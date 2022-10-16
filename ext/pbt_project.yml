@@ -5,19 +5,6 @@ author: ''
 language: python
 buildSystem: wheel
 pipelines:
-  pipelines/report_top_customers:
-    name: report_top_customers
-    description: Prepare a report based on customers' spending
-    author: kiran+700@prophecy.io
-    mode: batch
-    language: python
-    createdAt: '2022-07-28 02:25:25'
-    datasets:
-      inputs:
-      - 103/datasets/customers_orders
-      outputs:
-      - 103/datasets/report
-    dependencies: {}
   pipelines/join_agg_sort:
     name: join_agg_sort
     description: Show an example of joining two datasets (customers and orders), aggregating
@@ -46,6 +33,19 @@ pipelines:
       - 103/datasets/orders
       outputs:
       - 103/datasets/customers_orders
+    dependencies: {}
+  pipelines/report_top_customers:
+    name: report_top_customers
+    description: Prepare a report based on customers' spending
+    author: kiran+700@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-07-28 02:25:25'
+    datasets:
+      inputs:
+      - 103/datasets/customers_orders
+      outputs:
+      - 103/datasets/report
     dependencies: {}
 datasets:
   datasets/orders:
