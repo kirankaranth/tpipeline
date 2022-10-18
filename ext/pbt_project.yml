@@ -5,21 +5,6 @@ author: ''
 language: python
 buildSystem: wheel
 pipelines:
-  pipelines/join_agg_sort:
-    name: join_agg_sort
-    description: Show an example of joining two datasets (customers and orders), aggregating
-      (sales by customer), sorting (by totals)
-    author: kiran+700@prophecy.io
-    mode: batch
-    language: python
-    createdAt: '2022-07-28 02:25:25'
-    datasets:
-      inputs:
-      - 103/datasets/orders
-      - 103/datasets/customers
-      outputs:
-      - 103/datasets/customer_totals
-    dependencies: {}
   pipelines/customers_orders:
     name: customers_orders
     description: Aggregates total spending's for each customer
@@ -46,6 +31,21 @@ pipelines:
       - 103/datasets/customers_orders
       outputs:
       - 103/datasets/report
+    dependencies: {}
+  pipelines/join_agg_sort:
+    name: join_agg_sort
+    description: Show an example of joining two datasets (customers and orders), aggregating
+      (sales by customer), sorting (by totals)
+    author: kiran+700@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-07-28 02:25:25'
+    datasets:
+      inputs:
+      - 103/datasets/orders
+      - 103/datasets/customers
+      outputs:
+      - 103/datasets/customer_totals
     dependencies: {}
 datasets:
   datasets/orders:
@@ -132,7 +132,18 @@ datasets:
         description: ''
         author: kiran+700@prophecy.io
         createdAt: '2022-07-28 02:25:21'
-templates: {}
+templates:
+  templates/wheel:
+    name: wheel
+    description: null
+    author: kiran+700@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-10-17 15:08:34'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 jobs: {}
 libraries: []
 subgraphs: {}
