@@ -5,6 +5,20 @@ author: ''
 language: python
 buildSystem: wheel
 pipelines:
+  pipelines/customers_orders:
+    name: customers_orders
+    description: Aggregates total spending's for each customer
+    author: kiran+700@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-07-28 02:25:24'
+    datasets:
+      inputs:
+      - 103/datasets/customers
+      - 103/datasets/orders
+      outputs:
+      - 103/datasets/customers_orders
+    dependencies: {}
   pipelines/report_top_customers:
     name: report_top_customers
     description: Prepare a report based on customers' spending
@@ -32,20 +46,6 @@ pipelines:
       - 103/datasets/customers
       outputs:
       - 103/datasets/customer_totals
-    dependencies: {}
-  pipelines/customers_orders:
-    name: customers_orders
-    description: Aggregates total spending's for each customer
-    author: kiran+700@prophecy.io
-    mode: batch
-    language: python
-    createdAt: '2022-07-28 02:25:24'
-    datasets:
-      inputs:
-      - 103/datasets/customers
-      - 103/datasets/orders
-      outputs:
-      - 103/datasets/customers_orders
     dependencies: {}
 datasets:
   datasets/orders:
@@ -132,7 +132,18 @@ datasets:
         description: ''
         author: kiran+700@prophecy.io
         createdAt: '2022-07-28 02:25:21'
-templates: {}
+templates:
+  templates/wheel:
+    name: wheel
+    description: null
+    author: kiran+700@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-10-17 15:08:34'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 jobs: {}
 libraries: []
 subgraphs: {}
