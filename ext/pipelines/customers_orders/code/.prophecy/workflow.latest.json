@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "21",
+    "fabricId" : "96",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -183,7 +183,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "103/datasets/customers_orders"
+        "datasetId" : "datasets/customers_orders"
       }
     },
     "Reformat_5054" : {
@@ -250,8 +250,8 @@
       "metadata" : {
         "label" : "Customers",
         "slug" : "Customers",
-        "x" : 104.4003600702484,
-        "y" : 561.8000000000001,
+        "x" : -40.799639929751606,
+        "y" : 551.0000000000001,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -267,7 +267,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "103/datasets/customers"
+        "datasetId" : "datasets/customers"
       }
     },
     "Source_28006" : {
@@ -293,7 +293,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "103/datasets/orders"
+        "datasetId" : "datasets/orders"
       }
     },
     "Aggregate_74495" : {
