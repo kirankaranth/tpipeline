@@ -175,8 +175,8 @@
       "metadata" : {
         "label" : "Customers",
         "slug" : "Customers",
-        "x" : 332.40000000000003,
-        "y" : 185,
+        "x" : 507.6,
+        "y" : 71,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -252,8 +252,8 @@
       "metadata" : {
         "label" : "PerCustomer",
         "slug" : "PerCustomer",
-        "x" : 645,
-        "y" : 244,
+        "x" : 652.1999999999999,
+        "y" : 163.59999999999997,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
