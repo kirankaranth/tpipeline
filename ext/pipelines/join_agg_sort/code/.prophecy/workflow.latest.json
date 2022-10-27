@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "21",
+    "fabricId" : "96",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -146,8 +146,8 @@
       "metadata" : {
         "label" : "Orders",
         "slug" : "Orders",
-        "x" : 364,
-        "y" : 450,
+        "x" : 252.39999999999998,
+        "y" : 451.19999999999993,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -163,7 +163,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "103/datasets/orders"
+        "datasetId" : "datasets/orders"
       }
     },
     "Source_51020" : {
@@ -189,7 +189,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "103/datasets/customers"
+        "datasetId" : "datasets/customers"
       }
     },
     "Reformat_17440" : {
@@ -342,7 +342,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "103/datasets/customer_totals"
+        "datasetId" : "datasets/customer_totals"
       }
     },
     "OrderBy_51560" : {
