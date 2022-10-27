@@ -1,0 +1,44 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "16363" : {
+        "values" : [ [ "0" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "account_length_days",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "94427" : {
+        "values" : [ [ "0" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "account_open_date",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "python"
+  } ],
+  "language" : "python"
+}
