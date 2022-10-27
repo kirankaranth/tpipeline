@@ -2,10 +2,9 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "1025",
+    "fabricId" : "96",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
-    "interimMode" : "Full",
     "udfs" : {
       "language" : "python",
       "udfs" : [ ]
@@ -19,18 +18,23 @@
         "type" : "record",
         "fields" : [ ]
       },
-      "fabrics" : {
-        "dev" : {
-          "type" : "record",
-          "fields" : [ ]
-        }
-      }
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default"
     },
     "sparkConf" : [ ],
     "hadoopConf" : [ ],
     "codeMode" : "sparse",
     "buildSystem" : "maven",
-    "externalDependencies" : [ ]
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    }
   },
   "connections" : [ {
     "id" : "370",
@@ -76,12 +80,12 @@
       "metadata" : {
         "label" : "TotalByCustomer",
         "slug" : "TotalByCustomer",
-        "x" : 862,
-        "y" : 340,
-        "language" : "python",
+        "x" : 845.1999999999999,
+        "y" : 258.40000000000003,
         "phase" : 0,
         "cache" : false,
-        "detailedStats" : false
+        "detailedStats" : false,
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ {
@@ -92,9 +96,11 @@
           "id" : "42284",
           "slug" : "out"
         } ],
-        "selectedInputFields" : [ ]
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
       },
       "properties" : {
+        "allIns" : false,
         "doPivot" : false,
         "aggregate" : [ {
           "target" : "first_name",
@@ -102,36 +108,38 @@
             "format" : "sql",
             "expression" : "first(first_name)"
           },
-          "description" : ""
+          "description" : "",
+          "_row_id" : null
         }, {
           "target" : "last_name",
           "expression" : {
             "format" : "sql",
             "expression" : "first(last_name)"
           },
-          "description" : ""
+          "description" : "",
+          "_row_id" : null
         }, {
           "target" : "amounts",
           "expression" : {
             "format" : "sql",
             "expression" : "sum(amount)"
           },
-          "description" : ""
+          "description" : "",
+          "_row_id" : null
         } ],
-        "pivotColumn" : {
-          "format" : "sql",
-          "expression" : "col_name"
-        },
+        "allowSelection" : true,
+        "pivotColumn" : null,
         "pivotValues" : [ ],
         "activeTab" : "groupBy",
-        "columnsSelector" : [ "89787##customer_id", "89787##first_name", "89787##last_name", "89787##amount" ],
+        "columnsSelector" : [ "89787##amount", "89787##first_name", "89787##customer_id", "89787##last_name" ],
         "groupBy" : [ {
           "target" : "customer_id",
           "expression" : {
             "format" : "sql",
             "expression" : "customer_id"
           },
-          "description" : ""
+          "description" : "",
+          "_row_id" : null
         } ]
       }
     },
@@ -143,10 +151,10 @@
         "slug" : "Orders",
         "x" : 364,
         "y" : 450,
-        "language" : "python",
         "phase" : 0,
         "cache" : false,
-        "detailedStats" : false
+        "detailedStats" : false,
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ ],
@@ -154,10 +162,11 @@
           "id" : "59024",
           "slug" : "out"
         } ],
-        "selectedInputFields" : [ ]
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "265/datasets/orders"
+        "datasetId" : "datasets/orders"
       }
     },
     "Source_51020" : {
@@ -166,12 +175,12 @@
       "metadata" : {
         "label" : "Customers",
         "slug" : "Customers",
-        "x" : 366,
-        "y" : 221,
-        "language" : "python",
+        "x" : 332.40000000000003,
+        "y" : 185,
         "phase" : 0,
         "cache" : false,
-        "detailedStats" : false
+        "detailedStats" : false,
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ ],
@@ -179,10 +188,11 @@
           "id" : "66665",
           "slug" : "out"
         } ],
-        "selectedInputFields" : [ ]
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "265/datasets/customers"
+        "datasetId" : "datasets/customers"
       }
     },
     "Reformat_17440" : {
@@ -193,10 +203,10 @@
         "slug" : "Cleanup",
         "x" : 1069,
         "y" : 341,
-        "language" : "python",
         "phase" : 0,
         "cache" : false,
-        "detailedStats" : false
+        "detailedStats" : false,
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ {
@@ -207,7 +217,8 @@
           "id" : "77921",
           "slug" : "out"
         } ],
-        "selectedInputFields" : [ ]
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
       },
       "properties" : {
         "columnsSelector" : [ "30337##first_name", "30337##last_name", "30337##amounts", "30337##customer_id" ],
@@ -242,11 +253,11 @@
         "label" : "PerCustomer",
         "slug" : "PerCustomer",
         "x" : 645,
-        "y" : 340,
-        "language" : "python",
+        "y" : 244,
         "phase" : 0,
         "cache" : false,
-        "detailedStats" : false
+        "detailedStats" : false,
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ {
@@ -260,7 +271,8 @@
           "id" : "70086",
           "slug" : "out"
         } ],
-        "selectedInputFields" : [ ]
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
       },
       "properties" : {
         "conditions" : [ {
@@ -304,8 +316,21 @@
           "description" : "",
           "_row_id" : null
         } ],
+        "hints" : [ {
+          "id" : "27588",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "21857",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
         "activeTab" : "expressions",
-        "columnsSelector" : [ "27588##customer_id", "21857##customer_id", "27588##first_name", "27588##last_name", "21857##amount", "27588##customer_id" ],
+        "columnsSelector" : [ "27588##customer_id", "21857##customer_id", "27588##last_name", "27588##customer_id", "27588##first_name", "21857##amount" ],
+        "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
       }
@@ -318,10 +343,10 @@
         "slug" : "WriteReport",
         "x" : 1502,
         "y" : 341,
-        "language" : "python",
         "phase" : 0,
         "cache" : false,
-        "detailedStats" : false
+        "detailedStats" : false,
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ {
@@ -329,10 +354,11 @@
           "slug" : "in0"
         } ],
         "outputs" : [ ],
-        "selectedInputFields" : [ ]
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "265/datasets/customer_totals"
+        "datasetId" : "datasets/customer_totals"
       }
     },
     "OrderBy_51560" : {
@@ -343,10 +369,10 @@
         "slug" : "SortBiggestOrders",
         "x" : 1288,
         "y" : 341,
-        "language" : "python",
         "phase" : 0,
         "cache" : false,
-        "detailedStats" : false
+        "detailedStats" : false,
+        "isImported" : false
       },
       "ports" : {
         "inputs" : [ {
@@ -357,7 +383,8 @@
           "id" : "93463",
           "slug" : "out"
         } ],
-        "selectedInputFields" : [ ]
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
       },
       "properties" : {
         "columnsSelector" : [ "34799##amount" ],
@@ -374,6 +401,7 @@
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],
-    "selectedInputFields" : [ ]
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
   }
 }
