@@ -1,0 +1,15 @@
+name: testst
+description: ''
+version: 0.0.1
+author: kiranadmin@prophecy.io
+language: scala
+buildSystem: maven
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
