@@ -208,4 +208,6 @@ templates: {}
 jobs: {}
 libraries: []
 subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
 dependencies: []
