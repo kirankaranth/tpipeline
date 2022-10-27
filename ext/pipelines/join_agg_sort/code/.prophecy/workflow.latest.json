@@ -146,8 +146,8 @@
       "metadata" : {
         "label" : "Orders",
         "slug" : "Orders",
-        "x" : 252.39999999999998,
-        "y" : 451.19999999999993,
+        "x" : 354.4,
+        "y" : 463.19999999999993,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
