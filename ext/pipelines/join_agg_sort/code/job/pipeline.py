@@ -24,8 +24,12 @@ def main():
                 .getOrCreate()\
                 .newSession()
     Utils.initializeFromArgs(spark, parse_args())
-    spark.conf.set("prophecy.metadata.pipeline.uri", "357/pipelines/join_agg_sort")
-    MetricsCollector.start(spark = spark, pipelineId = "357/pipelines/join_agg_sort")
+    spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/join_agg_sort")
+    
+    MetricsCollector.start(
+        spark = spark,
+        pipelineId = spark.conf.get("prophecy.project.id") + "/" + "pipelines/join_agg_sort"
+    )
     pipeline(spark)
     MetricsCollector.end(spark)
 
