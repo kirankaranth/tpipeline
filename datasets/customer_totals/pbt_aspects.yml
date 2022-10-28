@@ -5,12 +5,21 @@ schema:
   - name: full_name
     type: string
     nullable: true
-    metadata: {}
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
   - name: amount
     type: long
     nullable: true
-    metadata: {}
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
   - name: customer_id
     type: integer
     nullable: true
-    metadata: {}
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
