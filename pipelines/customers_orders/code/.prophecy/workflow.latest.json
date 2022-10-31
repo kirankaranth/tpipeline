@@ -74,8 +74,8 @@
       "metadata" : {
         "label" : "By CustomerId",
         "slug" : "By_CustomerId",
-        "x" : 233,
-        "y" : 111.69999999999999,
+        "x" : 240.2,
+        "y" : 38.49999999999997,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -289,8 +289,8 @@
       "metadata" : {
         "label" : "Orders",
         "slug" : "Orders",
-        "x" : -135.5996399297516,
-        "y" : -94.79999999999998,
+        "x" : -115.19963992975157,
+        "y" : -106.79999999999998,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
