@@ -1,11 +1,137 @@
-name: testCLone222
+name: HelloWorld
 description: ''
-version: 0.0.1
-author: kiran+700@prophecy.io
+version: 0.0.1-SNAPSHOT
+author: ''
 language: python
 buildSystem: wheel
-pipelines: {}
-datasets: {}
+pipelines:
+  pipelines/customers_orders:
+    name: customers_orders
+    description: Aggregates total spending's for each customer
+    author: kiran+700@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-07-28 02:25:24'
+    datasets:
+      inputs:
+      - 103/datasets/customers
+      - 103/datasets/orders
+      outputs:
+      - 103/datasets/customers_orders
+    dependencies: {}
+  pipelines/report_top_customers:
+    name: report_top_customers
+    description: Prepare a report based on customers' spending
+    author: kiran+700@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-07-28 02:25:25'
+    datasets:
+      inputs:
+      - 103/datasets/customers_orders
+      outputs:
+      - 103/datasets/report
+    dependencies: {}
+  pipelines/join_agg_sort:
+    name: join_agg_sort
+    description: Show an example of joining two datasets (customers and orders), aggregating
+      (sales by customer), sorting (by totals)
+    author: kiran+700@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-07-28 02:25:25'
+    datasets:
+      inputs:
+      - 103/datasets/orders
+      - 103/datasets/customers
+      outputs:
+      - 103/datasets/customer_totals
+    dependencies: {}
+datasets:
+  datasets/orders:
+    name: orders
+    description: All the orders placed by the customers
+    author: kiran+700@prophecy.io
+    createdAt: '2022-07-28 02:25:22'
+    physicalDatasets:
+      dev:
+        fabricId: 21
+        datasetType: File
+        description: ''
+        author: kiran+700@prophecy.io
+        createdAt: '2022-07-28 02:25:22'
+  datasets/customers_orders:
+    name: customers_orders
+    description: Customers by total of their purchases
+    author: kiran+700@prophecy.io
+    createdAt: '2022-07-28 02:25:23'
+    physicalDatasets:
+      dev:
+        fabricId: 21
+        datasetType: File
+        description: ''
+        author: kiran+700@prophecy.io
+        createdAt: '2022-07-28 02:25:23'
+  datasets/customers:
+    name: customers
+    description: All the customers
+    author: kiran+700@prophecy.io
+    createdAt: '2022-07-28 02:25:22'
+    physicalDatasets:
+      dev:
+        fabricId: 21
+        datasetType: File
+        description: ''
+        author: kiran+700@prophecy.io
+        createdAt: '2022-07-28 02:25:22'
+  datasets/historic_events_flat:
+    name: historic_events_flat
+    description: Historic events flat
+    author: kiran+700@prophecy.io
+    createdAt: '2022-07-28 02:25:24'
+    physicalDatasets:
+      dev:
+        fabricId: 21
+        datasetType: File
+        description: ''
+        author: kiran+700@prophecy.io
+        createdAt: '2022-07-28 02:25:24'
+  datasets/report:
+    name: report
+    description: Final report for the bank
+    author: kiran+700@prophecy.io
+    createdAt: '2022-07-28 02:25:21'
+    physicalDatasets:
+      dev:
+        fabricId: 21
+        datasetType: File
+        description: ''
+        author: kiran+700@prophecy.io
+        createdAt: '2022-07-28 02:25:21'
+  datasets/old_events:
+    name: old_events
+    description: Old events data
+    author: kiran+700@prophecy.io
+    createdAt: '2022-07-28 02:25:23'
+    physicalDatasets:
+      dev:
+        fabricId: 21
+        datasetType: File
+        description: ''
+        author: kiran+700@prophecy.io
+        createdAt: '2022-07-28 02:25:24'
+  datasets/customer_totals:
+    name: customer_totals
+    description: Customers by total of their purchases
+    author: kiran+700@prophecy.io
+    createdAt: '2022-07-28 02:25:21'
+    physicalDatasets:
+      dev:
+        fabricId: 21
+        datasetType: File
+        description: ''
+        author: kiran+700@prophecy.io
+        createdAt: '2022-07-28 02:25:21'
 templates: {}
 jobs: {}
 libraries: []

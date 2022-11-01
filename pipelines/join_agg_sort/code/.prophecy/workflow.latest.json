@@ -175,8 +175,8 @@
       "metadata" : {
         "label" : "Customers",
         "slug" : "Customers",
-        "x" : 459.6,
-        "y" : 38.599999999999994,
+        "x" : 255.60000000000002,
+        "y" : 144.19999999999993,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -252,8 +252,8 @@
       "metadata" : {
         "label" : "PerCustomer",
         "slug" : "PerCustomer",
-        "x" : 760.2,
-        "y" : 306.3999999999999,
+        "x" : 639.0000000000001,
+        "y" : 158.7999999999999,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -329,7 +329,7 @@
         } ],
         "allIn1" : null,
         "activeTab" : "expressions",
-        "columnsSelector" : [ "27588##customer_id", "21857##customer_id", "27588##last_name", "27588##customer_id", "27588##first_name", "21857##amount" ],
+        "columnsSelector" : [ "21857##customer_id", "27588##customer_id", "21857##amount", "27588##last_name", "27588##first_name", "27588##customer_id" ],
         "allIn0" : null,
         "whereClause" : null,
         "headAlias" : "in0"
