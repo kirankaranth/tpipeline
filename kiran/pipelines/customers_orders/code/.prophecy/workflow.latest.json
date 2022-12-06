@@ -25,9 +25,15 @@
           "optional" : false
         } ]
       },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
       "fabrics" : { },
       "instances" : { },
-      "selected" : "test"
+      "selected" : "test",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
     },
     "sparkConf" : [ ],
     "hadoopConf" : [ ],
@@ -190,7 +196,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "3252/datasets/customers_orders"
+        "datasetId" : "datasets/customers_orders"
       }
     },
     "Reformat_5054" : {
@@ -274,7 +280,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "3252/datasets/customers"
+        "datasetId" : "datasets/customers"
       }
     },
     "Source_28006" : {
@@ -283,8 +289,8 @@
       "metadata" : {
         "label" : "Orders",
         "slug" : "Orders",
-        "x" : 120.00036007024839,
-        "y" : 120,
+        "x" : -88.79963992975159,
+        "y" : 84,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -300,7 +306,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "3252/datasets/orders"
+        "datasetId" : "datasets/orders"
       }
     },
     "Aggregate_74495" : {
