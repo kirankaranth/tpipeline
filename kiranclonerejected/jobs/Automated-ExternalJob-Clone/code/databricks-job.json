@@ -1,0 +1,67 @@
+{
+  "fabric_id" : "2730",
+  "components" : [ {
+    "PipelineComponent" : {
+      "id" : "pipelines/Automated-ExternalPip-Clone",
+      "nodeName" : "Automated-ExternalPip-Clone",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/prophecy/uitesting/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Automated-ExternalPip-Clone.jar",
+      "language" : "scala"
+    }
+  } ],
+  "request" : {
+    "format" : "MULTI_TASK",
+    "name" : "Automated-ExternalJob-Clone",
+    "job_clusters" : [ {
+      "job_cluster_key" : "Automated-ExternalJob-Clone_default_small",
+      "new_cluster" : {
+        "spark_version" : "11.3.x-scala2.12",
+        "node_type_id" : "i3.xlarge",
+        "spark_conf" : {
+          "prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/Automated-ExternalJob-Clone",
+          "prophecy.metadata.fabric.id" : "2730",
+          "prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
+          "prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
+          "prophecy.packages.path" : "{\"pipelines/Automated-ExternalPip-Clone\":\"dbfs:/FileStore/prophecy/artifacts/prophecy/uitesting/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Automated-ExternalPip-Clone.jar\"}",
+          "prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
+          "prophecy.execution.service.url" : "wss://execution.dp.uitesting.prophecy.io/eventws",
+          "prophecy.metadata.is.interactive.run" : "false"
+        },
+        "num_workers" : 1,
+        "driver_node_type_id" : "i3.xlarge"
+      }
+    } ],
+    "email_notifications" : {
+      "on_start" : [ "abhisheks+e2etests@prophecy.io" ]
+    },
+    "tasks" : [ {
+      "task_key" : "Automated-ExternalPip-Clone",
+      "job_cluster_key" : "Automated-ExternalJob-Clone_default_small",
+      "spark_jar_task" : {
+        "main_class_name" : "io.prophecy.pipelines.automatedexternalpipclone.Main",
+        "parameters" : [ "-i", "default", "-O", "{}" ]
+      },
+      "libraries" : [ {
+        "maven" : {
+          "coordinates" : "io.prophecy:prophecy-libs_2.12:6.2.14-3.3.0"
+        }
+      }, {
+        "pypi" : {
+          "package" : "prophecy-libs==1.3.12"
+        }
+      }, {
+        "jar" : "dbfs:/FileStore/prophecy/artifacts/prophecy/uitesting/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Automated-ExternalPip-Clone.jar"
+      } ],
+      "email_notifications" : { },
+      "max_retries" : 0
+    } ],
+    "max_concurrent_runs" : 1,
+    "schedule" : {
+      "quartz_cron_expression" : "0 0 0/1 * * ? 2080",
+      "timezone_id" : "GMT",
+      "pause_status" : "PAUSED"
+    }
+  },
+  "cluster_mode" : {
+    "clusterMode" : "Single"
+  }
+}

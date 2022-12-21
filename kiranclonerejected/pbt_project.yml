@@ -1,0 +1,71 @@
+name: Automated-ExternalP-Clone
+description: ''
+version: 0.0.1-SNAPSHOT
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: maven
+pipelines:
+  pipelines/Automated-ExternalPip-Clone:
+    name: Automated-ExternalPip-Clone
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-12-21 11:32:43'
+    datasets:
+      inputs:
+      - datasets/Automated-ExternalDataset-Clone
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/Automated-ExternalDataset-Clone:
+    name: Automated-ExternalDataset-Clone
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-12-21 11:33:56'
+    physicalDatasets:
+      dev:
+        fabricId: 2730
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-12-21 11:33:56'
+templates: {}
+jobs:
+  jobs/Automated-ExternalJob-Clone:
+    name: Automated-ExternalJob-Clone
+    description: ''
+    fabricUID: 2730
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0/1 * * ? 2080
+    timeout: null
+    alerting:
+      emails: abhisheks+e2etests@prophecy.io
+      onStart: true
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/Automated-ExternalPip-Clone
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2022-12-21 11:34:39'
+    author: abhisheks+e2etests@prophecy.io
+libraries: []
+subgraphs:
+  subgraphs/Automated-ExternalSG-Clone:
+    name: Automated-ExternalSG-Clone
+    description: test subgraph
+    author: abhisheks+e2etests@prophecy.io
+    language: scala
+    createdAt: '2022-12-21 11:34:33'
+sqlModels: {}
+sqlPipeline: null
+dependencies: []
+projectDependencies: {}
+pipelineConfigurations: {}
