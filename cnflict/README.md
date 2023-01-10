@@ -1,12 +1,12 @@
 # cnflictChk Repository
 
 entity1
-entity1
-entity1
-entity2
+entity3
+entity4
+comment
 entity2
 entity2
 commonComment
 commonComment
 commonComment
-entity6
+entity5
