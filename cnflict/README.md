@@ -6,3 +6,7 @@ entity4
 comment
 entity2
 entity2
+commonComment
+commonComment
+commonComment
+entity5
