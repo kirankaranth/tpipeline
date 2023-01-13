@@ -4,7 +4,18 @@ version: 0.0.1-SNAPSHOT
 author: kiranadmin@prophecy.io
 language: python
 buildSystem: wheel
-pipelines: {}
+pipelines:
+  pipelines/adsfgad:
+    name: adsfgad
+    description: ''
+    author: kiranadmin@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2023-01-13 11:09:58'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
