@@ -14,10 +14,10 @@ pipelines:
     createdAt: '2022-09-21 12:06:01'
     datasets:
       inputs:
-      - 10370/datasets/orders
-      - 10370/datasets/customers
+      - datasets/customers
+      - datasets/orders
       outputs:
-      - 10370/datasets/customers_orders
+      - datasets/customers_orders
     dependencies: {}
   pipelines/report_top_customers:
     name: report_top_customers
@@ -67,6 +67,7 @@ datasets:
     description: All the orders placed by the customers
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:00'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -79,6 +80,7 @@ datasets:
     description: Irs zipcode data
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:01'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -91,6 +93,7 @@ datasets:
     description: Customers by total of their purchases
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:00'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -103,6 +106,7 @@ datasets:
     description: All the customers
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:00'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -115,6 +119,7 @@ datasets:
     description: Farmer's market tax report
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:01'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -127,6 +132,7 @@ datasets:
     description: Farmer's Market data
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:00'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -139,6 +145,7 @@ datasets:
     description: Historic events flat
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:00'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -151,6 +158,7 @@ datasets:
     description: Final report for the bank
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:00'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -163,6 +171,7 @@ datasets:
     description: Old events data
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:00'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -175,6 +184,7 @@ datasets:
     description: Customers by total of their purchases
     author: abhisheks+child1663761837579@prophecy.io
     createdAt: '2022-09-21 12:06:00'
+    mode: batch
     physicalDatasets:
       dev1:
         fabricId: 2184
@@ -186,4 +196,8 @@ templates: {}
 jobs: {}
 libraries: []
 subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
 dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
