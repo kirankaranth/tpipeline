@@ -7,17 +7,17 @@ buildSystem: wheel
 pipelines:
   pipelines/customers_orders:
     name: customers_orders
-    description: Aggregates total spending's for each customer conflict
+    description: Aggregates total spending's for each customer blah
     author: abhisheks+child1663761837579@prophecy.io
     mode: batch
     language: python
     createdAt: '2022-09-21 12:06:01'
     datasets:
       inputs:
-      - datasets/customers
-      - datasets/orders
+      - 10370/datasets/orders
+      - 10370/datasets/customers
       outputs:
-      - datasets/customers_orders
+      - 10370/datasets/customers_orders
     dependencies: {}
   pipelines/report_top_customers:
     name: report_top_customers
