@@ -7,7 +7,7 @@ buildSystem: wheel
 pipelines:
   pipelines/customers_orders:
     name: customers_orders
-    description: Aggregates total spending's for each customer
+    description: Aggregates total spending's for each customer conflict
     author: abhisheks+child1663761837579@prophecy.io
     mode: batch
     language: python
