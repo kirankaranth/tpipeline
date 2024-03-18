@@ -1,0 +1,2415 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes",
+    "language" : "python",
+    "fabricId" : "3",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "sasmigrationteam.czprophecydev.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "or_hlp_peoplesoft_zorgkosten_sticky_notes",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "xd1WsfBjnLItl-Ti8SfjE$$XbunW2f0x4itKJjogbVY8",
+    "source" : "QzrAIMXQQMv5-WrH5gOjj$$ZxqpGo5ExAowpQCN2Mzc2",
+    "sourcePort" : "qK6BPeE5vY916D6sXtir0$$MpMZOnDsQnIwG6-5VG6Nm",
+    "target" : "4FM3R_-MqsTLOR2Y3V6Tv$$wPfdaN6S66VRZ58GvX-qo",
+    "targetPort" : "mP4IEjzjmb5tOjQmhmE8b$$C504p7zNT712hxv8S-wko"
+  }, {
+    "id" : "NCVDDQlTB_t2K1LoYreb7",
+    "source" : "8iBDj5K9WupdCYhA-EeoJ$$OZZW7IsUIcfzYUHr41Gum",
+    "sourcePort" : "hqiypr5Op181xUGkPnSc_$$OJZGfozQzlWI1X7IIU9rG",
+    "target" : "4FM3R_-MqsTLOR2Y3V6Tv$$wPfdaN6S66VRZ58GvX-qo",
+    "targetPort" : "BBnUViWTrAj-aeInPSMfN$$esqOzAjVkB_hKMRYjwJK5"
+  }, {
+    "id" : "bjFzSF5BJqaOVn_vn2w4A$$z5TgylNAdp46gsUQDSNW1",
+    "source" : "4FM3R_-MqsTLOR2Y3V6Tv$$wPfdaN6S66VRZ58GvX-qo",
+    "sourcePort" : "tDeQ4xgOiYpvIN-cyMvhh$$V_jmiuSDv-IaL1UvBYbzh",
+    "target" : "kgNF878EURXGCQyoECJrX$$ightVZGYXMIITvFX4lorD",
+    "targetPort" : "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI"
+  }, {
+    "id" : "5JNMQTzeaK6DB588kg3QY$$MAfmvVJqMVgJpxmM-wDxN",
+    "source" : "kgNF878EURXGCQyoECJrX$$ightVZGYXMIITvFX4lorD",
+    "sourcePort" : "tUEtutg0-MfuZ5bzSQcEt$$KRI6DUqPSf_ilCfMtbBOz",
+    "target" : "ms9wwFIE4UPTzkWegJk_a$$zh02tye6vKkIqqnSb-98t",
+    "targetPort" : "4f8HD0aC9ceKBv1mdznk-$$3K9esJ5wbRvpqdfdBD-fg"
+  }, {
+    "id" : "99eMPDXKDhtwnLWF12F4H$$VloehQ3z3iDySooOy3_ur",
+    "source" : "ms9wwFIE4UPTzkWegJk_a$$zh02tye6vKkIqqnSb-98t",
+    "sourcePort" : "k_prQYG7F8Y8fHiqcbYdv$$-CfU9r0heWHUuJoIEtFXl",
+    "target" : "dN49VV_pO-q0Tw2nyw8DF$$RCLV89qYXkHQVyc9-3F1i",
+    "targetPort" : "snu2KvlLabPSFvouEWhTe$$p2KNl2MhRMUqfvt9LU50y"
+  } ],
+  "processes" : {
+    "OXEEqt-dLd3-ggETH4Uq9$$GNB7KhxLVRpMhNYtDTcPj" : {
+      "id" : "OXEEqt-dLd3-ggETH4Uq9$$GNB7KhxLVRpMhNYtDTcPj",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Sticky_Note_1",
+        "slug" : "Sticky_Note_1",
+        "x" : -1160,
+        "y" : -320,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
+      },
+      "properties" : {
+        "script" : "# Indien DESCR254 begint met AP of AR, dan betreft het MACRO boekingen welke met de introductie van Force handmatig in PeopleSoft worden geboekt. Deze worden dus hier als handmatig gezien omdat dit niet als onderdeel van ind_handmatig wordt meegenomen.",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "ms9wwFIE4UPTzkWegJk_a$$zh02tye6vKkIqqnSb-98t" : {
+      "id" : "ms9wwFIE4UPTzkWegJk_a$$zh02tye6vKkIqqnSb-98t",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Table_Loader",
+        "slug" : "Table_Loader",
+        "x" : -360,
+        "y" : -260,
+        "phase" : 3,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "REPLACE\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5XSGX9W.BZ0056RU\nOriginal transform name: Table Loader\nOriginal output dataset names:\n- OR_HLP_PEOPLESOFT_ZORGKOSTEN"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4f8HD0aC9ceKBv1mdznk-$$3K9esJ5wbRvpqdfdBD-fg",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Kostensoort",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUSINESS_UNIT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verwerking",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verrichting",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_zorgkosten",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_taxatie",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_exact",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_handmatig",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_taxatie",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JurEntiteit_VerzGrondsl_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "k_prQYG7F8Y8fHiqcbYdv$$-CfU9r0heWHUuJoIEtFXl",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=&subPath=&tag=0.1.2&projectSubscriptionProjectId=430&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "QzrAIMXQQMv5-WrH5gOjj$$ZxqpGo5ExAowpQCN2Mzc2" : {
+      "id" : "QzrAIMXQQMv5-WrH5gOjj$$ZxqpGo5ExAowpQCN2Mzc2",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "source_stg_pst_ps_jrnl_ln_hst",
+        "slug" : "source_stg_pst_ps_jrnl_ln_hst",
+        "x" : -940,
+        "y" : -320,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "qK6BPeE5vY916D6sXtir0$$MpMZOnDsQnIwG6-5VG6Nm",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/stg_edwh_stg_pst_ps_jrnl_ln_hst"
+      }
+    },
+    "dN49VV_pO-q0Tw2nyw8DF$$RCLV89qYXkHQVyc9-3F1i" : {
+      "id" : "dN49VV_pO-q0Tw2nyw8DF$$RCLV89qYXkHQVyc9-3F1i",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "target_or_hlp_peoplesoft_zorgkosten",
+        "slug" : "target_or_hlp_peoplesoft_zorgkosten",
+        "x" : -200,
+        "y" : -260,
+        "phase" : 3,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "snu2KvlLabPSFvouEWhTe$$p2KNl2MhRMUqfvt9LU50y",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Kostensoort",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUSINESS_UNIT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verwerking",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verrichting",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_zorgkosten",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_taxatie",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_exact",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_handmatig",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_taxatie",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JurEntiteit_VerzGrondsl_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/bm_20230428_2_or_hlp_or_hlp_peoplesoft_zorgkosten"
+      }
+    },
+    "8iBDj5K9WupdCYhA-EeoJ$$OZZW7IsUIcfzYUHr41Gum" : {
+      "id" : "8iBDj5K9WupdCYhA-EeoJ$$OZZW7IsUIcfzYUHr41Gum",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "source_stg_pst_ps_jrnl_header_hst",
+        "slug" : "source_stg_pst_ps_jrnl_header_hst",
+        "x" : -940,
+        "y" : -160,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "hqiypr5Op181xUGkPnSc_$$OJZGfozQzlWI1X7IIU9rG",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/stg_edwh_stg_pst_ps_jrnl_header_hst"
+      }
+    },
+    "kFJYQ_DEFsB0KfmL-nx8V$$SAWJwadMKq6maxLD50p-z" : {
+      "id" : "kFJYQ_DEFsB0KfmL-nx8V$$SAWJwadMKq6maxLD50p-z",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Sticky_Note_2",
+        "slug" : "Sticky_Note_2",
+        "x" : -1160,
+        "y" : -160,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
+      },
+      "properties" : {
+        "script" : "# HST_tabellen bevatten geen EDWH-historie\r\n\r\n# Dit is een uitzondering: hierdoor kan in de ontwikkelcheck, het punt op NVT: \r\n# Jobs in de OI/OR-tak mogen alleen _ACT-tabellen als inputtabel hebben: geen andere type tabellen uit de staging (HST/T/LST).\r\n# Alleen bij uitzondering mag ook een EDWH-tabel (IL/FCT) als input dienen.",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "kgNF878EURXGCQyoECJrX$$ightVZGYXMIITvFX4lorD" : {
+      "id" : "kgNF878EURXGCQyoECJrX$$ightVZGYXMIITvFX4lorD",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Extract_aggregate",
+        "slug" : "Extract_aggregate",
+        "x" : -540,
+        "y" : -260,
+        "phase" : 2,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Sommeer bedragen\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5XSGX9W.BZ0056RT\nOriginal transform name: Extract\nOriginal output dataset names:\n- W5ZVCNFO"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Kostensoort",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUSINESS_UNIT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CHARTFIELD1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verwerking",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verrichting",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_zorgkosten",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_taxatie",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_exact",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_handmatig",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_taxatie",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KDE_JET",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "VZL",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JurEntiteit_VerzGrondsl_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "tUEtutg0-MfuZ5bzSQcEt$$KRI6DUqPSf_ilCfMtbBOz",
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Kostensoort",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUSINESS_UNIT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verwerking",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verrichting",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_zorgkosten",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_taxatie",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_exact",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_handmatig",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_taxatie",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JurEntiteit_VerzGrondsl_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "Bedrag_Peoplesoft",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(Bedrag_Peoplesoft)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Bedrag_Peoplesoft_zorgkosten",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(Bedrag_Peoplesoft_zorgkosten)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Bedrag_Peoplesoft_taxatie",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(Bedrag_Peoplesoft_taxatie)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##Jaar_Maand_Verrichting", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##JurEntiteit_VerzGrondsl_Code", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##Kostensoort", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##ind_exact", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##BUSINESS_UNIT", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##ind_handmatig", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##Jaar_Maand_Verwerking", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##ind_taxatie", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##Bedrag_Peoplesoft_zorgkosten", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##Bedrag_Peoplesoft_taxatie", "Mkar00vR8eyG3u274O5AE$$UpasouzQAV6UL-boExQAI##Bedrag_Peoplesoft" ],
+        "groupBy" : [ {
+          "target" : "Kostensoort",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Kostensoort"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "BUSINESS_UNIT",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BUSINESS_UNIT"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Jaar_Maand_Verwerking",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Jaar_Maand_Verwerking"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "Jaar_Maand_Verrichting",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Jaar_Maand_Verrichting"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ind_exact",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ind_exact"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ind_handmatig",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ind_handmatig"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "JurEntiteit_VerzGrondsl_Code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "JurEntiteit_VerzGrondsl_Code"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "ind_taxatie",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ind_taxatie"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=&subPath=&tag=0.1.2&projectSubscriptionProjectId=430&path=gems/Aggregate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "4FM3R_-MqsTLOR2Y3V6Tv$$wPfdaN6S66VRZ58GvX-qo" : {
+      "id" : "4FM3R_-MqsTLOR2Y3V6Tv$$wPfdaN6S66VRZ58GvX-qo",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Join",
+        "slug" : "Join",
+        "x" : -740,
+        "y" : -260,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Koppel Journaalregels\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5XSGX9W.BZ0056RS\nOriginal transform name: Join\nOriginal output dataset names:\n- W5ZUUJH2"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "mP4IEjzjmb5tOjQmhmE8b$$C504p7zNT712hxv8S-wko",
+          "slug" : "STG_PST_PS_JRNL_LN_HST",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "BUSINESS_UNIT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UNPOST_SEQ",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_LINE",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LEDGER",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ACCOUNT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ALTACCT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DEPTID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OPERATING_UNIT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PRODUCT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FUND_CODE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CLASS_FLD",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PROGRAM_CODE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUDGET_REF",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AFFILIATE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AFFILIATE_INTRA1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AFFILIATE_INTRA2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CHARTFIELD1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CHARTFIELD2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CHARTFIELD3",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PROJECT_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BOOK_CODE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "GL_ADJUST_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUDGET_PERIOD",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SCENARIO",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CURRENCY_CD",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "STATISTICS_CODE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "MONETARY_AMOUNT",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "MOVEMENT_FLAG",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "STATISTIC_AMOUNT",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_LN_REF",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SUSPENDED_LINE",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LINE_DESCR",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_LINE_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_LINE_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FOREIGN_CURRENCY",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RT_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FOREIGN_AMOUNT",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RATE_DIV",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RATE_MULT",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PROCESS_INSTANCE",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DOC_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DOC_SEQ_NBR",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DOC_SEQ_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DOC_SEQ_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_LINE_SOURCE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUSINESS_UNIT_PC",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ACTIVITY_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ANALYSIS_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RESOURCE_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RESOURCE_CATEGORY",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RESOURCE_SUB_CAT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUDGET_DT",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUDGET_LINE_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CLOSING_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ENTRY_EVENT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EE_PROC_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_LINE_GFEE",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IU_TRAN_GRP_NBR",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IU_ANCHOR_FLG",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PC_DISTRIB_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TAS_GWA",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BETC_CD",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SPEEDCHART_KEY",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SPEEDTYPE_KEY",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SETTLEMENT_DT",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DATE_CODE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SCE_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SOURCE_DATA",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_LINE_ORIG_SRC",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EDWH_PEIL_DTM",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EDWH_PROCES_DTD",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EDWH_VERWIJDER_DTD",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "BBnUViWTrAj-aeInPSMfN$$esqOzAjVkB_hKMRYjwJK5",
+          "slug" : "STG_PST_PS_JRNL_LN_HEADER_HST",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "BUSINESS_UNIT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UNPOST_SEQ",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUSINESS_UNIT_IU",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ADJUSTING_ENTRY",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FISCAL_YEAR",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ACCOUNTING_PERIOD",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ADB_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LEDGER_GROUP",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LEDGER",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AUTO_GEN_LINES",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "REVERSAL_CD",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "REVERSAL_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "REVERSAL_ADJ_PER",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "REVERSAL_CD_ADB",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "REVERSAL_DATE_ADB",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "UNPOST_JRNL_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_TOTAL_LINES",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_TOTAL_DEBITS",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_TOT_CREDITS",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SOURCE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TRANS_REF_NUM",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_BALANCE_STAT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CONTROL_TOTAL_STAT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_EDIT_ERR_STAT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_HDR_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SUSP_RECON_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_PROCESS_REQST",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_SUMLED_REQST",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SJE_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SCHEDULE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EVENT_OCCURRENCE",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "POSTED_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PROCESS_INSTANCE",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SOURCE_INSTANCE",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TRANSACTION_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LAST_LN_COMMITTED",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OPRID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DTTM_STAMP_SEC",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DESCR",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CURRENCY_CD",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FOREIGN_CURRENCY",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RT_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CUR_EFFDT",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RATE_DIV",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RATE_MULT",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SYSTEM_SOURCE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DOC_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DOC_SEQ_NBR",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DOC_SEQ_DATE",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DOC_SEQ_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ACCTG_DEF_NAME",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUDGET_HDR_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KK_AMOUNT_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KK_TRAN_OVER_FLAG",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KK_TRAN_OVER_OPRID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KK_TRAN_OVER_DTTM",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KK_SKIP",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_LOCKED",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PROC_PART_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "GL_ADJUST_TYPE",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_DATE_ORIG",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JOURNAL_CLASS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KK_TRAN_BYPAS_FLAG",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EE_HDR_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IU_SYS_TRAN_CD",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "IU_TRAN_CD",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_CREATE_DTTM",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DESCR254",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ALC",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FED_DISTRIB_STATUS",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ATTACHMENT_EXIST",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "GL_CTA",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DATE_CODE_JRNL",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SCE_ID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SOURCE_DATA",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JRNL_NET_UNITS",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EDWH_PEIL_DTM",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EDWH_PROCES_DTD",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EDWH_VERWIJDER_DTD",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "tDeQ4xgOiYpvIN-cyMvhh$$V_jmiuSDv-IaL1UvBYbzh",
+          "slug" : "SQL_Join",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Kostensoort",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BUSINESS_UNIT",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CHARTFIELD1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verwerking",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Jaar_Maand_Verrichting",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_zorgkosten",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft_taxatie",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Bedrag_Peoplesoft",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_exact",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_handmatig",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ind_taxatie",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KDE_JET",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "VZL",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "JurEntiteit_VerzGrondsl_Code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "script" : "STG_PST_PS_JRNL_HEADER_HST.createOrReplaceTempView(\"STG_PST_PS_JRNL_HEADER_HST\")\r\nSTG_PST_PS_JRNL_LN_HST.createOrReplaceTempView(\"STG_PST_PS_JRNL_LN_HST\")\r\nSQL_Join = spark.sql(f\"\"\"\r\nWITH cal_col AS (\r\nSELECT \r\n  STG_PST_PS_JRNL_LN_HST.ACCOUNT AS Kostensoort,\r\n  STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT AS BUSINESS_UNIT,\r\n  STG_PST_PS_JRNL_LN_HST.CHARTFIELD1 AS CHARTFIELD1,\r\n  CONCAT(year(STG_PST_PS_JRNL_LN_HST.JOURNAL_DATE),'.',lpad(month(STG_PST_PS_JRNL_LN_HST.JOURNAL_DATE), 2, '0')) AS Jaar_Maand_Verwerking,\r\n\r\nCASE\r\n  WHEN SUBSTR(STG_PST_PS_JRNL_LN_HST.CHARTFIELD1, 1, 2) IN ('L0', 'V0', 'L1', 'V1', 'L2', 'V2') \r\n    THEN CONCAT('20', LPAD(SUBSTR(STG_PST_PS_JRNL_LN_HST.CHARTFIELD1, 2, 2), 2, '0'), '.', LPAD(SUBSTR(STG_PST_PS_JRNL_LN_HST.CHARTFIELD1, 4, 2), 2, '0'))\r\n  WHEN SUBSTR(STG_PST_PS_JRNL_LN_HST.CHARTFIELD1, 1, 3) = 'LJR' \r\n    THEN CONCAT(LPAD(STG_PST_PS_JRNL_HEADER_HST.FISCAL_YEAR, 4, '0'), '.', SUBSTR(STG_PST_PS_JRNL_LN_HST.CHARTFIELD1, 4, 2))\r\n  WHEN (coalesce(STG_PST_PS_JRNL_LN_HST.CHARTFIELD1, float('-inf')) >= 'VJR01' AND coalesce(STG_PST_PS_JRNL_LN_HST.CHARTFIELD1, float('-inf')) <= 'VJR12')\r\n    THEN CONCAT(LPAD(STG_PST_PS_JRNL_HEADER_HST.FISCAL_YEAR - 1, 4, '0'), '.', SUBSTR(STG_PST_PS_JRNL_LN_HST.CHARTFIELD1, 4, 2))\r\n  WHEN STG_PST_PS_JRNL_LN_HST.CHARTFIELD1 = 'VJR00'\r\n    THEN CONCAT(LPAD(STG_PST_PS_JRNL_HEADER_HST.FISCAL_YEAR - 2, 4, '0'), '.', '00')\r\n  ELSE CONCAT(year(STG_PST_PS_JRNL_HEADER_HST.JOURNAL_DATE),'.',lpad(month(STG_PST_PS_JRNL_HEADER_HST.JOURNAL_DATE), 2, '0') ) \r\nEND AS Jaar_Maand_Verrichting, \r\n\r\nCASE\r\n    WHEN (STG_PST_PS_JRNL_LN_HST.CHARTFIELD1 RLIKE 'T[0-9][0-9]') THEN 0\r\n    WHEN (STG_PST_PS_JRNL_LN_HST.CHARTFIELD1 LIKE '%TAX%') THEN 0\r\n    ELSE STG_PST_PS_JRNL_LN_HST.MONETARY_AMOUNT\r\n  END AS Bedrag_Peoplesoft_zorgkosten,\r\n\r\nCASE\r\n    WHEN (STG_PST_PS_JRNL_LN_HST.CHARTFIELD1 RLIKE 'T[0-9][0-9]') \r\n     THEN STG_PST_PS_JRNL_LN_HST.MONETARY_AMOUNT\r\n    WHEN (STG_PST_PS_JRNL_LN_HST.CHARTFIELD1 LIKE '%TAX%')\r\n     THEN STG_PST_PS_JRNL_LN_HST.MONETARY_AMOUNT\r\n    ELSE 0\r\nEND AS Bedrag_Peoplesoft_taxatie,\r\n\r\nSTG_PST_PS_JRNL_LN_HST.MONETARY_AMOUNT AS Bedrag_Peoplesoft,\r\n\r\nCASE\r\n    WHEN substring(upper(STG_PST_PS_JRNL_HEADER_HST.SOURCE), 1, length('M')) = 'M'\r\n     THEN '0'\r\n    WHEN substring(upper(STG_PST_PS_JRNL_HEADER_HST.SOURCE), 1, length('AFZ')) = 'AFZ'\r\n     THEN '0'\r\nELSE '1'\r\nEND AS ind_handmatig,\r\n\r\nCASE\r\n    WHEN (STG_PST_PS_JRNL_LN_HST.CHARTFIELD1 RLIKE 'T[0-9][0-9]')\r\n     THEN '1'\r\n    WHEN STG_PST_PS_JRNL_LN_HST.CHARTFIELD1 LIKE '%TAX%'\r\n     THEN '1'\r\nELSE '0'\r\nEND AS ind_taxatie,\r\n \r\nCASE\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 1, 3) = 'O21'\r\n     THEN '0021'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 1, 3) = 'O20'\r\n     THEN '0020'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 1, 3) = 'D10'\r\n     THEN '0010'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'OZV01'\r\n     THEN '0021'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'OZK05'\r\n     THEN '0020'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'DLZ04'\r\n     THEN '0010'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 3, 1) = '1'\r\n     THEN '0001'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 3, 1) = '2'\r\n     THEN '0002'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 3, 1) = '3'\r\n     THEN '0003'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 3, 1) = '4'\r\n     THEN '0004'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 1, 3) = 'CZZ'\r\n     THEN '0004'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 3, 1) = '8'\r\n     THEN '0008'\r\n    WHEN SUBSTR(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT, 3, 1) = '9'\r\n     THEN '0009'\r\n    ELSE \"UNKN\"\r\nEND AS KDE_JET,\r\nCASE\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'CC411'\r\n     THEN '12'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'CM852'\r\n     THEN '24'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'CR852'\r\n     THEN '21'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'CR220'\r\n     THEN '21'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'OZV01'\r\n     THEN '11'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'OZK05'\r\n     THEN '11'\r\n    WHEN STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = 'DLZ04'\r\n     THEN '11'\r\n    ELSE substr(STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT,4,2)\r\nEND AS VZL\r\nFROM STG_PST_PS_JRNL_HEADER_HST INNER JOIN \r\n     STG_PST_PS_JRNL_LN_HST\r\n      ON \r\n      (\r\n      STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT = STG_PST_PS_JRNL_LN_HST.BUSINESS_UNIT \r\n      AND STG_PST_PS_JRNL_HEADER_HST.JOURNAL_ID = STG_PST_PS_JRNL_LN_HST.JOURNAL_ID \r\n      AND STG_PST_PS_JRNL_HEADER_HST.JRNL_HDR_STATUS IN (\"P\",\"U\") \r\n      AND STG_PST_PS_JRNL_LN_HST.LEDGER = \"GROOTB_EUR\"\r\n      )\r\nWHERE\r\n      (STG_PST_PS_JRNL_LN_HST.ACCOUNT BETWEEN '5000000' AND '6999999'\r\n      or STG_PST_PS_JRNL_LN_HST.ACCOUNT IN (\"116510\",\r\n      \"116560\", \r\n      \"156220\",\r\n      \"156230\", \r\n      \"160000\" ,\r\n      \"160010\" ,\r\n      \"160050\" ,\r\n      \"160900\" ,\r\n      \"199980\" ,\r\n      \"754000\" ,\r\n      \"754150\" ,\r\n      \"766010\" ,\r\n      \"767300\" ,\r\n      \"767310\" ,\r\n      \"767340\" ,\r\n      \"768050\" ,\r\n      \"920020\" ,\r\n      \"665000\",\r\n      \"691001\",\r\n      \"613010\"\r\n      ))\r\n      and STG_PST_PS_JRNL_HEADER_HST.BUSINESS_UNIT IN (\"CC411\",\"CZ411\",\"CZ852\", \"CR852\",\"CM852\",\"D1011\",\"D1052\",\"O2011\",\"O2052\",\"O2111\", \"CZZ11\") \r\n)\r\nselect * , \r\nIF(SUBSTR(Jaar_Maand_Verrichting, 5, 3) = '.00', '0', '1') AS ind_exact,\r\n CONCAT(KDE_JET, '.', VZL) AS JurEntiteit_VerzGrondsl_Code\r\nFROM cal_col\r\n\"\"\")",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, STG_PST_PS_JRNL_LN_HST: DataFrame, STG_PST_PS_JRNL_LN_HEADER_HST: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return SQL_Join"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
