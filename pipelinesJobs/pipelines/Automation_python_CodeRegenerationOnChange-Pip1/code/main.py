@@ -1,0 +1,3 @@
+from automation_python_coderegenerationonchangepip1.pipeline import main
+
+main()

@@ -1,0 +1,295 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "7.1.85",
+        "pyPiVersion" : "1.8.13"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/Automation_python_CodeRegenerationOnChange-Pip2",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "Automation_python_CodeRegenerationOnChange-Pip2",
+      "hasApplication" : true
+    },
+    "language" : "python",
+    "fabricId" : "1",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "abhishekse2etestsprophecyioteam.automationpythoncoderegenerationonchange.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.webapp.functions", "prophecy.warehouse.functions", "abhishekse2etestsprophecyioteam.pythonproject.functions", "prophecy.streaming.functions", "prophecy.spark_abi.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "6",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "9",
+      "projectName" : "ProphecyWebAppPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "1404",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "11",
+      "projectName" : "python_project",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2024-04-01T15:47:44.905222Z",
+        "name" : "plibMaven",
+        "version" : "7.1.85",
+        "id" : "1506360208",
+        "createdAt" : "2024-04-01T15:47:44.905113Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2024-04-01T15:47:44.905327Z",
+        "name" : "plibPypi",
+        "version" : "1.8.13",
+        "id" : "268541913",
+        "createdAt" : "2024-04-01T15:47:44.905282Z"
+      } ]
+    }, {
+      "projectUID" : "8",
+      "projectName" : "ProphecyStreamingPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "1212",
+      "projectName" : "ProphecySparkAbinitioPython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "automation_python_coderegenerationonchangepip2",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "5arT5FVz1rSJvB5FU4JGJ",
+    "source" : "Y8dVS7C00MVGrlw8D-gbu$$48pC63h1pOnvittus1Erl",
+    "sourcePort" : "KPh98d3YnSIbVV6aDkKrM$$EoV_WFfQzoaW7FKYdWvF-",
+    "target" : "BU7u2Y9M_SIZzKt_dkjYH$$mpPEzhwkb_ihAShgImp2L",
+    "targetPort" : "T_1Ur9h8tzneT7_jTYejN$$LFHHptrUMH9zbOl1zG1Ed"
+  } ],
+  "processes" : {
+    "Y8dVS7C00MVGrlw8D-gbu$$48pC63h1pOnvittus1Erl" : {
+      "id" : "Y8dVS7C00MVGrlw8D-gbu$$48pC63h1pOnvittus1Erl",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "read_customers_dataset",
+        "slug" : "read_customers_dataset",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "KPh98d3YnSIbVV6aDkKrM$$EoV_WFfQzoaW7FKYdWvF-",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Automation_dataset1_coderegen"
+      }
+    },
+    "OQW83gW1P214Lhok7aG6m$$kDKMr3HiwhkWjRcGbhGd0" : {
+      "id" : "OQW83gW1P214Lhok7aG6m$$kDKMr3HiwhkWjRcGbhGd0",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "dataset_cust_in",
+        "slug" : "dataset_cust_in",
+        "x" : 20,
+        "y" : 220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "cbB32hCKjW-GzOE10-xVc$$ANiBEzoEsUBFkMHCXY1fb",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "gitUri=http://gitserver:3000/y30d6q3H_team_3/3HyzlFYe_project_11.git&subPath=&tag=python_project/v3.3.4.0-1&projectSubscriptionProjectId=11&path=datasets/dataset_cust_in"
+      }
+    },
+    "BU7u2Y9M_SIZzKt_dkjYH$$mpPEzhwkb_ihAShgImp2L" : {
+      "id" : "BU7u2Y9M_SIZzKt_dkjYH$$mpPEzhwkb_ihAShgImp2L",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "reformat_with_udf",
+        "slug" : "reformat_with_udf",
+        "x" : 220,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "T_1Ur9h8tzneT7_jTYejN$$LFHHptrUMH9zbOl1zG1Ed",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "P1PIzwo6D4_Lq2EqsPKqK$$TyWQQ_EWXn93GZQ26e_VU",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "c_with_udf",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "udfSingleIntInput(2)"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/P4JOEwcf_team_5/P4JOEwcf_project_6.git&subPath=&tag=0.2.5&projectSubscriptionProjectId=6&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}

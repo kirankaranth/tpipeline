@@ -1,0 +1,93 @@
+{
+  "id" : "62atCbKD_f18tACaHXyyZ",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false,
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "Dj-fDTPsM-_7y5Y0HdRlt",
+      "slug" : "in0",
+      "isStreaming" : false
+    } ],
+    "outputs" : [ {
+      "id" : "2nesnT1L3vtCE8CgFT_ye",
+      "slug" : "out0",
+      "isStreaming" : false
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "properties" : {
+    "packageName" : "testcoderegen.Automation_subgraph1_coderegen"
+  },
+  "connections" : [ {
+    "id" : "vOe_9f_tUkKrlWOnrQTBQ",
+    "source" : "62atCbKD_f18tACaHXyyZ",
+    "sourcePort" : "Dj-fDTPsM-_7y5Y0HdRlt",
+    "target" : "EKXZSpMy8AJ6oxj-SC8Vc",
+    "targetPort" : "wQYae82HZlSwl92YQIrrD"
+  }, {
+    "id" : "Qxm9F89MzTxwkbcOtV1XQ",
+    "source" : "EKXZSpMy8AJ6oxj-SC8Vc",
+    "sourcePort" : "bHC8t4WMNeXrMVDhIiboc",
+    "target" : "62atCbKD_f18tACaHXyyZ",
+    "targetPort" : "2nesnT1L3vtCE8CgFT_ye"
+  } ],
+  "processes" : {
+    "EKXZSpMy8AJ6oxj-SC8Vc" : {
+      "id" : "EKXZSpMy8AJ6oxj-SC8Vc",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -440,
+        "y" : -160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wQYae82HZlSwl92YQIrrD",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "bHC8t4WMNeXrMVDhIiboc",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/P4JOEwcf_team_5/P4JOEwcf_project_6.git&subPath=&tag=0.2.5&projectSubscriptionProjectId=6&path=gems/Reformat",
+        "projectId" : "6",
+        "projectName" : "ProphecySparkBasicsPython",
+        "version" : "0.2.5"
+      }
+    }
+  }
+}

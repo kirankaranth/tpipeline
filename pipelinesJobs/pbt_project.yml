@@ -1,0 +1,198 @@
+name: Automation_python_CodeRegenerationOnChange
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: automationpythoncoderegenerationonchange
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-04-03 09:38:02'
+pipelines:
+  pipelines/Automation_python_CodeRegenerationOnChange-Pip1:
+    name: Automation_python_CodeRegenerationOnChange-Pip1
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-04-03 09:39:16'
+    datasets:
+      inputs:
+      - datasets/Automation_dataset1_coderegen
+      - datasets/Automation_dataset2_coderegen
+      - gitUri=http://gitserver:3000/y30d6q3H_team_3/3HyzlFYe_project_11.git&subPath=&tag=python_project/v3.3.4.0-1&projectSubscriptionProjectId=11&path=datasets/dataset_cust_in
+      outputs: []
+    subgraphs:
+    - subgraphs/Automation_subgraph1_coderegen
+    dependencies: {}
+  pipelines/Automation_python_CodeRegenerationOnChange-Pip2:
+    name: Automation_python_CodeRegenerationOnChange-Pip2
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-04-03 09:46:58'
+    datasets:
+      inputs:
+      - datasets/Automation_dataset1_coderegen
+      - gitUri=http://gitserver:3000/y30d6q3H_team_3/3HyzlFYe_project_11.git&subPath=&tag=python_project/v3.3.4.0-1&projectSubscriptionProjectId=11&path=datasets/dataset_cust_in
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/Automation_python_CodeRegenerationOnChange-Pip3:
+    name: Automation_python_CodeRegenerationOnChange-Pip3
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-04-03 09:50:48'
+    datasets:
+      inputs:
+      - datasets/Automation_dataset2_coderegen
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/Automation_dataset1_coderegen:
+    name: Automation_dataset1_coderegen
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2024-04-03 09:40:41'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 1
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2024-04-03 09:40:41'
+  datasets/Automation_dataset2_coderegen:
+    name: Automation_dataset2_coderegen
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2024-04-03 09:41:37'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 1
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2024-04-03 09:41:37'
+templates: {}
+jobs:
+  jobs/job:
+    name: job
+    description: ''
+    fabricUID: 1
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/Automation_python_CodeRegenerationOnChange-Pip1
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-04-04 09:18:10'
+    author: abhisheks+e2etests@prophecy.io
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems:
+    gems/TestGem1:
+      name: TestGem1
+      category: TestCategory1
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files:
+      - abhishekse2etestsprophecyioteam_automationpythoncoderegenerationonchange/gems/TestGem1.py
+      gemType: ComponentGem
+      dependencies: []
+      createdAt: '2024-04-03 09:44:13'
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-04-03 09:38:02'
+  udfs:
+    udfs/udfSingleIntInput:
+      name: udfSingleIntInput
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs:
+  subgraphs/Automation_subgraph1_coderegen:
+    name: Automation_subgraph1_coderegen
+    description: test subgraph
+    author: abhisheks+e2etests@prophecy.io
+    language: python
+    artefactID: ''
+    mode: batch
+    createdAt: '2024-04-03 09:43:30'
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2024-04-03T09:38:02.975639Z'
+  name: plibMaven
+  version: 7.1.85
+  createdAt: '2024-04-03T09:38:02.975639Z'
+  type: plibMaven
+- modifiedAt: '2024-04-03T09:38:02.975639Z'
+  name: plibPypi
+  version: 1.8.13
+  createdAt: '2024-04-03T09:38:02.975639Z'
+  type: plibPypi
+projectDependencies:
+  '6':
+    projectUID: 6
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/P4JOEwcf_team_5/P4JOEwcf_project_6.git&subPath=
+    version: 0.2.5
+    isDefault: true
+    author: null
+    createdAt: '2024-04-04 02:48:09'
+  '11':
+    projectUID: 11
+    projectName: python_project
+    repositoryPath: gitUri=http://gitserver:3000/y30d6q3H_team_3/3HyzlFYe_project_11.git&subPath=
+    version: python_project/v3.3.4.0-1
+    isDefault: false
+    author: null
+    createdAt: '2024-04-03 09:37:53'
+  '1404':
+    projectUID: 1404
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/P4JOEwcf_team_5/EHlOAJlv_project_1404.git&subPath=
+    version: 0.0.4
+    isDefault: true
+    author: null
+    createdAt: '2024-04-04 02:48:09'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
