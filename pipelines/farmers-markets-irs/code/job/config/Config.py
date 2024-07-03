@@ -3,9 +3,10 @@ from prophecy.config import ConfigBase
 
 class Config(ConfigBase):
 
-    def __init__(self, fabricName: str=None):
+    def __init__(self, **kwargs):
         self.spark = None
-        self.update(fabricName)
+        self.update()
 
-    def update(self, fabricName: str):
-        self.fabricName = fabricName
+    def update(self, **kwargs):
+        prophecy_spark = self.spark
+        pass

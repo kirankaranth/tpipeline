@@ -34,9 +34,10 @@ def main():
                 .appName("Prophecy Pipeline")\
                 .getOrCreate()
     Utils.initializeFromArgs(spark, parse_args())
-    MetricsCollector.start(spark)
-    pipeline(spark)
-    MetricsCollector.end(spark)
+    spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/farmers-markets-irs")
+    registerUDFs(spark)
+    
+    MetricsCollector.instrument(spark = spark, pipelineId = "pipelines/farmers-markets-irs", config = Config)(pipeline)
 
 if __name__ == "__main__":
     main()

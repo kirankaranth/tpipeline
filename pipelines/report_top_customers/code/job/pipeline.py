@@ -3,6 +3,7 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from job.config.ConfigStore import *
 from job.udfs.UDFs import *
+from prophecy.utils import *
 from job.graph import *
 
 def pipeline(spark: SparkSession) -> None:
@@ -12,14 +13,17 @@ def pipeline(spark: SparkSession) -> None:
     Report(spark, df_Top_10)
 
 def main():
-    spark = SparkSession.builder \
-        .config("spark.default.parallelism", "4") \
-        .config("spark.sql.legacy.allowUntypedScalaUDF", "true") \
-        .enableHiveSupport() \
-        .appName("Prophecy Pipeline") \
-        .getOrCreate()
+    spark = SparkSession.builder\
+                .config("spark.default.parallelism", "4")\
+                .config("spark.sql.legacy.allowUntypedScalaUDF", "true")\
+                .enableHiveSupport()\
+                .appName("Prophecy Pipeline")\
+                .getOrCreate()
     Utils.initializeFromArgs(spark, parse_args())
-    pipeline(spark)
+    spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/report_top_customers")
+    registerUDFs(spark)
+    
+    MetricsCollector.instrument(spark = spark, pipelineId = "pipelines/report_top_customers", config = Config)(pipeline)
 
 if __name__ == "__main__":
     main()

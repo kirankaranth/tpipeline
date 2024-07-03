@@ -13,6 +13,8 @@ def pipeline(spark: SparkSession) -> None:
     df_Cleanup = Cleanup(spark, df_By_CustomerId)
     df_Sum_Amounts = Sum_Amounts(spark, df_Cleanup)
     Customer_Orders(spark, df_Sum_Amounts)
+    df_DATASET1 = DATASET1(spark)
+    df_dataset1 = dataset1(spark)
 
 def main():
     spark = SparkSession.builder\
@@ -20,17 +22,12 @@ def main():
                 .config("spark.sql.legacy.allowUntypedScalaUDF", "true")\
                 .enableHiveSupport()\
                 .appName("Prophecy Pipeline")\
-                .getOrCreate()\
-                .newSession()
+                .getOrCreate()
     Utils.initializeFromArgs(spark, parse_args())
     spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/customers_orders")
+    registerUDFs(spark)
     
-    MetricsCollector.start(
-        spark = spark,
-        pipelineId = spark.conf.get("prophecy.project.id") + "/" + "pipelines/customers_orders"
-    )
-    pipeline(spark)
-    MetricsCollector.end(spark)
+    MetricsCollector.instrument(spark = spark, pipelineId = "pipelines/customers_orders", config = Config)(pipeline)
 
 if __name__ == "__main__":
     main()
