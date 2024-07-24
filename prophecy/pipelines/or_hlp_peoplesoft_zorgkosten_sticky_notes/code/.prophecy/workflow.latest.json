@@ -3,8 +3,13 @@
     "migrationVersions" : {
       "gemBuilderVersion" : "v1"
     },
+    "functions" : { },
     "codeGenConfiguration" : {
-      "editableConfig" : true
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.0.25",
+        "pyPiVersion" : "1.9.9"
+      }
     },
     "id" : "1",
     "uri" : "pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes",
@@ -42,7 +47,15 @@
     "codeMode" : "sparse",
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
-    "dependentProjectExternalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "430",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "431",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
     "isImported" : false,
     "interimMode" : "Full",
     "interimModeEnabled" : true,
@@ -52,7 +65,7 @@
       "value" : 1000
     },
     "topLevelPackage" : "or_hlp_peoplesoft_zorgkosten_sticky_notes",
-    "configurationVersion" : "v1"
+    "configurationVersion" : "v2"
   },
   "connections" : [ {
     "id" : "xd1WsfBjnLItl-Ti8SfjE$$XbunW2f0x4itKJjogbVY8",
@@ -251,7 +264,7 @@
         "columnsSelector" : [ ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=&subPath=&tag=0.1.2&projectSubscriptionProjectId=430&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/SyDp0Yfv_team_81/QyuS0B3D_project_430.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=430&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },
@@ -828,7 +841,7 @@
         } ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=&subPath=&tag=0.1.2&projectSubscriptionProjectId=430&path=gems/Aggregate",
+        "gemId" : "gitUri=http://gitserver:3000/SyDp0Yfv_team_81/QyuS0B3D_project_430.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=430&path=gems/Aggregate",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },

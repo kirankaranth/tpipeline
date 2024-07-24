@@ -6,7 +6,7 @@ setup(
     packages=find_packages(include=['or_hlp_peoplesoft_zorgkosten_sticky_notes*']),
     description='or_hlp_peoplesoft_zorgkosten_sticky_notes',
     install_requires=[
-        'prophecy-libs==1.7.4'
+        'prophecy-libs==1.9.9'
     ],
     entry_points={
         'console_scripts': [
