@@ -1,7 +1,6 @@
 from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
-from prophecy.utils import *
 from or_hlp_peoplesoft_zorgkosten_sticky_notes.config.ConfigStore import *
 from or_hlp_peoplesoft_zorgkosten_sticky_notes.udfs.UDFs import *
 from prophecy.utils import *
@@ -23,25 +22,18 @@ def main():
                 .config("spark.sql.legacy.allowUntypedScalaUDF", "true")\
                 .enableHiveSupport()\
                 .appName("Prophecy Pipeline")\
-                .getOrCreate()\
-                .newSession()
+                .getOrCreate()
     Utils.initializeFromArgs(spark, parse_args())
     spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes")
     registerUDFs(spark)
-
-    try:
-        
-        MetricsCollector.start(
-            spark = spark,
-            pipelineId = "pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes",
-            config = Config
-        )
-    except :
-        
-        MetricsCollector.start(spark = spark, pipelineId = "pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes")
-
-    pipeline(spark)
-    MetricsCollector.end(spark)
+    
+    MetricsCollector.instrument(
+        spark = spark,
+        pipelineId = "pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes",
+        config = Config
+    )(
+        pipeline
+    )
 
 if __name__ == "__main__":
     main()

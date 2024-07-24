@@ -81,31 +81,46 @@ functions:
   udafs: {}
   expressions: {}
   airflowFunctions: {}
+  businessRules: {}
 subgraphs: {}
 sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
-dependencies: '[]'
+dependencies:
+- type: plibMaven
+  modifiedAt: '2024-07-24T11:55:39.372537Z'
+  name: plibMaven
+  version: 8.0.25
+  id: '557549338'
+  createdAt: '2024-07-24T11:55:39.372277Z'
+- type: plibPypi
+  modifiedAt: '2024-07-24T11:55:39.372588Z'
+  name: plibPypi
+  version: 1.9.9
+  id: '82707779'
+  createdAt: '2024-07-24T11:55:39.37258Z'
 projectDependencies:
   '430':
     projectUID: 430
     projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/SyDp0Yfv_team_81/QyuS0B3D_project_430.git&subPath=
-    version: 0.1.2
+    version: 0.2.25
     isDefault: true
     author: null
-    createdAt: '2024-03-18 10:46:12'
+    createdAt: '2024-07-24 11:55:38'
   '431':
     projectUID: 431
     projectName: ProphecyWarehousePython
     repositoryPath: gitUri=http://gitserver:3000/SyDp0Yfv_team_81/QyuS0B3D_project_431.git&subPath=
-    version: 0.0.2
+    version: 0.0.8
     isDefault: true
     author: null
-    createdAt: '2024-03-18 10:46:12'
+    createdAt: '2024-07-24 11:55:40'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
