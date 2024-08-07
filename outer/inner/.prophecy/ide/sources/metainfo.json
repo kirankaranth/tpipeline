@@ -1,0 +1,44 @@
+{
+  "name" : "HelloWorld_SQL",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "fabricId" : "11652",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ {
+    "name" : "customers",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "orders",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_customers",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_orders",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_payments",
+    "type" : "Model",
+    "syncedOnce" : true
+  } ],
+  "frontEndLanguage" : "sql"
+}

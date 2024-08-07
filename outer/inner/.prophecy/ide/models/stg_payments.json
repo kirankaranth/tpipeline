@@ -36,6 +36,7 @@
         "outputs" : [ {
           "id" : "k0WE01K4",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "id",
@@ -101,6 +102,7 @@
         "inputs" : [ {
           "id" : "I4z62jzh",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "id",
@@ -129,6 +131,7 @@
         "outputs" : [ {
           "id" : "dvNxlrgk",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -173,7 +176,6 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "SELECT * \n\nFROM renamed\n",
-        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -183,6 +185,7 @@
         "inputs" : [ {
           "id" : "dtYTHFhD",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -211,6 +214,7 @@
         "outputs" : [ {
           "id" : "wR47vX6j",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",

@@ -32,7 +32,6 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "SELECT * \n\nFROM final\n",
-        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -42,6 +41,7 @@
         "inputs" : [ {
           "id" : "powGTHjv",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -95,6 +95,7 @@
         "outputs" : [ {
           "id" : "X7h9bflr",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -169,6 +170,7 @@
         "outputs" : [ {
           "id" : "Hhzt9ARk",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -259,6 +261,7 @@
         "inputs" : [ {
           "id" : "y9SmiMyp",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -286,6 +289,7 @@
         }, {
           "id" : "INgUCTxr",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -324,6 +328,7 @@
         "outputs" : [ {
           "id" : "Sb9DHViN",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -398,6 +403,7 @@
         "outputs" : [ {
           "id" : "ghPNy1VQ",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -478,6 +484,7 @@
         "inputs" : [ {
           "id" : "YZSwtxGG",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -506,6 +513,7 @@
         "outputs" : [ {
           "id" : "NvQgVUbv",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
