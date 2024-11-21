@@ -7,13 +7,9 @@ from prophecy.utils import *
 from job.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_Customers = Customers(spark)
-    df_Orders = Orders(spark)
-    df_PerCustomer = PerCustomer(spark, df_Customers, df_Orders)
-    df_TotalByCustomer = TotalByCustomer(spark, df_PerCustomer)
-    df_Cleanup = Cleanup(spark, df_TotalByCustomer)
-    df_SortBiggestOrders = SortBiggestOrders(spark, df_Cleanup)
-    WriteReport(spark, df_SortBiggestOrders)
+    df_customers = customers(spark)
+    df_orders = orders(spark)
+    df_customer_order_details = customer_order_details(spark, df_customers, df_orders)
 
 def main():
     spark = SparkSession.builder\
@@ -21,17 +17,12 @@ def main():
                 .config("spark.sql.legacy.allowUntypedScalaUDF", "true")\
                 .enableHiveSupport()\
                 .appName("Prophecy Pipeline")\
-                .getOrCreate()\
-                .newSession()
+                .getOrCreate()
     Utils.initializeFromArgs(spark, parse_args())
     spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/join_agg_sort")
+    registerUDFs(spark)
     
-    MetricsCollector.start(
-        spark = spark,
-        pipelineId = spark.conf.get("prophecy.project.id") + "/" + "pipelines/join_agg_sort"
-    )
-    pipeline(spark)
-    MetricsCollector.end(spark)
+    MetricsCollector.instrument(spark = spark, pipelineId = "pipelines/join_agg_sort", config = Config)(pipeline)
 
 if __name__ == "__main__":
     main()

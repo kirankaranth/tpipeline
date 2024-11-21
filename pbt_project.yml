@@ -6,7 +6,7 @@ language: python
 buildSystem: ''
 buildSystemDetails:
   artefactID: helloworld
-  parentArtefactID: ''
+  parentArtefactID: kiranadminprophecyioteam
   buildSystem: wheel
   author: null
   createdAt: '2024-06-27 06:58:26'
@@ -22,10 +22,9 @@ pipelines:
     createdAt: '2022-09-19 13:02:56'
     datasets:
       inputs:
-      - 265/datasets/orders
-      - 265/datasets/customers
-      outputs:
-      - 265/datasets/customer_totals
+      - datasets/customers
+      - datasets/orders
+      outputs: []
     subgraphs: []
     dependencies: {}
   pipelines/customers_orders:
@@ -38,10 +37,10 @@ pipelines:
     createdAt: '2022-09-19 13:02:56'
     datasets:
       inputs:
-      - 265/datasets/orders
-      - 265/datasets/customers
+      - datasets/customers
+      - datasets/orders
       outputs:
-      - 265/datasets/customers_orders
+      - datasets/customers_orders
     subgraphs: []
     dependencies: {}
   pipelines/farmers-markets-irs:
@@ -246,7 +245,19 @@ sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
-dependencies: '[]'
+dependencies:
+- type: plibMaven
+  modifiedAt: '2024-09-17T14:02:25.008254Z'
+  name: plibMaven
+  version: 8.1.8
+  id: '1616575543'
+  createdAt: '2024-09-17T14:02:25.008183Z'
+- type: plibPypi
+  modifiedAt: '2024-09-17T14:02:25.008403Z'
+  name: plibPypi
+  version: 1.9.14
+  id: '934953220'
+  createdAt: '2024-09-17T14:02:25.008362Z'
 projectDependencies:
   '12654':
     projectUID: 12654
