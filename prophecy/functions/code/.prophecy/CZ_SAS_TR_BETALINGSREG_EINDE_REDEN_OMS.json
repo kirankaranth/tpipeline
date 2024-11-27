@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\n# Original SAS code:\n# type_oms = 'BETALINGSREG_EINDE_REDEN'\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import StringType\n\n\n@udf(returnType=StringType())\ndef cz_sas_tr_betalingsreg_einde_reden_oms() -> str:\n    return \"BETALINGSREG_EINDE_REDEN\"\n"}

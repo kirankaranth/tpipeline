@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF cz_sas_br_edwh_vorige_situatie \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import DateType\n\n\n@udf(returnType=DateType())\ndef cz_sas_vorige_situatie(datum):\n    # pylint: disable=import-outside-toplevel\n    from datetime import timedelta\n\n    return datum - timedelta(days=1)\n"}

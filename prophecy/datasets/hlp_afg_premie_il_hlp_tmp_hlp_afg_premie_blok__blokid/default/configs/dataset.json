@@ -1,0 +1,279 @@
+{
+  "format": "catalogTable",
+  "path": "HLP_AFG_PREMIE_il_hlp",
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "Zorgverzekering_IDC",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BRN_PERSOON_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "GEBOORTE_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "GESLACHT_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LAND_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ZORGVERZ_OVEREENKOMST_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BOUWSTEEN_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LABEL_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "PRODUCTSET_SOORT_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "COLLECTIVITEIT_OVEREENKOMST_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BETAAL_TERMIJN_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIGEN_RISICO_REGELING_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "REFERENTIEPREMIE_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "FABRIEKSPRIJS_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "COMMERCIELE_TOESLAG_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_RESOURCE_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "INGANG_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIND_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_VAN",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_TOT_MET",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LFT_FABRIEKSPRIJS_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LFT_COMM_TOESLAG_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "PREMIE_AFWIJKEND_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "PREMIE_AFWIJKEND_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "COLLECTIVITEIT_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "COLLECTIVITEIT_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "PAKKET_KORTING_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_VAN_ER",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_TOT_MET_ER",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIGEN_RISICO_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ER_FABRIEKSPRIJS_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ER_COMM_TOESLAG_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIGEN_RISICO_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "ASSURANTIE_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_VAN_BL",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_TOT_MET_BL",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BUITENLAND_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BUITENLAND_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIGEN_PRODUCT_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIGEN_PRODUCT_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BETAALTERMIJN_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "DETENTIE_IDC",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "datasetType": "Database",
+  "writeMode": "overwrite",
+  "provider": "delta",
+  "tableName": "tmp_hlp_afg_premie_blok_&blokid.",
+  "isCatalogEnabled": true,
+  "catalog": "sas_migration"
+}

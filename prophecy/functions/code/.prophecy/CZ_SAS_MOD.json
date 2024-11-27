@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF cz_sas_mod \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import FloatType\n\n\n@udf(FloatType())\ndef cz_sas_mod(dividend, divisor):\n    if dividend is None or divisor is None or divisor == 0.0:\n        return None\n\n    return dividend % divisor\n"}

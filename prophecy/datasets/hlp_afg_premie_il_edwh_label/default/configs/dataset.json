@@ -1,0 +1,69 @@
+{
+  "format": "catalogTable",
+  "path": "HLP_AFG_PREMIE_il_edwh",
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "LABEL_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LABEL_KEY",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LABEL_OMSCHRIJVING",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LABEL_OMSCHRIJVING_KORT",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_PEIL_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_PROCES_DTD",
+        "type": "timestamp",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_VERWIJDER_DTD",
+        "type": "timestamp",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LABEL_ZORGVERZEKERING_IDC",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_RESOURCE_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "datasetType": "Database",
+  "writeMode": "overwrite",
+  "provider": "delta",
+  "tableName": "label",
+  "isCatalogEnabled": true,
+  "catalog": "sas_migration"
+}

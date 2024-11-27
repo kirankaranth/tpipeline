@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\n# Original SAS code:\n# COALESCE (DESC, RBINH015)\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import StringType\n\n\n@udf(returnType=StringType())\ndef cz_sas_br_t_kostensoort_oms(desc, rbinh015):\n    return desc if desc is not None else rbinh015\n"}

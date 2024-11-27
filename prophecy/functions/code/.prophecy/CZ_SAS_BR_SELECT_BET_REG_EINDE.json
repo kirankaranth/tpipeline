@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF cz_sas_br_select_bet_reg_einde \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import ArrayType, DoubleType\n\n\n@udf(returnType=ArrayType(DoubleType()))\ndef cz_sas_br_select_bet_reg_einde():\n    return [2.0, 5.0]\n"}

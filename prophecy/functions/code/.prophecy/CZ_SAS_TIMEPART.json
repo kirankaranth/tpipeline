@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import DoubleType\n\n\n@udf(returnType=DoubleType())\ndef cz_sas_timepart(param1):\n    return (\n        param1.hour * 3600\n        + param1.minute * 60\n        + param1.second\n        + param1.microsecond * 1e-6\n    )\n"}

@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\n# Original SAS code:\n# STRIP(PUT(&ID ,ZKA_ID_NAAR_OMS.))\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import StringType\n\n\n# Define the UDF\n@udf(returnType=StringType())\ndef cz_sas_br_t_zka_id_naar_oms():\n    return \"\"\n"}

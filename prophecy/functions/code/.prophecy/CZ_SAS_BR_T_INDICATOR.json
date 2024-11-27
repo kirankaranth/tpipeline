@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF cz_sas_br_t_indicator \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import DoubleType\n\n\n@udf(returnType=DoubleType())\ndef cz_sas_br_t_indicator(indicator, geldige_waarde):\n    if indicator == geldige_waarde:\n        return 1.0\n\n    return 0.0\n"}

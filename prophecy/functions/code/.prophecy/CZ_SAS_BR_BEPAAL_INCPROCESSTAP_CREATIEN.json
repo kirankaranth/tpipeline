@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF \"\"\"\n# Original SAS code:\n# (1)\n# Auto-generated pyspark code:\nfrom pyspark.sql.types import IntegerType\nfrom pyspark.sql.functions import udf\n\n\n@udf(IntegerType())\ndef cz_sas_br_bepaal_incprocesstap_creatien():\n    return 1\n"}

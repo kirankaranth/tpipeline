@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\n# Original SAS code:\n# Team 1 - BI <fpa.sens.team1.bi@cz.nl>\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import StringType\n\n\n@udf(returnType=StringType())\ndef cz_s_turn_br_f_emailextbestand():\n    return \"Team 1 - BI <fpa.sens.team1.bi@cz.nl>\"\n"}

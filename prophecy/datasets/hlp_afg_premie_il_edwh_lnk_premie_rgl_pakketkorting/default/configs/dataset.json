@@ -1,0 +1,81 @@
+{
+  "format": "catalogTable",
+  "path": "HLP_AFG_PREMIE_il_edwh",
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "LNK_PREMIE_RGL_PAKKETKORTING_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LABEL_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BRN_PERSOON_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BOUWSTEEN_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "INGANG_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIND_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "PAKKET_KORTING_PCT",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_RESOURCE_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_PEIL_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_PROCES_DTD",
+        "type": "timestamp",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_VERWIJDER_DTD",
+        "type": "timestamp",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "datasetType": "Database",
+  "writeMode": "overwrite",
+  "provider": "delta",
+  "tableName": "lnk_premie_rgl_pakketkorting",
+  "isCatalogEnabled": true,
+  "catalog": "sas_migration"
+}

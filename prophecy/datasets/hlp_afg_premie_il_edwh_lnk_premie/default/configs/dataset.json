@@ -1,0 +1,117 @@
+{
+  "format": "catalogTable",
+  "path": "HLP_AFG_PREMIE_il_edwh",
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "LNK_PREMIE_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "OVEREENKOMST_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "PRODUCTSET_SOORT_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BOUWSTEEN_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "INGANG_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIND_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "REFERENTIEPREMIE_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "FABRIEKSPRIJS_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "COMMERCIELE_TOESLAG_BDG",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_RESOURCE_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EIGEN_RISICO_REGELING_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_VAN",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LEEFTIJD_TOT_MET",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "TABELPREMIE_IDC",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_PEIL_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_VERWIJDER_DTD",
+        "type": "timestamp",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_PROCES_DTD",
+        "type": "timestamp",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "datasetType": "Database",
+  "writeMode": "overwrite",
+  "provider": "delta",
+  "tableName": "lnk_premie",
+  "isCatalogEnabled": true,
+  "catalog": "sas_migration"
+}

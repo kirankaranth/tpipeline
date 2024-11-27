@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF CZ_SAS_HUIDIGE_SITUATIE \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import StringType\n\n\n@udf(returnType=StringType())\ndef cz_sas_huidige_situatie(date):\n    return date.strftime(\"%Y-%m-%d\")\n"}

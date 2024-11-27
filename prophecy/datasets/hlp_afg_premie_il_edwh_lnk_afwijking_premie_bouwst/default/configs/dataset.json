@@ -1,0 +1,57 @@
+{
+  "format": "catalogTable",
+  "path": "HLP_AFG_PREMIE_il_edwh",
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "LNK_AFWIJKING_PREMIE_BOUWST_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "LNK_BRN_AFWIJKING_PREMIE_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "BOUWSTEEN_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_RESOURCE_ID",
+        "type": "double",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_PEIL_DTM",
+        "type": "date",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_PROCES_DTD",
+        "type": "timestamp",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "EDWH_VERWIJDER_DTD",
+        "type": "timestamp",
+        "nullable": true,
+        "metadata": {}
+      }
+    ]
+  },
+  "datasetType": "Database",
+  "writeMode": "overwrite",
+  "provider": "delta",
+  "tableName": "lnk_afwijking_premie_bouwst",
+  "isCatalogEnabled": true,
+  "catalog": "sas_migration"
+}

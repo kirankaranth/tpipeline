@@ -1,0 +1,1 @@
+{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\n# Original SAS code:\n# type_oms = 'INCASSOPROCESSTAP'\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import StringType\n\n\n@udf(returnType=StringType())\ndef cz_sas_tr_incassoprocesstap_oms(type_oms) -> str:\n    return \"INCASSOPROCESSTAP\" if type_oms is not None else \"\"\n"}
