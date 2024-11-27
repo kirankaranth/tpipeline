@@ -1,255 +1,2591 @@
+name: cz-prophecy-dev
+description: ''
+version: 0.0.1
 author: adm-601361@cz.nl
+language: python
 buildSystem: ''
 buildSystemDetails:
   artefactID: czprophecydev
-  author: null
-  buildSystem: wheel
-  createdAt: '2024-03-18 10:46:12'
   parentArtefactID: sasmigrationteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-03-18 10:46:12'
+pipelines:
+  pipelines/HLP_AFG_PREMIE:
+    name: HLP_AFG_PREMIE
+    description: ''
+    author: alchemist@t1a.com
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-11-27 14:59:52'
+    datasets:
+      inputs:
+      - datasets/hlp_afg_premie_il_hlp_hlp_premie_parameters
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes:
+    name: or_hlp_peoplesoft_zorgkosten_sticky_notes
+    description: Example Sticky Notes conversion
+    author: adm-601361@cz.nl
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-03-18 10:46:12'
+    datasets:
+      inputs:
+      - datasets/stg_edwh_stg_pst_ps_jrnl_header_hst
+      - datasets/stg_edwh_stg_pst_ps_jrnl_ln_hst
+      outputs:
+      - datasets/bm_20230428_2_or_hlp_or_hlp_peoplesoft_zorgkosten
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/bm_20230428_2_or_hlp_or_hlp_peoplesoft_zorgkosten:
+    name: bm_20230428_2_or_hlp_or_hlp_peoplesoft_zorgkosten
+    description: ''
     author: adm-601361@cz.nl
     createdAt: '2024-03-18 11:27:39'
-    description: ''
     mode: batch
-    name: bm_20230428_2_or_hlp_or_hlp_peoplesoft_zorgkosten
     physicalDatasets:
       migration:
+        fabricId: 3
+        datasetType: Database
+        description: ''
         author: adm-601361@cz.nl
         createdAt: '2024-03-18 11:27:39'
-        datasetType: Database
-        description: ''
-        fabricId: 3
   datasets/hlp_afg_premie_il_edwh_afwijking_premie_reden:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_afwijking_premie_reden
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_datum:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_datum
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_label:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_label
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_afwijking_premie_bouwst:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_afwijking_premie_bouwst
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_brn_afwijking_premie:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_brn_afwijking_premie
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_assurantie:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie_rgl_assurantie
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_betaaltermijn:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie_rgl_betaaltermijn
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_buitenland:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie_rgl_buitenland
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_collectiviteit:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie_rgl_collectiviteit
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_eigen_product:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie_rgl_eigen_product
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_eigen_risico:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie_rgl_eigen_risico
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_leeftijd:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie_rgl_leeftijd
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_pakketkorting:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_edwh_lnk_premie_rgl_pakketkorting
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_hlp_hlp_afg_premie:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_hlp_hlp_afg_premie
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/hlp_afg_premie_il_hlp_hlp_premie_parameters:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    description: ''
     name: hlp_afg_premie_il_hlp_hlp_premie_parameters
-    physicalDatasets:
-      migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
-        datasetType: Database
-        description: ''
-        fabricId: 3
-  datasets/hlp_afg_premie_il_hlp_tmp_hlp_afg_premie_blok__blokid:
+    description: ''
     author: alchemist@t1a.com
     createdAt: '2024-11-27 14:59:52'
-    description: ''
-    name: hlp_afg_premie_il_hlp_tmp_hlp_afg_premie_blok__blokid
+    mode: batch
     physicalDatasets:
       migration:
-        author: alchemist@t1a.com
-        createdAt: '2024-11-27 14:59:52'
+        fabricId: 3
         datasetType: Database
         description: ''
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
+  datasets/hlp_afg_premie_il_hlp_tmp_hlp_afg_premie_blok__blokid:
+    name: hlp_afg_premie_il_hlp_tmp_hlp_afg_premie_blok__blokid
+    description: ''
+    author: alchemist@t1a.com
+    createdAt: '2024-11-27 14:59:52'
+    mode: batch
+    physicalDatasets:
+      migration:
         fabricId: 3
+        datasetType: Database
+        description: ''
+        author: alchemist@t1a.com
+        createdAt: '2024-11-27 14:59:52'
   datasets/stg_edwh_stg_pst_ps_jrnl_header_hst:
+    name: stg_edwh_stg_pst_ps_jrnl_header_hst
+    description: ''
     author: adm-601361@cz.nl
     createdAt: '2024-03-18 10:50:08'
-    description: ''
     mode: batch
-    name: stg_edwh_stg_pst_ps_jrnl_header_hst
     physicalDatasets:
       migration:
+        fabricId: 3
+        datasetType: Database
+        description: ''
         author: adm-601361@cz.nl
         createdAt: '2024-03-18 10:50:08'
-        datasetType: Database
-        description: ''
-        fabricId: 3
   datasets/stg_edwh_stg_pst_ps_jrnl_ln_hst:
+    name: stg_edwh_stg_pst_ps_jrnl_ln_hst
+    description: ''
     author: adm-601361@cz.nl
     createdAt: '2024-03-18 10:50:40'
-    description: ''
     mode: batch
-    name: stg_edwh_stg_pst_ps_jrnl_ln_hst
     physicalDatasets:
       migration:
-        author: adm-601361@cz.nl
-        createdAt: '2024-03-18 10:50:40'
+        fabricId: 3
         datasetType: Database
         description: ''
-        fabricId: 3
+        author: adm-601361@cz.nl
+        createdAt: '2024-03-18 10:50:40'
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems:
+    gems/BepaalPeriodeMetPrioriteit:
+      name: BepaalPeriodeMetPrioriteit
+      category: Transform
+      subCategory: ''
+      description: null
+      author: null
+      mode: batch
+      files:
+      - sasmigrationteam_czprophecydev/gems/BepaalPeriodeMetPrioriteit.py
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2024-11-27 14:58:50'
+    gems/SnapshotFromHistory:
+      name: SnapshotFromHistory
+      category: Transform
+      subCategory: ''
+      description: null
+      author: null
+      mode: batch
+      files:
+      - sasmigrationteam_czprophecydev/gems/SnapshotFromHistory.py
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2024-11-27 14:59:07'
+    gems/Verwijderworktabellenalleeninputs:
+      name: Verwijderworktabellenalleeninputs
+      category: Transform
+      subCategory: ''
+      description: null
+      author: null
+      mode: batch
+      files:
+      - sasmigrationteam_czprophecydev/gems/Verwijderworktabellenalleeninputs.py
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2024-11-27 14:59:03'
+  dependencies: null
+functions:
+  author: alchemist@t1a.com
+  createdAt: '2023-05-16 12:51:07'
+  udfs:
+    udfs/CZ_SAS_ARIS2SASDATE:
+      name: CZ_SAS_ARIS2SASDATE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BEREKEN_PREMIE:
+      name: CZ_SAS_BEREKEN_PREMIE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BEREKEN_REGELING:
+      name: CZ_SAS_BEREKEN_REGELING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_BEPAAL_INCPROCESSTAP_CREATIEN:
+      name: CZ_SAS_BR_BEPAAL_INCPROCESSTAP_CREATIEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_BEPAAL_INCPROCESSTAP_DUMMY:
+      name: CZ_SAS_BR_BEPAAL_INCPROCESSTAP_DUMMY
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_BEPAAL_INCPROCESSTAP_FINTRANS:
+      name: CZ_SAS_BR_BEPAAL_INCPROCESSTAP_FINTRANS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_BEPAAL_INCPROCESSTAP_ZWAARTE:
+      name: CZ_SAS_BR_BEPAAL_INCPROCESSTAP_ZWAARTE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_BEREKEN_OPENSTAAND_BEDRAG:
+      name: CZ_SAS_BR_BEREKEN_OPENSTAAND_BEDRAG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_BUS_UNIT_2_JE_VZL:
+      name: CZ_SAS_BR_BUS_UNIT_2_JE_VZL
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_BUS_UNIT_2_JUR_ENT:
+      name: CZ_SAS_BR_BUS_UNIT_2_JUR_ENT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_B_OPENST_EXCL_ONINB_BDG:
+      name: CZ_SAS_BR_B_OPENST_EXCL_ONINB_BDG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_CLASSIFY_CHARACTERS:
+      name: CZ_SAS_BR_CLASSIFY_CHARACTERS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_COULANCE_SOORT:
+      name: CZ_SAS_BR_COULANCE_SOORT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_CREEER_INCASSO_FASE_CODE:
+      name: CZ_SAS_BR_CREEER_INCASSO_FASE_CODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_CREEER_OUDERDOM_CAT_CODE:
+      name: CZ_SAS_BR_CREEER_OUDERDOM_CAT_CODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_CVZ_REGELING_IDC:
+      name: CZ_SAS_BR_CVZ_REGELING_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_EXCL_GESPREID_BETALEN_ER:
+      name: CZ_SAS_BR_EXCL_GESPREID_BETALEN_ER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_EXCL_KRUISDOSSIER:
+      name: CZ_SAS_BR_EXCL_KRUISDOSSIER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_EXCL_SOMMATIEDOSSIER:
+      name: CZ_SAS_BR_EXCL_SOMMATIEDOSSIER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_FIN_DEB_STARTDTM_DM:
+      name: CZ_SAS_BR_FIN_DEB_STARTDTM_DM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_AFDELING_MACHTIGING:
+      name: CZ_SAS_BR_F_AFDELING_MACHTIGING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_ATL_BEHANDELINGEN_BOEKING:
+      name: CZ_SAS_BR_F_ATL_BEHANDELINGEN_BOEKING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_CRMZ_LEEFTIJD_TM:
+      name: CZ_SAS_BR_F_CRMZ_LEEFTIJD_TM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_DBC_AANTAL:
+      name: CZ_SAS_BR_F_DBC_AANTAL
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_EMAILEXTBESTAND:
+      name: CZ_SAS_BR_F_EMAILEXTBESTAND
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_GDS_PRCODELIJST_GGZ:
+      name: CZ_SAS_BR_F_GDS_PRCODELIJST_GGZ
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_GDS_PRCODELIJST_PARAMEDISCH:
+      name: CZ_SAS_BR_F_GDS_PRCODELIJST_PARAMEDISCH
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_GELDIGHEID_STATUS:
+      name: CZ_SAS_BR_F_GELDIGHEID_STATUS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_LABEL_VERSTREKKING:
+      name: CZ_SAS_BR_F_LABEL_VERSTREKKING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_LEIDENDE_ZORGVERLENER:
+      name: CZ_SAS_BR_F_LEIDENDE_ZORGVERLENER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_PENSIOENLEEFTIJD_MENV:
+      name: CZ_SAS_BR_F_PENSIOENLEEFTIJD_MENV
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_PERSONEEL_COLLECTIVITEIT_ID:
+      name: CZ_SAS_BR_F_PERSONEEL_COLLECTIVITEIT_ID
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_PRESTATIE_ATL_BOEKING:
+      name: CZ_SAS_BR_F_PRESTATIE_ATL_BOEKING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_SRT_VERZEKERING_OMS:
+      name: CZ_SAS_BR_F_SRT_VERZEKERING_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_UKGRGL_PARTITIONS:
+      name: CZ_SAS_BR_F_UKGRGL_PARTITIONS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_ZKA_DIVISIE_FILTER:
+      name: CZ_SAS_BR_F_ZKA_DIVISIE_FILTER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_F_ZKA_SECTOR:
+      name: CZ_SAS_BR_F_ZKA_SECTOR
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_ALLEEN_AV:
+      name: CZ_SAS_BR_IND_ALLEEN_AV
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV:
+      name: CZ_SAS_BR_IND_AV
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV_COLLECTIEF:
+      name: CZ_SAS_BR_IND_AV_COLLECTIEF
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV_COLLECTIEF_RECHTSTREEKS:
+      name: CZ_SAS_BR_IND_AV_COLLECTIEF_RECHTSTREEKS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV_COLLECTIEF_TUSSENPERSOON:
+      name: CZ_SAS_BR_IND_AV_COLLECTIEF_TUSSENPERSOON
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV_INDIVIDUEEL:
+      name: CZ_SAS_BR_IND_AV_INDIVIDUEEL
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV_INDIVIDUEEL_RECHTSTREEKS:
+      name: CZ_SAS_BR_IND_AV_INDIVIDUEEL_RECHTSTREEKS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV_INDIVIDUEEL_TUSSENPERSOON:
+      name: CZ_SAS_BR_IND_AV_INDIVIDUEEL_TUSSENPERSOON
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV_PARTICULIER:
+      name: CZ_SAS_BR_IND_AV_PARTICULIER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_AV_VERDRAG:
+      name: CZ_SAS_BR_IND_AV_VERDRAG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_BASIS:
+      name: CZ_SAS_BR_IND_BASIS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_BASIS_PARTICULIER:
+      name: CZ_SAS_BR_IND_BASIS_PARTICULIER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_BASIS_VERDRAG:
+      name: CZ_SAS_BR_IND_BASIS_VERDRAG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_COLLECTIEF:
+      name: CZ_SAS_BR_IND_COLLECTIEF
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_COLLECTIEF_RECHTSTREEKS:
+      name: CZ_SAS_BR_IND_COLLECTIEF_RECHTSTREEKS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_COLLECTIEF_TUSSENPERSOON:
+      name: CZ_SAS_BR_IND_COLLECTIEF_TUSSENPERSOON
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_INDIVIDUEEL:
+      name: CZ_SAS_BR_IND_INDIVIDUEEL
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_INDIVIDUEEL_RECHTSTREEKS:
+      name: CZ_SAS_BR_IND_INDIVIDUEEL_RECHTSTREEKS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_INDIVIDUEEL_TUSSENPERSOON:
+      name: CZ_SAS_BR_IND_INDIVIDUEEL_TUSSENPERSOON
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_JONGER_DAN_18:
+      name: CZ_SAS_BR_IND_JONGER_DAN_18
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_IND_VERDRAG_GEEN_RECHT:
+      name: CZ_SAS_BR_IND_VERDRAG_GEEN_RECHT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_REMOVE_CONTROL_CHARACTERS:
+      name: CZ_SAS_BR_REMOVE_CONTROL_CHARACTERS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_REMOVE_DOUBLE_OTHER_CHARACTERS:
+      name: CZ_SAS_BR_REMOVE_DOUBLE_OTHER_CHARACTERS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_SELECT_BET_REG_EINDE:
+      name: CZ_SAS_BR_SELECT_BET_REG_EINDE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_SELECT_BET_REG_START:
+      name: CZ_SAS_BR_SELECT_BET_REG_START
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_SEPA:
+      name: CZ_SAS_BR_SEPA
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_SUBSTITUTE_BETWEEN_DOUBLE_N:
+      name: CZ_SAS_BR_SUBSTITUTE_BETWEEN_DOUBLE_N
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_SUBSTITUTE_DOUBLE_A:
+      name: CZ_SAS_BR_SUBSTITUTE_DOUBLE_A
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_DEBITEURENBEHEER:
+      name: CZ_SAS_BR_S_DEBITEURENBEHEER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_DEB_START_FIN_MUT:
+      name: CZ_SAS_BR_S_DEB_START_FIN_MUT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_EXCLHUIDIGEMAAND:
+      name: CZ_SAS_BR_S_EXCLHUIDIGEMAAND
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_FINTRANSSOORT_OPBOEKING:
+      name: CZ_SAS_BR_S_FINTRANSSOORT_OPBOEKING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_FIN_TRANS_OPBOEKING:
+      name: CZ_SAS_BR_S_FIN_TRANS_OPBOEKING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_FIN_TRANS_STORNERING:
+      name: CZ_SAS_BR_S_FIN_TRANS_STORNERING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_GENORM_WERKAANBOD:
+      name: CZ_SAS_BR_S_GENORM_WERKAANBOD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_GENORM_WERKAANB_EXCLMATCH:
+      name: CZ_SAS_BR_S_GENORM_WERKAANB_EXCLMATCH
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_HERHAALVERKEER:
+      name: CZ_SAS_BR_S_HERHAALVERKEER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_NOTAS_HERBINCASSOKST:
+      name: CZ_SAS_BR_S_NOTAS_HERBINCASSOKST
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_RUBRIEKENBESTAND:
+      name: CZ_SAS_BR_S_RUBRIEKENBESTAND
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_TELEFONIE_CENTRAALNR:
+      name: CZ_SAS_BR_S_TELEFONIE_CENTRAALNR
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_S_TM_VORIGJAAR:
+      name: CZ_SAS_BR_S_TM_VORIGJAAR
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_TV_SUBLABEL_NIET_AANWEZIG:
+      name: CZ_SAS_BR_TV_SUBLABEL_NIET_AANWEZIG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_AANTAL_DBC:
+      name: CZ_SAS_BR_T_AANTAL_DBC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_AANTAL_DDD:
+      name: CZ_SAS_BR_T_AANTAL_DDD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_AANTAL_UREN:
+      name: CZ_SAS_BR_T_AANTAL_UREN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_AANTAL_UREN_GEBOORTEZORG:
+      name: CZ_SAS_BR_T_AANTAL_UREN_GEBOORTEZORG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_AANTAL_UREN_WIJKVERPLEGING:
+      name: CZ_SAS_BR_T_AANTAL_UREN_WIJKVERPLEGING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ACTUALITEIT_VERZEKERING:
+      name: CZ_SAS_BR_T_ACTUALITEIT_VERZEKERING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ADRES_STATUS:
+      name: CZ_SAS_BR_T_ADRES_STATUS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ADRES_TYPE:
+      name: CZ_SAS_BR_T_ADRES_TYPE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_AFSLUITPROVISIE:
+      name: CZ_SAS_BR_T_AFSLUITPROVISIE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ANVA_POLISKEY:
+      name: CZ_SAS_BR_T_ANVA_POLISKEY
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ANVA_SCHADEKEY:
+      name: CZ_SAS_BR_T_ANVA_SCHADEKEY
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ANYDT:
+      name: CZ_SAS_BR_T_ANYDT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ARTNR_VERGOEDING_04:
+      name: CZ_SAS_BR_T_ARTNR_VERGOEDING_04
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ARTNR_VERGOEDING_07:
+      name: CZ_SAS_BR_T_ARTNR_VERGOEDING_07
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BDG_BTW_TRF:
+      name: CZ_SAS_BR_T_BDG_BTW_TRF
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BDG_EB0_NTR:
+      name: CZ_SAS_BR_T_BDG_EB0_NTR
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BDG_RST_TEE:
+      name: CZ_SAS_BR_T_BDG_RST_TEE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BEPAAL_KARAKTER_TYPE:
+      name: CZ_SAS_BR_T_BEPAAL_KARAKTER_TYPE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BEPAAL_VERZEKERAAR:
+      name: CZ_SAS_BR_T_BEPAAL_VERZEKERAAR
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BEPAAL_ZORGVERLENER_ID:
+      name: CZ_SAS_BR_T_BEPAAL_ZORGVERLENER_ID
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BETAALTERMIJN:
+      name: CZ_SAS_BR_T_BETAALTERMIJN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BGK_ACTIVITEIT:
+      name: CZ_SAS_BR_T_BGK_ACTIVITEIT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BGK_TYPE:
+      name: CZ_SAS_BR_T_BGK_TYPE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_BSN:
+      name: CZ_SAS_BR_T_BSN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_CATX:
+      name: CZ_SAS_BR_T_CATX
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_CAT_INSTELLING:
+      name: CZ_SAS_BR_T_CAT_INSTELLING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_CONTINUITEITSPROVISIE:
+      name: CZ_SAS_BR_T_CONTINUITEITSPROVISIE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_CORRECTIE_NTA:
+      name: CZ_SAS_BR_T_CORRECTIE_NTA
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_CORRECTIE_NTR:
+      name: CZ_SAS_BR_T_CORRECTIE_NTR
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_CRMZ_PEILDATUM_VNESTAND:
+      name: CZ_SAS_BR_T_CRMZ_PEILDATUM_VNESTAND
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_CRMZ_PEILDATUM_VRZSTAND:
+      name: CZ_SAS_BR_T_CRMZ_PEILDATUM_VRZSTAND
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_CZA_PERSONEELSNMR:
+      name: CZ_SAS_BR_T_CZA_PERSONEELSNMR
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DATUM:
+      name: CZ_SAS_BR_T_DATUM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DATUMTIJD_DATEPART:
+      name: CZ_SAS_BR_T_DATUMTIJD_DATEPART
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DATUM_TIJD:
+      name: CZ_SAS_BR_T_DATUM_TIJD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DBC_PERIODE:
+      name: CZ_SAS_BR_T_DBC_PERIODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DDD:
+      name: CZ_SAS_BR_T_DDD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DD_HEROPEND_IDC:
+      name: CZ_SAS_BR_T_DD_HEROPEND_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DD_TOEKOMST_IDC:
+      name: CZ_SAS_BR_T_DD_TOEKOMST_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DD_XTRA_INFO_IDC:
+      name: CZ_SAS_BR_T_DD_XTRA_INFO_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DECLARATIECODE_OVP:
+      name: CZ_SAS_BR_T_DECLARATIECODE_OVP
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DECLARATIESOORT:
+      name: CZ_SAS_BR_T_DECLARATIESOORT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_DV_PERSONEELSNUMMER:
+      name: CZ_SAS_BR_T_DV_PERSONEELSNUMMER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_EIGEN_RISICO_ZVW:
+      name: CZ_SAS_BR_T_EIGEN_RISICO_ZVW
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ELFPROEF:
+      name: CZ_SAS_BR_T_ELFPROEF
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_EMAIL_AKTIVITEIT:
+      name: CZ_SAS_BR_T_EMAIL_AKTIVITEIT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_EMAIL_STATUS:
+      name: CZ_SAS_BR_T_EMAIL_STATUS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_FICTIEF_LEEGMAKEN:
+      name: CZ_SAS_BR_T_FICTIEF_LEEGMAKEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_FOUT_ONZEKERHEID_STATUS:
+      name: CZ_SAS_BR_T_FOUT_ONZEKERHEID_STATUS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_GECONTRACTEERD:
+      name: CZ_SAS_BR_T_GECONTRACTEERD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_GESLACHT:
+      name: CZ_SAS_BR_T_GESLACHT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_GPH_CODE:
+      name: CZ_SAS_BR_T_GPH_CODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_HOOFDLETTERS:
+      name: CZ_SAS_BR_T_HOOFDLETTERS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_HUISNUMMER:
+      name: CZ_SAS_BR_T_HUISNUMMER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_HUISNUMMER_TOEVOEGING:
+      name: CZ_SAS_BR_T_HUISNUMMER_TOEVOEGING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_INDICATIE_SOORT:
+      name: CZ_SAS_BR_T_INDICATIE_SOORT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_INDICATOR:
+      name: CZ_SAS_BR_T_INDICATOR
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_INGEDIEND_DOOR_VERZEKERDE_I:
+      name: CZ_SAS_BR_T_INGEDIEND_DOOR_VERZEKERDE_I
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_INKOOPKANAAL_TYPE:
+      name: CZ_SAS_BR_T_INKOOPKANAAL_TYPE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_INKOOPKANAAL_TYPE_NUM:
+      name: CZ_SAS_BR_T_INKOOPKANAAL_TYPE_NUM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_INSTITUTIONELE_ZVLSOORT:
+      name: CZ_SAS_BR_T_INSTITUTIONELE_ZVLSOORT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_KETENZORG_SOORT:
+      name: CZ_SAS_BR_T_KETENZORG_SOORT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_KEY_FOUT_DBC:
+      name: CZ_SAS_BR_T_KEY_FOUT_DBC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_KEY_OVERFINANCIERING:
+      name: CZ_SAS_BR_T_KEY_OVERFINANCIERING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_KM:
+      name: CZ_SAS_BR_T_KM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_KOSTENSOORT_OMS:
+      name: CZ_SAS_BR_T_KOSTENSOORT_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_KREDIETTERMIJNCATEGORIE:
+      name: CZ_SAS_BR_T_KREDIETTERMIJNCATEGORIE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_LABEL:
+      name: CZ_SAS_BR_T_LABEL
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MASKEREN_TIJD_INTERVAL:
+      name: CZ_SAS_BR_T_MASKEREN_TIJD_INTERVAL
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_AFGEHANDELD_IDC:
+      name: CZ_SAS_BR_T_MA_AFGEHANDELD_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_BEPAAL_AFDELING:
+      name: CZ_SAS_BR_T_MA_BEPAAL_AFDELING
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_BINNEN_DE_NORM:
+      name: CZ_SAS_BR_T_MA_BINNEN_DE_NORM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_DOORLOOPTIJD_DAGEN:
+      name: CZ_SAS_BR_T_MA_DOORLOOPTIJD_DAGEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_DOORLOOPTIJD_WERKDAGEN:
+      name: CZ_SAS_BR_T_MA_DOORLOOPTIJD_WERKDAGEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_EXTRA_INFO_IDC:
+      name: CZ_SAS_BR_T_MA_EXTRA_INFO_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_GROEPEER_STATUS:
+      name: CZ_SAS_BR_T_MA_GROEPEER_STATUS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_HEROPEND_IDC:
+      name: CZ_SAS_BR_T_MA_HEROPEND_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_INTOEKOMST_IDC:
+      name: CZ_SAS_BR_T_MA_INTOEKOMST_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_KANAAL:
+      name: CZ_SAS_BR_T_MA_KANAAL
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_LAND:
+      name: CZ_SAS_BR_T_MA_LAND
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_PZP_IDC:
+      name: CZ_SAS_BR_T_MA_PZP_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_TOEGEWEZEN_IDC:
+      name: CZ_SAS_BR_T_MA_TOEGEWEZEN_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_VERWIJDEREN_IDC:
+      name: CZ_SAS_BR_T_MA_VERWIJDEREN_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_VOORGELEGD_IDC:
+      name: CZ_SAS_BR_T_MA_VOORGELEGD_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MA_ZVL_CONCAT:
+      name: CZ_SAS_BR_T_MA_ZVL_CONCAT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_MIN_VERWIJDER_DTD:
+      name: CZ_SAS_BR_T_MIN_VERWIJDER_DTD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_NAAM:
+      name: CZ_SAS_BR_T_NAAM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_NATUURLIJK_PERS_LEEFTIJD:
+      name: CZ_SAS_BR_T_NATUURLIJK_PERS_LEEFTIJD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_NORM_NAAR_UREN:
+      name: CZ_SAS_BR_T_NORM_NAAR_UREN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_NUMERICFIELD_TOCHAR9:
+      name: CZ_SAS_BR_T_NUMERICFIELD_TOCHAR9
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_NUMERIEK:
+      name: CZ_SAS_BR_T_NUMERIEK
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_NVT_LEEGMAKEN:
+      name: CZ_SAS_BR_T_NVT_LEEGMAKEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ONTSLEUTELEN:
+      name: CZ_SAS_BR_T_ONTSLEUTELEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_POSTCODE:
+      name: CZ_SAS_BR_T_POSTCODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PREMIEGRONDSLAG_BDG:
+      name: CZ_SAS_BR_T_PREMIEGRONDSLAG_BDG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PREMIEPLICHTIG:
+      name: CZ_SAS_BR_T_PREMIEPLICHTIG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PREMIEVRIJE_VERZ_IDC:
+      name: CZ_SAS_BR_T_PREMIEVRIJE_VERZ_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PROVISIE_REGELING_BDG:
+      name: CZ_SAS_BR_T_PROVISIE_REGELING_BDG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PROVISIE_REGELING_CODE:
+      name: CZ_SAS_BR_T_PROVISIE_REGELING_CODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PROVISIE_REGELING_OMS:
+      name: CZ_SAS_BR_T_PROVISIE_REGELING_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PROVISIE_REGELING_PCT:
+      name: CZ_SAS_BR_T_PROVISIE_REGELING_PCT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PROVISIE_RGL_TYPE_CODE:
+      name: CZ_SAS_BR_T_PROVISIE_RGL_TYPE_CODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PUNT_LEEGMAKEN:
+      name: CZ_SAS_BR_T_PUNT_LEEGMAKEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_PZP_COLLECTIVITEIT_IDC:
+      name: CZ_SAS_BR_T_PZP_COLLECTIVITEIT_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_RENDEMENT_LABELORG:
+      name: CZ_SAS_BR_T_RENDEMENT_LABELORG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_RENDEMENT_LABELORG_MAAND:
+      name: CZ_SAS_BR_T_RENDEMENT_LABELORG_MAAND
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_RESTITUTIE_BEDRAG_BRK:
+      name: CZ_SAS_BR_T_RESTITUTIE_BEDRAG_BRK
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_SELECTIE_DATUM:
+      name: CZ_SAS_BR_T_SELECTIE_DATUM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_SOORT_HONORARIUM_KOSTEN:
+      name: CZ_SAS_BR_T_SOORT_HONORARIUM_KOSTEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_SPECIALISME:
+      name: CZ_SAS_BR_T_SPECIALISME
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_SPECIALISME_DIAGNOSE:
+      name: CZ_SAS_BR_T_SPECIALISME_DIAGNOSE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_START_KREDIETTERMIJN:
+      name: CZ_SAS_BR_T_START_KREDIETTERMIJN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_STEDELIJKHEID_OMS:
+      name: CZ_SAS_BR_T_STEDELIJKHEID_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_STRING_VOORLOOPNULLEN:
+      name: CZ_SAS_BR_T_STRING_VOORLOOPNULLEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_SUBSTR_MUTATIETOTAAL:
+      name: CZ_SAS_BR_T_SUBSTR_MUTATIETOTAAL
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_TELEFONIE_AANBODTYPE:
+      name: CZ_SAS_BR_T_TELEFONIE_AANBODTYPE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_TERMIJN_DAGEN:
+      name: CZ_SAS_BR_T_TERMIJN_DAGEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_UITSLUITEN_VERGOEDING_FNT:
+      name: CZ_SAS_BR_T_UITSLUITEN_VERGOEDING_FNT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_UZOVI:
+      name: CZ_SAS_BR_T_UZOVI
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_UZOVI_AANV_VERZ:
+      name: CZ_SAS_BR_T_UZOVI_AANV_VERZ
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_UZOVI_OHRA_OVERIG:
+      name: CZ_SAS_BR_T_UZOVI_OHRA_OVERIG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_VERANTWOORDING_DTM:
+      name: CZ_SAS_BR_T_VERANTWOORDING_DTM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_VERDRAGSVERZEKERDEN:
+      name: CZ_SAS_BR_T_VERDRAGSVERZEKERDEN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_VERRICHTING_SUBCODE:
+      name: CZ_SAS_BR_T_VERRICHTING_SUBCODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_VERR_ATL_UKG:
+      name: CZ_SAS_BR_T_VERR_ATL_UKG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_VERZEKERINGSBASIS:
+      name: CZ_SAS_BR_T_VERZEKERINGSBASIS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_WANBETALER_PROCES_TYPE:
+      name: CZ_SAS_BR_T_WANBETALER_PROCES_TYPE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_WANBET_AAN_AFMELDING_DTM:
+      name: CZ_SAS_BR_T_WANBET_AAN_AFMELDING_DTM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_WTG_KDE_IDC:
+      name: CZ_SAS_BR_T_WTG_KDE_IDC
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_WTG_KDE_IDC_NUM:
+      name: CZ_SAS_BR_T_WTG_KDE_IDC_NUM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_WTG_OSL_BDG:
+      name: CZ_SAS_BR_T_WTG_OSL_BDG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ZKA_CODE_NAAR_ID:
+      name: CZ_SAS_BR_T_ZKA_CODE_NAAR_ID
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ZKA_ID_NAAR_CODE:
+      name: CZ_SAS_BR_T_ZKA_ID_NAAR_CODE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ZKA_ID_NAAR_OMS:
+      name: CZ_SAS_BR_T_ZKA_ID_NAAR_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ZORGKOSTEN_BASIS:
+      name: CZ_SAS_BR_T_ZORGKOSTEN_BASIS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ZORGPRODUCT:
+      name: CZ_SAS_BR_T_ZORGPRODUCT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_T_ZVL_AGB_CODE8:
+      name: CZ_SAS_BR_T_ZVL_AGB_CODE8
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_VOORUITBET_OPENSTAAND_BDG:
+      name: CZ_SAS_BR_VOORUITBET_OPENSTAAND_BDG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_BR_V_ADRES:
+      name: CZ_SAS_BR_V_ADRES
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_DATUMS:
+      name: CZ_SAS_DATUMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_DHMS:
+      name: CZ_SAS_DHMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_EXTRACT_MILLISECONDS:
+      name: CZ_SAS_EXTRACT_MILLISECONDS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_FMT_DDMMYY10:
+      name: CZ_SAS_FMT_DDMMYY10
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_FUZZ:
+      name: CZ_SAS_FUZZ
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_GET_NL_DAYOFTHEWEEKNAME:
+      name: CZ_SAS_GET_NL_DAYOFTHEWEEKNAME
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_GET_NL_MONTHNAME:
+      name: CZ_SAS_GET_NL_MONTHNAME
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_HUIDIGE_SITUATIE:
+      name: CZ_SAS_HUIDIGE_SITUATIE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_INPUT_BEST:
+      name: CZ_SAS_INPUT_BEST
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_INTCK:
+      name: CZ_SAS_INTCK
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_INTNX:
+      name: CZ_SAS_INTNX
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_INTNX_DATE:
+      name: CZ_SAS_INTNX_DATE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_INTNX_TS:
+      name: CZ_SAS_INTNX_TS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_ISPARTNER:
+      name: CZ_SAS_ISPARTNER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_KIK_ID:
+      name: CZ_SAS_KIK_ID
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_MOD:
+      name: CZ_SAS_MOD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_PUT_Z:
+      name: CZ_SAS_PUT_Z
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_RELATIE_DECRYPT:
+      name: CZ_SAS_RELATIE_DECRYPT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_RESOLVE_PATTERN:
+      name: CZ_SAS_RESOLVE_PATTERN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_SCAN:
+      name: CZ_SAS_SCAN
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_SETSASVERWIJDERDATUM:
+      name: CZ_SAS_SETSASVERWIJDERDATUM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TEST:
+      name: CZ_SAS_TEST
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TIMEPART:
+      name: CZ_SAS_TIMEPART
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_AANMANING_ZWAARTE_OMS:
+      name: CZ_SAS_TR_AANMANING_ZWAARTE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_AFBOEKING_REDEN_OMS:
+      name: CZ_SAS_TR_AFBOEKING_REDEN_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_BETAALWIJZE_OMS:
+      name: CZ_SAS_TR_BETAALWIJZE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_BETALINGSREGELING_STATUS_OMS:
+      name: CZ_SAS_TR_BETALINGSREGELING_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_BETALINGSREG_EINDE_REDEN_OMS:
+      name: CZ_SAS_TR_BETALINGSREG_EINDE_REDEN_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_BETALINGSVERKEER_STATUS_OMS:
+      name: CZ_SAS_TR_BETALINGSVERKEER_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_BETALINGSVERKEER_SUBTYPE:
+      name: CZ_SAS_TR_BETALINGSVERKEER_SUBTYPE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_BOEKING_STATUS_OMS:
+      name: CZ_SAS_TR_BOEKING_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_DC_NOTA_STATUS_OMS:
+      name: CZ_SAS_TR_DC_NOTA_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_DEBITEURCREDITEUR_SRT_OMS:
+      name: CZ_SAS_TR_DEBITEURCREDITEUR_SRT_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_DEBITEURCREDITEUR_STATUS_OMS:
+      name: CZ_SAS_TR_DEBITEURCREDITEUR_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_INCASSOPROCESSTAP_OMS:
+      name: CZ_SAS_TR_INCASSOPROCESSTAP_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_INCASSO_DOSSIER_STATUS_OMS:
+      name: CZ_SAS_TR_INCASSO_DOSSIER_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_INCASSO_FASE_OMS:
+      name: CZ_SAS_TR_INCASSO_FASE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_KREDIETTERMIJN_CATEGORIE_OMS:
+      name: CZ_SAS_TR_KREDIETTERMIJN_CATEGORIE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_MARKEER_ONTBREKENDE_REF_ID:
+      name: CZ_SAS_TR_MARKEER_ONTBREKENDE_REF_ID
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_MARKEER_REF_ID_NVT:
+      name: CZ_SAS_TR_MARKEER_REF_ID_NVT
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_OPHOUDING_SCHADE_OMS:
+      name: CZ_SAS_TR_OPHOUDING_SCHADE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_OUDERDOM_CATEGORIE_OMS:
+      name: CZ_SAS_TR_OUDERDOM_CATEGORIE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_SCHULDSANERING_SITUATIE_OMS:
+      name: CZ_SAS_TR_SCHULDSANERING_SITUATIE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_STORNERING_SOORT_OMS:
+      name: CZ_SAS_TR_STORNERING_SOORT_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_STORNERING_STATUS_OMS:
+      name: CZ_SAS_TR_STORNERING_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_SUM:
+      name: CZ_SAS_TR_SUM
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_UITVAL_REDEN_OMS:
+      name: CZ_SAS_TR_UITVAL_REDEN_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_VORDERING_STATUS_OMS:
+      name: CZ_SAS_TR_VORDERING_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_WANBETALER_AANKOND_TYPE_OMS:
+      name: CZ_SAS_TR_WANBETALER_AANKOND_TYPE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_WANBETALER_PROCES_TYPE_OMS:
+      name: CZ_SAS_TR_WANBETALER_PROCES_TYPE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_WANBET_AANAFMELD_REDEN_OMS:
+      name: CZ_SAS_TR_WANBET_AANAFMELD_REDEN_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_WANBET_AANAFMELD_STATUS_OMS:
+      name: CZ_SAS_TR_WANBET_AANAFMELD_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_WANBET_AANAFMELD_TYPE_OMS:
+      name: CZ_SAS_TR_WANBET_AANAFMELD_TYPE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_WERKAANBOD_TYPE_OMS:
+      name: CZ_SAS_TR_WERKAANBOD_TYPE_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TR_WERKOPDRACHT_STATUS_OMS:
+      name: CZ_SAS_TR_WERKOPDRACHT_STATUS_OMS
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_TV_SUBLABEL_NIET_AANWEZIG:
+      name: CZ_SAS_TV_SUBLABEL_NIET_AANWEZIG
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_UPPER:
+      name: CZ_SAS_UPPER
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_VORIGE_SITUATIE:
+      name: CZ_SAS_VORIGE_SITUATIE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_YYYYMMD:
+      name: CZ_SAS_YYYYMMD
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+    udfs/CZ_SAS_YYYYMMDD2DATE:
+      name: CZ_SAS_YYYYMMDD2DATE
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: alchemist@t1a.com
+      createdAt: '2022-12-15 18:04:50'
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
 dependencies:
 - createdAt: '2024-07-24T11:55:39.372277Z'
   id: '557549338'
@@ -263,2618 +2599,23 @@ dependencies:
   name: plibPypi
   type: plibPypi
   version: 1.9.9
-description: ''
-flags:
-  shouldAddDefaultDependenciesIfAbsent: true
-functions:
-  author: alchemist@t1a.com
-  createdAt: '2023-05-16 12:51:07'
-  expressions: {}
-  gems: {}
-  modifiedAt: '2023-05-16 13:09:41'
-  udafs: {}
-  udfs:
-    udfs/CZ_SAS_ARIS2SASDATE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_ARIS2SASDATE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BEREKEN_PREMIE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BEREKEN_PREMIE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BEREKEN_REGELING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BEREKEN_REGELING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_BEPAAL_INCPROCESSTAP_CREATIEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_BEPAAL_INCPROCESSTAP_CREATIEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_BEPAAL_INCPROCESSTAP_DUMMY:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_BEPAAL_INCPROCESSTAP_DUMMY
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_BEPAAL_INCPROCESSTAP_FINTRANS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_BEPAAL_INCPROCESSTAP_FINTRANS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_BEPAAL_INCPROCESSTAP_ZWAARTE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_BEPAAL_INCPROCESSTAP_ZWAARTE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_BEREKEN_OPENSTAAND_BEDRAG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_BEREKEN_OPENSTAAND_BEDRAG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_BUS_UNIT_2_JE_VZL:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_BUS_UNIT_2_JE_VZL
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_BUS_UNIT_2_JUR_ENT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_BUS_UNIT_2_JUR_ENT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_B_OPENST_EXCL_ONINB_BDG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_B_OPENST_EXCL_ONINB_BDG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_CLASSIFY_CHARACTERS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_CLASSIFY_CHARACTERS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_COULANCE_SOORT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_COULANCE_SOORT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_CREEER_INCASSO_FASE_CODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_CREEER_INCASSO_FASE_CODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_CREEER_OUDERDOM_CAT_CODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_CREEER_OUDERDOM_CAT_CODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_CVZ_REGELING_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_CVZ_REGELING_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_EXCL_GESPREID_BETALEN_ER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_EXCL_GESPREID_BETALEN_ER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_EXCL_KRUISDOSSIER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_EXCL_KRUISDOSSIER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_EXCL_SOMMATIEDOSSIER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_EXCL_SOMMATIEDOSSIER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_FIN_DEB_STARTDTM_DM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_FIN_DEB_STARTDTM_DM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_AFDELING_MACHTIGING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_AFDELING_MACHTIGING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_ATL_BEHANDELINGEN_BOEKING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_ATL_BEHANDELINGEN_BOEKING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_CRMZ_LEEFTIJD_TM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_CRMZ_LEEFTIJD_TM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_DBC_AANTAL:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_DBC_AANTAL
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_EMAILEXTBESTAND:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_EMAILEXTBESTAND
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_GDS_PRCODELIJST_GGZ:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_GDS_PRCODELIJST_GGZ
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_GDS_PRCODELIJST_PARAMEDISCH:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_GDS_PRCODELIJST_PARAMEDISCH
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_GELDIGHEID_STATUS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_GELDIGHEID_STATUS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_LABEL_VERSTREKKING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_LABEL_VERSTREKKING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_LEIDENDE_ZORGVERLENER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_LEIDENDE_ZORGVERLENER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_PENSIOENLEEFTIJD_MENV:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_PENSIOENLEEFTIJD_MENV
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_PERSONEEL_COLLECTIVITEIT_ID:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_PERSONEEL_COLLECTIVITEIT_ID
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_PRESTATIE_ATL_BOEKING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_PRESTATIE_ATL_BOEKING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_SRT_VERZEKERING_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_SRT_VERZEKERING_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_UKGRGL_PARTITIONS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_UKGRGL_PARTITIONS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_ZKA_DIVISIE_FILTER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_ZKA_DIVISIE_FILTER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_F_ZKA_SECTOR:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_F_ZKA_SECTOR
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_ALLEEN_AV:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_ALLEEN_AV
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV_COLLECTIEF:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV_COLLECTIEF
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV_COLLECTIEF_RECHTSTREEKS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV_COLLECTIEF_RECHTSTREEKS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV_COLLECTIEF_TUSSENPERSOON:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV_COLLECTIEF_TUSSENPERSOON
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV_INDIVIDUEEL:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV_INDIVIDUEEL
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV_INDIVIDUEEL_RECHTSTREEKS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV_INDIVIDUEEL_RECHTSTREEKS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV_INDIVIDUEEL_TUSSENPERSOON:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV_INDIVIDUEEL_TUSSENPERSOON
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV_PARTICULIER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV_PARTICULIER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_AV_VERDRAG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_AV_VERDRAG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_BASIS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_BASIS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_BASIS_PARTICULIER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_BASIS_PARTICULIER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_BASIS_VERDRAG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_BASIS_VERDRAG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_COLLECTIEF:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_COLLECTIEF
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_COLLECTIEF_RECHTSTREEKS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_COLLECTIEF_RECHTSTREEKS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_COLLECTIEF_TUSSENPERSOON:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_COLLECTIEF_TUSSENPERSOON
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_INDIVIDUEEL:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_INDIVIDUEEL
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_INDIVIDUEEL_RECHTSTREEKS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_INDIVIDUEEL_RECHTSTREEKS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_INDIVIDUEEL_TUSSENPERSOON:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_INDIVIDUEEL_TUSSENPERSOON
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_JONGER_DAN_18:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_JONGER_DAN_18
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_IND_VERDRAG_GEEN_RECHT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_IND_VERDRAG_GEEN_RECHT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_REMOVE_CONTROL_CHARACTERS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_REMOVE_CONTROL_CHARACTERS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_REMOVE_DOUBLE_OTHER_CHARACTERS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_REMOVE_DOUBLE_OTHER_CHARACTERS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_SELECT_BET_REG_EINDE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_SELECT_BET_REG_EINDE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_SELECT_BET_REG_START:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_SELECT_BET_REG_START
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_SEPA:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_SEPA
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_SUBSTITUTE_BETWEEN_DOUBLE_N:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_SUBSTITUTE_BETWEEN_DOUBLE_N
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_SUBSTITUTE_DOUBLE_A:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_SUBSTITUTE_DOUBLE_A
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_DEBITEURENBEHEER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_DEBITEURENBEHEER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_DEB_START_FIN_MUT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_DEB_START_FIN_MUT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_EXCLHUIDIGEMAAND:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_EXCLHUIDIGEMAAND
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_FINTRANSSOORT_OPBOEKING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_FINTRANSSOORT_OPBOEKING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_FIN_TRANS_OPBOEKING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_FIN_TRANS_OPBOEKING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_FIN_TRANS_STORNERING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_FIN_TRANS_STORNERING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_GENORM_WERKAANBOD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_GENORM_WERKAANBOD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_GENORM_WERKAANB_EXCLMATCH:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_GENORM_WERKAANB_EXCLMATCH
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_HERHAALVERKEER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_HERHAALVERKEER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_NOTAS_HERBINCASSOKST:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_NOTAS_HERBINCASSOKST
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_RUBRIEKENBESTAND:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_RUBRIEKENBESTAND
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_TELEFONIE_CENTRAALNR:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_TELEFONIE_CENTRAALNR
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_S_TM_VORIGJAAR:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_S_TM_VORIGJAAR
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_TV_SUBLABEL_NIET_AANWEZIG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_TV_SUBLABEL_NIET_AANWEZIG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_AANTAL_DBC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_AANTAL_DBC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_AANTAL_DDD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_AANTAL_DDD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_AANTAL_UREN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_AANTAL_UREN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_AANTAL_UREN_GEBOORTEZORG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_AANTAL_UREN_GEBOORTEZORG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_AANTAL_UREN_WIJKVERPLEGING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_AANTAL_UREN_WIJKVERPLEGING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ACTUALITEIT_VERZEKERING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ACTUALITEIT_VERZEKERING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ADRES_STATUS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ADRES_STATUS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ADRES_TYPE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ADRES_TYPE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_AFSLUITPROVISIE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_AFSLUITPROVISIE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ANVA_POLISKEY:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ANVA_POLISKEY
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ANVA_SCHADEKEY:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ANVA_SCHADEKEY
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ANYDT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ANYDT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ARTNR_VERGOEDING_04:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ARTNR_VERGOEDING_04
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ARTNR_VERGOEDING_07:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ARTNR_VERGOEDING_07
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BDG_BTW_TRF:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BDG_BTW_TRF
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BDG_EB0_NTR:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BDG_EB0_NTR
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BDG_RST_TEE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BDG_RST_TEE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BEPAAL_KARAKTER_TYPE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BEPAAL_KARAKTER_TYPE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BEPAAL_VERZEKERAAR:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BEPAAL_VERZEKERAAR
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BEPAAL_ZORGVERLENER_ID:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BEPAAL_ZORGVERLENER_ID
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BETAALTERMIJN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BETAALTERMIJN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BGK_ACTIVITEIT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BGK_ACTIVITEIT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BGK_TYPE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BGK_TYPE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_BSN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_BSN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_CATX:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_CATX
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_CAT_INSTELLING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_CAT_INSTELLING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_CONTINUITEITSPROVISIE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_CONTINUITEITSPROVISIE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_CORRECTIE_NTA:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_CORRECTIE_NTA
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_CORRECTIE_NTR:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_CORRECTIE_NTR
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_CRMZ_PEILDATUM_VNESTAND:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_CRMZ_PEILDATUM_VNESTAND
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_CRMZ_PEILDATUM_VRZSTAND:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_CRMZ_PEILDATUM_VRZSTAND
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_CZA_PERSONEELSNMR:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_CZA_PERSONEELSNMR
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DATUM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DATUM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DATUMTIJD_DATEPART:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DATUMTIJD_DATEPART
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DATUM_TIJD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DATUM_TIJD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DBC_PERIODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DBC_PERIODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DDD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DDD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DD_HEROPEND_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DD_HEROPEND_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DD_TOEKOMST_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DD_TOEKOMST_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DD_XTRA_INFO_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DD_XTRA_INFO_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DECLARATIECODE_OVP:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DECLARATIECODE_OVP
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DECLARATIESOORT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DECLARATIESOORT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_DV_PERSONEELSNUMMER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_DV_PERSONEELSNUMMER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_EIGEN_RISICO_ZVW:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_EIGEN_RISICO_ZVW
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ELFPROEF:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ELFPROEF
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_EMAIL_AKTIVITEIT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_EMAIL_AKTIVITEIT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_EMAIL_STATUS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_EMAIL_STATUS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_FICTIEF_LEEGMAKEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_FICTIEF_LEEGMAKEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_FOUT_ONZEKERHEID_STATUS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_FOUT_ONZEKERHEID_STATUS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_GECONTRACTEERD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_GECONTRACTEERD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_GESLACHT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_GESLACHT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_GPH_CODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_GPH_CODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_HOOFDLETTERS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_HOOFDLETTERS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_HUISNUMMER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_HUISNUMMER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_HUISNUMMER_TOEVOEGING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_HUISNUMMER_TOEVOEGING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_INDICATIE_SOORT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_INDICATIE_SOORT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_INDICATOR:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_INDICATOR
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_INGEDIEND_DOOR_VERZEKERDE_I:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_INGEDIEND_DOOR_VERZEKERDE_I
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_INKOOPKANAAL_TYPE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_INKOOPKANAAL_TYPE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_INKOOPKANAAL_TYPE_NUM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_INKOOPKANAAL_TYPE_NUM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_INSTITUTIONELE_ZVLSOORT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_INSTITUTIONELE_ZVLSOORT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_KETENZORG_SOORT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_KETENZORG_SOORT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_KEY_FOUT_DBC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_KEY_FOUT_DBC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_KEY_OVERFINANCIERING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_KEY_OVERFINANCIERING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_KM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_KM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_KOSTENSOORT_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_KOSTENSOORT_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_KREDIETTERMIJNCATEGORIE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_KREDIETTERMIJNCATEGORIE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_LABEL:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_LABEL
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MASKEREN_TIJD_INTERVAL:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MASKEREN_TIJD_INTERVAL
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_AFGEHANDELD_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_AFGEHANDELD_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_BEPAAL_AFDELING:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_BEPAAL_AFDELING
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_BINNEN_DE_NORM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_BINNEN_DE_NORM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_DOORLOOPTIJD_DAGEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_DOORLOOPTIJD_DAGEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_DOORLOOPTIJD_WERKDAGEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_DOORLOOPTIJD_WERKDAGEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_EXTRA_INFO_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_EXTRA_INFO_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_GROEPEER_STATUS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_GROEPEER_STATUS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_HEROPEND_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_HEROPEND_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_INTOEKOMST_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_INTOEKOMST_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_KANAAL:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_KANAAL
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_LAND:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_LAND
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_PZP_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_PZP_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_TOEGEWEZEN_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_TOEGEWEZEN_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_VERWIJDEREN_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_VERWIJDEREN_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_VOORGELEGD_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_VOORGELEGD_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MA_ZVL_CONCAT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MA_ZVL_CONCAT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_MIN_VERWIJDER_DTD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_MIN_VERWIJDER_DTD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_NAAM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_NAAM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_NATUURLIJK_PERS_LEEFTIJD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_NATUURLIJK_PERS_LEEFTIJD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_NORM_NAAR_UREN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_NORM_NAAR_UREN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_NUMERICFIELD_TOCHAR9:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_NUMERICFIELD_TOCHAR9
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_NUMERIEK:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_NUMERIEK
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_NVT_LEEGMAKEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_NVT_LEEGMAKEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ONTSLEUTELEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ONTSLEUTELEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_POSTCODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_POSTCODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PREMIEGRONDSLAG_BDG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PREMIEGRONDSLAG_BDG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PREMIEPLICHTIG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PREMIEPLICHTIG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PREMIEVRIJE_VERZ_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PREMIEVRIJE_VERZ_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PROVISIE_REGELING_BDG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PROVISIE_REGELING_BDG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PROVISIE_REGELING_CODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PROVISIE_REGELING_CODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PROVISIE_REGELING_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PROVISIE_REGELING_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PROVISIE_REGELING_PCT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PROVISIE_REGELING_PCT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PROVISIE_RGL_TYPE_CODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PROVISIE_RGL_TYPE_CODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PUNT_LEEGMAKEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PUNT_LEEGMAKEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_PZP_COLLECTIVITEIT_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_PZP_COLLECTIVITEIT_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_RENDEMENT_LABELORG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_RENDEMENT_LABELORG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_RENDEMENT_LABELORG_MAAND:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_RENDEMENT_LABELORG_MAAND
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_RESTITUTIE_BEDRAG_BRK:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_RESTITUTIE_BEDRAG_BRK
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_SELECTIE_DATUM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_SELECTIE_DATUM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_SOORT_HONORARIUM_KOSTEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_SOORT_HONORARIUM_KOSTEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_SPECIALISME:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_SPECIALISME
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_SPECIALISME_DIAGNOSE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_SPECIALISME_DIAGNOSE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_START_KREDIETTERMIJN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_START_KREDIETTERMIJN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_STEDELIJKHEID_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_STEDELIJKHEID_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_STRING_VOORLOOPNULLEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_STRING_VOORLOOPNULLEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_SUBSTR_MUTATIETOTAAL:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_SUBSTR_MUTATIETOTAAL
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_TELEFONIE_AANBODTYPE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_TELEFONIE_AANBODTYPE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_TERMIJN_DAGEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_TERMIJN_DAGEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_UITSLUITEN_VERGOEDING_FNT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_UITSLUITEN_VERGOEDING_FNT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_UZOVI:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_UZOVI
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_UZOVI_AANV_VERZ:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_UZOVI_AANV_VERZ
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_UZOVI_OHRA_OVERIG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_UZOVI_OHRA_OVERIG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_VERANTWOORDING_DTM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_VERANTWOORDING_DTM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_VERDRAGSVERZEKERDEN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_VERDRAGSVERZEKERDEN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_VERRICHTING_SUBCODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_VERRICHTING_SUBCODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_VERR_ATL_UKG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_VERR_ATL_UKG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_VERZEKERINGSBASIS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_VERZEKERINGSBASIS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_WANBETALER_PROCES_TYPE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_WANBETALER_PROCES_TYPE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_WANBET_AAN_AFMELDING_DTM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_WANBET_AAN_AFMELDING_DTM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_WTG_KDE_IDC:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_WTG_KDE_IDC
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_WTG_KDE_IDC_NUM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_WTG_KDE_IDC_NUM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_WTG_OSL_BDG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_WTG_OSL_BDG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ZKA_CODE_NAAR_ID:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ZKA_CODE_NAAR_ID
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ZKA_ID_NAAR_CODE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ZKA_ID_NAAR_CODE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ZKA_ID_NAAR_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ZKA_ID_NAAR_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ZORGKOSTEN_BASIS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ZORGKOSTEN_BASIS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ZORGPRODUCT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ZORGPRODUCT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_T_ZVL_AGB_CODE8:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_T_ZVL_AGB_CODE8
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_VOORUITBET_OPENSTAAND_BDG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_VOORUITBET_OPENSTAAND_BDG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_BR_V_ADRES:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_BR_V_ADRES
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_DATUMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_DATUMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_DHMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_DHMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_EXTRACT_MILLISECONDS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_EXTRACT_MILLISECONDS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_FMT_DDMMYY10:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_FMT_DDMMYY10
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_FUZZ:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_FUZZ
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_GET_NL_DAYOFTHEWEEKNAME:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_GET_NL_DAYOFTHEWEEKNAME
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_GET_NL_MONTHNAME:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_GET_NL_MONTHNAME
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_HUIDIGE_SITUATIE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_HUIDIGE_SITUATIE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_INPUT_BEST:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_INPUT_BEST
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_INTCK:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_INTCK
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_INTNX:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_INTNX
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_INTNX_DATE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_INTNX_DATE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_INTNX_TS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_INTNX_TS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_ISPARTNER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_ISPARTNER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_KIK_ID:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_KIK_ID
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_MOD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_MOD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_PUT_Z:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_PUT_Z
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_RELATIE_DECRYPT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_RELATIE_DECRYPT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_RESOLVE_PATTERN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_RESOLVE_PATTERN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_SCAN:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_SCAN
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_SETSASVERWIJDERDATUM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_SETSASVERWIJDERDATUM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TEST:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TEST
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TIMEPART:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TIMEPART
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_AANMANING_ZWAARTE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_AANMANING_ZWAARTE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_AFBOEKING_REDEN_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_AFBOEKING_REDEN_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_BETAALWIJZE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_BETAALWIJZE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_BETALINGSREGELING_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_BETALINGSREGELING_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_BETALINGSREG_EINDE_REDEN_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_BETALINGSREG_EINDE_REDEN_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_BETALINGSVERKEER_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_BETALINGSVERKEER_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_BETALINGSVERKEER_SUBTYPE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_BETALINGSVERKEER_SUBTYPE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_BOEKING_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_BOEKING_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_DC_NOTA_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_DC_NOTA_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_DEBITEURCREDITEUR_SRT_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_DEBITEURCREDITEUR_SRT_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_DEBITEURCREDITEUR_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_DEBITEURCREDITEUR_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_INCASSOPROCESSTAP_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_INCASSOPROCESSTAP_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_INCASSO_DOSSIER_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_INCASSO_DOSSIER_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_INCASSO_FASE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_INCASSO_FASE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_KREDIETTERMIJN_CATEGORIE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_KREDIETTERMIJN_CATEGORIE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_MARKEER_ONTBREKENDE_REF_ID:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_MARKEER_ONTBREKENDE_REF_ID
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_MARKEER_REF_ID_NVT:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_MARKEER_REF_ID_NVT
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_OPHOUDING_SCHADE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_OPHOUDING_SCHADE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_OUDERDOM_CATEGORIE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_OUDERDOM_CATEGORIE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_SCHULDSANERING_SITUATIE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_SCHULDSANERING_SITUATIE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_STORNERING_SOORT_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_STORNERING_SOORT_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_STORNERING_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_STORNERING_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_SUM:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_SUM
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_UITVAL_REDEN_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_UITVAL_REDEN_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_VORDERING_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_VORDERING_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_WANBETALER_AANKOND_TYPE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_WANBETALER_AANKOND_TYPE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_WANBETALER_PROCES_TYPE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_WANBETALER_PROCES_TYPE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_WANBET_AANAFMELD_REDEN_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_WANBET_AANAFMELD_REDEN_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_WANBET_AANAFMELD_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_WANBET_AANAFMELD_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_WANBET_AANAFMELD_TYPE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_WANBET_AANAFMELD_TYPE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_WERKAANBOD_TYPE_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_WERKAANBOD_TYPE_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TR_WERKOPDRACHT_STATUS_OMS:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TR_WERKOPDRACHT_STATUS_OMS
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_TV_SUBLABEL_NIET_AANWEZIG:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_TV_SUBLABEL_NIET_AANWEZIG
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_UPPER:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_UPPER
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_VORIGE_SITUATIE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_VORIGE_SITUATIE
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_YYYYMMD:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_YYYYMMD
-      outputs: []
-      tags: []
-    udfs/CZ_SAS_YYYYMMDD2DATE:
-      author: alchemist@t1a.com
-      createdAt: '2022-12-15 18:04:50'
-      description: ''
-      inputs: []
-      modifiedAt: '2022-12-15 18:04:50'
-      name: CZ_SAS_YYYYMMDD2DATE
-      outputs: []
-      tags: []
-gemContainer:
-  dependencies: null
-  gemLibsVersion: 1.3.4.0
-  gems:
-    gems/BepaalPeriodeMetPrioriteit:
-      author: null
-      category: Transform
-      createdAt: '2024-11-27 14:58:50'
-      dependencies: null
-      description: null
-      files:
-      - sasmigrationteam_czprophecydev/gems/BepaalPeriodeMetPrioriteit.py
-      gemType: ComponentGem
-      mode: batch
-      name: BepaalPeriodeMetPrioriteit
-      subCategory: ''
-    gems/SnapshotFromHistory:
-      author: null
-      category: Transform
-      createdAt: '2024-11-27 14:59:07'
-      dependencies: null
-      description: null
-      files:
-      - sasmigrationteam_czprophecydev/gems/SnapshotFromHistory.py
-      gemType: ComponentGem
-      mode: batch
-      name: SnapshotFromHistory
-      subCategory: ''
-    gems/Verwijderworktabellenalleeninputs:
-      author: null
-      category: Transform
-      createdAt: '2024-11-27 14:59:03'
-      dependencies: null
-      description: null
-      files:
-      - sasmigrationteam_czprophecydev/gems/Verwijderworktabellenalleeninputs.py
-      gemType: ComponentGem
-      mode: batch
-      name: Verwijderworktabellenalleeninputs
-      subCategory: ''
-  languageVersion: '3.10'
-jobs: {}
-language: python
-name: cz-prophecy-dev
-pipelineConfigurations: {}
-pipelines:
-  pipelines/HLP_AFG_PREMIE:
-    author: alchemist@t1a.com
-    createdAt: '2024-11-27 14:59:52'
-    datasets:
-      inputs:
-      - datasets/hlp_afg_premie_il_hlp_hlp_premie_parameters
-      outputs: []
-    dependencies: {}
-    description: ''
-    language: python
-    mode: batch
-    name: HLP_AFG_PREMIE
-  pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes:
-    artefactID: ''
-    author: adm-601361@cz.nl
-    createdAt: '2024-03-18 10:46:12'
-    datasets:
-      inputs:
-      - datasets/stg_edwh_stg_pst_ps_jrnl_header_hst
-      - datasets/stg_edwh_stg_pst_ps_jrnl_ln_hst
-      outputs:
-      - datasets/bm_20230428_2_or_hlp_or_hlp_peoplesoft_zorgkosten
-    dependencies: {}
-    description: Example Sticky Notes conversion
-    language: python
-    mode: batch
-    name: or_hlp_peoplesoft_zorgkosten_sticky_notes
-    subgraphs: []
 projectDependencies:
   '4':
-    author: null
-    createdAt: '2024-07-24 11:55:38'
-    isDefault: true
-    projectName: ProphecySparkBasicsPython
     projectUID: 4
+    projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/XIUGo8J6_team_2/XIUGo8J6_project_4.git&subPath=
     version: 0.2.25
-  '5':
-    author: null
-    createdAt: '2024-07-24 11:55:40'
     isDefault: true
-    projectName: ProphecyWarehousePython
+    author: null
+    createdAt: '2024-07-24 11:55:38'
+  '5':
     projectUID: 5
+    projectName: ProphecyWarehousePython
     repositoryPath: gitUri=http://gitserver:3000/XIUGo8J6_team_2/XIUGo8J6_project_5.git&subPath=
     version: 0.0.8
-sqlMacros: {}
-sqlModels: {}
-sqlPipeline: null
-sqlSeeds: {}
-sqlSnapshots: {}
-sqlSources: {}
-sqlTests: {}
-sqlUnreferencedSources: {}
-subgraphs: {}
-templates: {}
-version: 0.0.1
+    isDefault: true
+    author: null
+    createdAt: '2024-07-24 11:55:40'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
