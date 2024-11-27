@@ -1,0 +1,53 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: AFWIJKING_PREMIE_REDEN_ID
+    type: double
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: AFWIJKING_PREMIE_REDEN_CODE
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: AFWIJKING_PREMIE_REDEN_OMS
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: EDWH_PEIL_DTM
+    type: date
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: EDWH_PROCES_DTD
+    type: timestamp
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: EDWH_VERWIJDER_DTD
+    type: timestamp
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: EDWH_RESOURCE_ID
+    type: double
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

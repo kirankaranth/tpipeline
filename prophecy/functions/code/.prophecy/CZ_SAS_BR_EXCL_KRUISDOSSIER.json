@@ -1,1 +1,1 @@
-{"initCode": "", "code": "\"\"\" UDF cz_sas_br_excl_kruisdossier\"\"\"\n\nfrom pyspark.sql.types import BooleanType\nfrom pyspark.sql.functions import udf\n\n\n@udf(returnType=BooleanType())\ndef cz_sas_br_excl_kruisdossier(status_dossier):\n    return status_dossier != 7\n"}
+{"initCode":"","code":"\"\"\" UDF cz_sas_br_excl_kruisdossier\"\"\"\n\nfrom pyspark.sql.types import BooleanType\nfrom pyspark.sql.functions import udf\n\n\n@udf(returnType=BooleanType())\ndef cz_sas_br_excl_kruisdossier(status_dossier):\n    return status_dossier != 7\n"}

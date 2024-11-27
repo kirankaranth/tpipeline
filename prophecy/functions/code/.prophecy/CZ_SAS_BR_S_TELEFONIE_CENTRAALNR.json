@@ -1,1 +1,1 @@
-{"initCode": "", "code": "\"\"\" UDF \"\"\"\n# Original SAS code:\n# 9000\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import DoubleType\n\n\n@udf(returnType=DoubleType())\ndef cz_sas_br_s_telefonie_centraalnr():\n    return 9000.0\n"}
+{"initCode":"","code":"\"\"\" UDF \"\"\"\n# Original SAS code:\n# 9000\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import DoubleType\n\n\n@udf(returnType=DoubleType())\ndef cz_sas_br_s_telefonie_centraalnr():\n    return 9000.0\n"}

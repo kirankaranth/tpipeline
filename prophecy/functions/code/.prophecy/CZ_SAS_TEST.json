@@ -1,1 +1,1 @@
-{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import IntegerType\n\n\n@udf(returnType=IntegerType())\ndef cz_sas_test(value: int):\n    return value * value\n"}
+{"initCode":"","code":"\"\"\" UDF \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import IntegerType\n\n\n@udf(returnType=IntegerType())\ndef cz_sas_test(value: int):\n    return value * value\n"}

@@ -21,8 +21,25 @@ pipelines:
     createdAt: '2024-11-27 14:59:52'
     datasets:
       inputs:
+      - datasets/hlp_afg_premie_il_edwh_afwijking_premie_reden
+      - datasets/hlp_afg_premie_il_edwh_datum
+      - datasets/hlp_afg_premie_il_edwh_label
+      - datasets/hlp_afg_premie_il_edwh_lnk_afwijking_premie_bouwst
+      - datasets/hlp_afg_premie_il_edwh_lnk_brn_afwijking_premie
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_assurantie
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_betaaltermijn
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_buitenland
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_collectiviteit
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_eigen_product
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_eigen_risico
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_leeftijd
+      - datasets/hlp_afg_premie_il_edwh_lnk_premie_rgl_pakketkorting
       - datasets/hlp_afg_premie_il_hlp_hlp_premie_parameters
-      outputs: []
+      - datasets/hlp_afg_premie_il_hlp_tmp_hlp_afg_premie_blok__blokid
+      outputs:
+      - datasets/hlp_afg_premie_il_hlp_hlp_afg_premie
+      - datasets/hlp_afg_premie_il_hlp_tmp_hlp_afg_premie_blok__blokid
     subgraphs: []
     dependencies: {}
   pipelines/or_hlp_peoplesoft_zorgkosten_sticky_notes:

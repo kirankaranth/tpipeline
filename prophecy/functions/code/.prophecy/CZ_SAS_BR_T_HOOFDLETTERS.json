@@ -1,1 +1,1 @@
-{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import StringType\n\n\n@udf(returnType=StringType())\ndef cz_sas_br_t_hoofdletters(an_kolom):\n    an_kolom = an_kolom.upper() if an_kolom else None\n    return an_kolom\n"}
+{"initCode":"","code":"\"\"\" UDF \"\"\"\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import StringType\n\n\n@udf(returnType=StringType())\ndef cz_sas_br_t_hoofdletters(an_kolom):\n    an_kolom = an_kolom.upper() if an_kolom else None\n    return an_kolom\n"}

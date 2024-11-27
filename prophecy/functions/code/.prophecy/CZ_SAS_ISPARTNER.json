@@ -1,1 +1,1 @@
-{"initCode": "", "code": "\"\"\" UDF \"\"\"\n\n# Original SAS code:\n# abs(gebdat1 -  ) lt 16\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import BooleanType\n\n\n@udf(returnType=BooleanType())\ndef cz_sas_ispartner():\n    return 0\n"}
+{"initCode":"","code":"\"\"\" UDF \"\"\"\n\n# Original SAS code:\n# abs(gebdat1 -  ) lt 16\n# Auto-generated pyspark code:\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import BooleanType\n\n\n@udf(returnType=BooleanType())\ndef cz_sas_ispartner():\n    return 0\n"}
