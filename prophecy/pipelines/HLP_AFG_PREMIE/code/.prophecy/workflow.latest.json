@@ -169,7 +169,7 @@
       "projectName" : "ProphecySparkBasicsPython",
       "externalDependencies" : [ ]
     } ],
-    "isImported" : true,
+    "isImported" : false,
     "interimMode" : "Full",
     "interimModeEnabled" : true,
     "visualCodeInterimMode" : "Disabled",
@@ -206,8 +206,8 @@
       "metadata" : {
         "label" : "source_hlp_premie_parameters",
         "slug" : "source_hlp_premie_parameters",
-        "x" : 0,
-        "y" : 0,
+        "x" : 20,
+        "y" : 120,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
@@ -233,8 +233,8 @@
       "metadata" : {
         "label" : "User_Written",
         "slug" : "User_Written",
-        "x" : 0,
-        "y" : 0,
+        "x" : 220,
+        "y" : 120,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,
@@ -429,8 +429,8 @@
       "metadata" : {
         "label" : "Loop",
         "slug" : "Loop",
-        "x" : 0,
-        "y" : 0,
+        "x" : 420,
+        "y" : 220,
         "phase" : 2,
         "cache" : false,
         "detailedStats" : false,
@@ -1069,8 +1069,8 @@
           "metadata" : {
             "label" : "Verwijder_Work_tabellen_alleen_inputs_2",
             "slug" : "Verwijder_Work_tabellen_alleen_inputs_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4420,
+            "y" : 1080,
             "phase" : 37,
             "cache" : false,
             "detailedStats" : false,
@@ -1102,9 +1102,7 @@
             "isCustomOutputSchema" : true,
             "autoUpdateOnRun" : false
           },
-          "properties" : {
-            "plug" : null
-          },
+          "properties" : { },
           "componentInfo" : {
             "gemId" : "gems/Verwijderworktabellenalleeninputs",
             "projectName" : "cz-prophecy-dev"
@@ -1116,8 +1114,8 @@
           "metadata" : {
             "label" : "Extract_1",
             "slug" : "Extract_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5000,
+            "y" : 1500,
             "phase" : 38,
             "cache" : false,
             "detailedStats" : false,
@@ -1503,8 +1501,8 @@
           "metadata" : {
             "label" : "Verwijder_Work_tabellen_alleen_inputs_3",
             "slug" : "Verwijder_Work_tabellen_alleen_inputs_3",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5000,
+            "y" : 1700,
             "phase" : 43,
             "cache" : false,
             "detailedStats" : false,
@@ -1530,9 +1528,7 @@
             "isCustomOutputSchema" : true,
             "autoUpdateOnRun" : false
           },
-          "properties" : {
-            "plug" : null
-          },
+          "properties" : { },
           "componentInfo" : {
             "gemId" : "gems/Verwijderworktabellenalleeninputs",
             "projectName" : "cz-prophecy-dev"
@@ -1544,8 +1540,8 @@
           "metadata" : {
             "label" : "Extract_aggregate",
             "slug" : "Extract_aggregate",
-            "x" : 0,
-            "y" : 0,
+            "x" : 420,
+            "y" : 420,
             "phase" : 5,
             "cache" : false,
             "detailedStats" : false,
@@ -1611,8 +1607,8 @@
           "metadata" : {
             "label" : "source_lnk_premie_rgl_collectiviteit",
             "slug" : "source_lnk_premie_rgl_collectiviteit",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1860,
+            "y" : 1400,
             "phase" : 25,
             "cache" : false,
             "detailedStats" : false,
@@ -1638,8 +1634,8 @@
           "metadata" : {
             "label" : "Join_dedup",
             "slug" : "Join_dedup",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2060,
+            "y" : 1600,
             "phase" : 18,
             "cache" : false,
             "detailedStats" : false,
@@ -1676,8 +1672,8 @@
           "metadata" : {
             "label" : "Join_5",
             "slug" : "Join_5",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5420,
+            "y" : 2080,
             "phase" : 42,
             "cache" : false,
             "detailedStats" : false,
@@ -2091,8 +2087,8 @@
           "metadata" : {
             "label" : "Extract_filter_1",
             "slug" : "Extract_filter_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 420,
+            "y" : 20,
             "phase" : 8,
             "cache" : false,
             "detailedStats" : false,
@@ -2261,8 +2257,8 @@
           "metadata" : {
             "label" : "Join_1",
             "slug" : "Join_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2060,
+            "y" : 220,
             "phase" : 12,
             "cache" : false,
             "detailedStats" : false,
@@ -2570,8 +2566,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_12",
             "slug" : "Snapshot_uit_historie_12",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5820,
+            "y" : 2480,
             "phase" : 47,
             "cache" : false,
             "detailedStats" : false,
@@ -2838,8 +2834,8 @@
             "columns_to_keep" : "LNK_PREMIE_RGL_BETAAL_ID,LABEL_ID,COLLECTIVITEIT_OVEREENKOMST_ID,PRODUCTSET_SOORT_ID,BOUWSTEEN_ID,INGANG_DTM,EIND_DTM,BETAAL_TERMIJN_ID,BETAALTERMIJN_PCT,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_VERWIJDER_DTD,EDWH_PROCES_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -2856,8 +2852,8 @@
           "metadata" : {
             "label" : "source_label",
             "slug" : "source_label",
-            "x" : 0,
-            "y" : 0,
+            "x" : 420,
+            "y" : 620,
             "phase" : 7,
             "cache" : false,
             "detailedStats" : false,
@@ -2883,8 +2879,8 @@
           "metadata" : {
             "label" : "source_afwijking_premie_reden",
             "slug" : "source_afwijking_premie_reden",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1340,
+            "y" : 1720,
             "phase" : 17,
             "cache" : false,
             "detailedStats" : false,
@@ -2910,8 +2906,8 @@
           "metadata" : {
             "label" : "source_lnk_premie",
             "slug" : "source_lnk_premie",
-            "x" : 0,
-            "y" : 0,
+            "x" : 220,
+            "y" : 220,
             "phase" : 4,
             "cache" : false,
             "detailedStats" : false,
@@ -2937,8 +2933,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_3",
             "slug" : "Snapshot_uit_historie_3",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1540,
+            "y" : 980,
             "phase" : 15,
             "cache" : false,
             "detailedStats" : false,
@@ -3205,8 +3201,8 @@
             "columns_to_keep" : "LNK_BRN_AFWIJKING_PREMIE_ID,BRN_PERSOON_ID,OVEREENKOMST_ID,AFWIJKING_PREMIE_REDEN_ID,PREMIE_AFWIJKEND_BDG,PREMIE_AFWIJKEND_PCT,INGANG_DTM,EIND_DTM,HERKOMST_MUTATIE_DTD,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_PROCES_DTD,EDWH_VERWIJDER_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -3223,8 +3219,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_9",
             "slug" : "Snapshot_uit_historie_9",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4680,
+            "y" : 1960,
             "phase" : 39,
             "cache" : false,
             "detailedStats" : false,
@@ -3455,8 +3451,8 @@
             "columns_to_keep" : "LNK_PREMIE_RGL_ASSURANTIE_ID,LABEL_ID,BOUWSTEEN_ID,LAND_ID,INGANG_DTM,EIND_DTM,ASSURANTIE_PCT,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_VERWIJDER_DTD,EDWH_PROCES_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -3473,8 +3469,8 @@
           "metadata" : {
             "label" : "Extract_filter_3",
             "slug" : "Extract_filter_3",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3240,
+            "y" : 1780,
             "phase" : 29,
             "cache" : false,
             "detailedStats" : false,
@@ -3512,8 +3508,8 @@
           "metadata" : {
             "label" : "Join_AFW_1",
             "slug" : "Join_AFW_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2580,
+            "y" : 520,
             "phase" : 20,
             "cache" : false,
             "detailedStats" : false,
@@ -3822,8 +3818,8 @@
           "metadata" : {
             "label" : "Append_union_1",
             "slug" : "Append_union_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3900,
+            "y" : 1580,
             "phase" : 33,
             "cache" : false,
             "detailedStats" : false,
@@ -3864,8 +3860,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_6",
             "slug" : "Snapshot_uit_historie_6",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2060,
+            "y" : 1400,
             "phase" : 25,
             "cache" : false,
             "detailedStats" : false,
@@ -4114,8 +4110,8 @@
             "columns_to_keep" : "LNK_PREMIE_RGL_COLL_ID,COLLECTIVITEIT_OVEREENKOMST_ID,PRODUCTSET_SOORT_ID,BOUWSTEEN_ID,INGANG_DTM,EIND_DTM,COLLECTIVITEIT_BDG,COLLECTIVITEIT_PCT,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_VERWIJDER_DTD,EDWH_PROCES_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -4132,8 +4128,8 @@
           "metadata" : {
             "label" : "Extract_filter",
             "slug" : "Extract_filter",
-            "x" : 0,
-            "y" : 0,
+            "x" : 220,
+            "y" : 420,
             "phase" : 5,
             "cache" : false,
             "detailedStats" : false,
@@ -4365,8 +4361,8 @@
           "metadata" : {
             "label" : "Join_3",
             "slug" : "Join_3",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4680,
+            "y" : 1760,
             "phase" : 36,
             "cache" : false,
             "detailedStats" : false,
@@ -4740,8 +4736,8 @@
           "metadata" : {
             "label" : "source_hlp_premie_parameters_1",
             "slug" : "source_hlp_premie_parameters_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 220,
+            "y" : 20,
             "phase" : 8,
             "cache" : false,
             "detailedStats" : false,
@@ -4767,8 +4763,8 @@
           "metadata" : {
             "label" : "source_lnk_premie_rgl_assurantie",
             "slug" : "source_lnk_premie_rgl_assurantie",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4460,
+            "y" : 1960,
             "phase" : 39,
             "cache" : false,
             "detailedStats" : false,
@@ -4794,8 +4790,8 @@
           "metadata" : {
             "label" : "Verwijder_Work_tabellen_alleen_inputs_1",
             "slug" : "Verwijder_Work_tabellen_alleen_inputs_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2320,
+            "y" : 1000,
             "phase" : 27,
             "cache" : false,
             "detailedStats" : false,
@@ -4821,9 +4817,7 @@
             "isCustomOutputSchema" : true,
             "autoUpdateOnRun" : false
           },
-          "properties" : {
-            "plug" : null
-          },
+          "properties" : { },
           "componentInfo" : {
             "gemId" : "gems/Verwijderworktabellenalleeninputs",
             "projectName" : "cz-prophecy-dev"
@@ -4835,8 +4829,8 @@
           "metadata" : {
             "label" : "User_Written_1",
             "slug" : "User_Written_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 20,
+            "y" : 620,
             "phase" : 3,
             "cache" : false,
             "detailedStats" : false,
@@ -4870,8 +4864,8 @@
           "metadata" : {
             "label" : "Splitter_split_1",
             "slug" : "Splitter_split_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2320,
+            "y" : 1240,
             "phase" : 19,
             "cache" : false,
             "detailedStats" : false,
@@ -4996,8 +4990,8 @@
           "metadata" : {
             "label" : "BepaalPeriodeMetPrioriteit",
             "slug" : "BepaalPeriodeMetPrioriteit",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3240,
+            "y" : 820,
             "phase" : 24,
             "cache" : false,
             "detailedStats" : false,
@@ -5291,8 +5285,8 @@
           "metadata" : {
             "label" : "Join_6",
             "slug" : "Join_6",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5820,
+            "y" : 2280,
             "phase" : 46,
             "cache" : false,
             "detailedStats" : false,
@@ -5698,8 +5692,8 @@
           "metadata" : {
             "label" : "source_lnk_premie_rgl_leeftijd",
             "slug" : "source_lnk_premie_rgl_leeftijd",
-            "x" : 0,
-            "y" : 0,
+            "x" : 420,
+            "y" : 820,
             "phase" : 11,
             "cache" : false,
             "detailedStats" : false,
@@ -5725,8 +5719,8 @@
           "metadata" : {
             "label" : "Join_orderby",
             "slug" : "Join_orderby",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1140,
+            "y" : 100,
             "phase" : 9,
             "cache" : false,
             "detailedStats" : false,
@@ -5802,8 +5796,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_5",
             "slug" : "Snapshot_uit_historie_5",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1540,
+            "y" : 1720,
             "phase" : 17,
             "cache" : false,
             "detailedStats" : false,
@@ -5962,8 +5956,8 @@
             "columns_to_keep" : "AFWIJKING_PREMIE_REDEN_ID,AFWIJKING_PREMIE_REDEN_CODE,AFWIJKING_PREMIE_REDEN_OMS,EDWH_PEIL_DTM,EDWH_PROCES_DTD,EDWH_VERWIJDER_DTD,EDWH_RESOURCE_ID",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -5980,8 +5974,8 @@
           "metadata" : {
             "label" : "Join_4",
             "slug" : "Join_4",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5220,
+            "y" : 1880,
             "phase" : 40,
             "cache" : false,
             "detailedStats" : false,
@@ -6339,8 +6333,8 @@
           "metadata" : {
             "label" : "Extract",
             "slug" : "Extract",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2320,
+            "y" : 220,
             "phase" : 14,
             "cache" : false,
             "detailedStats" : false,
@@ -6627,8 +6621,8 @@
           "metadata" : {
             "label" : "source_lnk_premie_rgl_buitenland",
             "slug" : "source_lnk_premie_rgl_buitenland",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4460,
+            "y" : 2160,
             "phase" : 41,
             "cache" : false,
             "detailedStats" : false,
@@ -6654,8 +6648,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_4",
             "slug" : "Snapshot_uit_historie_4",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1540,
+            "y" : 1220,
             "phase" : 16,
             "cache" : false,
             "detailedStats" : false,
@@ -6814,8 +6808,8 @@
             "columns_to_keep" : "LNK_AFWIJKING_PREMIE_BOUWST_ID,LNK_BRN_AFWIJKING_PREMIE_ID,BOUWSTEEN_ID,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_PROCES_DTD,EDWH_VERWIJDER_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -6832,8 +6826,8 @@
           "metadata" : {
             "label" : "Append_subset_cols_1",
             "slug" : "Append_subset_cols_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4100,
+            "y" : 1580,
             "phase" : 33,
             "cache" : false,
             "detailedStats" : false,
@@ -7092,8 +7086,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie",
             "slug" : "Snapshot_uit_historie",
-            "x" : 0,
-            "y" : 0,
+            "x" : 420,
+            "y" : 220,
             "phase" : 4,
             "cache" : false,
             "detailedStats" : false,
@@ -7432,8 +7426,8 @@
             "columns_to_keep" : "LNK_PREMIE_ID,OVEREENKOMST_ID,PRODUCTSET_SOORT_ID,BOUWSTEEN_ID,INGANG_DTM,EIND_DTM,REFERENTIEPREMIE_BDG,FABRIEKSPRIJS_BDG,COMMERCIELE_TOESLAG_BDG,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_VERWIJDER_DTD,EDWH_PROCES_DTD,EIGEN_RISICO_REGELING_ID,TABELPREMIE_IDC,LEEFTIJD_VAN,LEEFTIJD_TOT_MET",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -7450,8 +7444,8 @@
           "metadata" : {
             "label" : "source_lnk_brn_afwijking_premie",
             "slug" : "source_lnk_brn_afwijking_premie",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1340,
+            "y" : 980,
             "phase" : 15,
             "cache" : false,
             "detailedStats" : false,
@@ -7477,8 +7471,8 @@
           "metadata" : {
             "label" : "BepaalPeriodeMetPrioriteit_1",
             "slug" : "BepaalPeriodeMetPrioriteit_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4460,
+            "y" : 1580,
             "phase" : 34,
             "cache" : false,
             "detailedStats" : false,
@@ -7808,8 +7802,8 @@
           "metadata" : {
             "label" : "Extract_reformat_2",
             "slug" : "Extract_reformat_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3440,
+            "y" : 1780,
             "phase" : 29,
             "cache" : false,
             "detailedStats" : false,
@@ -7921,8 +7915,8 @@
           "metadata" : {
             "label" : "source_lnk_afwijking_premie_bouwst",
             "slug" : "source_lnk_afwijking_premie_bouwst",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1340,
+            "y" : 1220,
             "phase" : 16,
             "cache" : false,
             "detailedStats" : false,
@@ -8020,8 +8014,8 @@
           "metadata" : {
             "label" : "Append_union",
             "slug" : "Append_union",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2840,
+            "y" : 820,
             "phase" : 23,
             "cache" : false,
             "detailedStats" : false,
@@ -8062,8 +8056,8 @@
           "metadata" : {
             "label" : "Splitter_split_2",
             "slug" : "Splitter_split_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2320,
+            "y" : 1440,
             "phase" : 19,
             "cache" : false,
             "detailedStats" : false,
@@ -8188,8 +8182,8 @@
           "metadata" : {
             "label" : "Join_join",
             "slug" : "Join_join",
-            "x" : 0,
-            "y" : 0,
+            "x" : 940,
+            "y" : 100,
             "phase" : 9,
             "cache" : false,
             "detailedStats" : false,
@@ -8581,8 +8575,8 @@
           "metadata" : {
             "label" : "Join_2",
             "slug" : "Join_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3440,
+            "y" : 1560,
             "phase" : 26,
             "cache" : false,
             "detailedStats" : false,
@@ -8884,8 +8878,8 @@
           "metadata" : {
             "label" : "source_lnk_premie_rgl_eigen_risico",
             "slug" : "source_lnk_premie_rgl_eigen_risico",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3900,
+            "y" : 1780,
             "phase" : 35,
             "cache" : false,
             "detailedStats" : false,
@@ -8911,8 +8905,8 @@
           "metadata" : {
             "label" : "Join_PKT_3",
             "slug" : "Join_PKT_3",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3640,
+            "y" : 1880,
             "phase" : 32,
             "cache" : false,
             "detailedStats" : false,
@@ -9233,8 +9227,8 @@
           "metadata" : {
             "label" : "Join_PKT_2",
             "slug" : "Join_PKT_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3640,
+            "y" : 1680,
             "phase" : 31,
             "cache" : false,
             "detailedStats" : false,
@@ -9555,8 +9549,8 @@
           "metadata" : {
             "label" : "Extract_filter_2",
             "slug" : "Extract_filter_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1340,
+            "y" : 100,
             "phase" : 10,
             "cache" : false,
             "detailedStats" : false,
@@ -9594,8 +9588,8 @@
           "metadata" : {
             "label" : "Join_join_1",
             "slug" : "Join_join_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1860,
+            "y" : 1600,
             "phase" : 18,
             "cache" : false,
             "detailedStats" : false,
@@ -9747,8 +9741,8 @@
           "metadata" : {
             "label" : "Verwijder_Work_tabellen_alleen_inputs",
             "slug" : "Verwijder_Work_tabellen_alleen_inputs",
-            "x" : 0,
-            "y" : 0,
+            "x" : 940,
+            "y" : 400,
             "phase" : 13,
             "cache" : false,
             "detailedStats" : false,
@@ -9768,9 +9762,7 @@
             "isCustomOutputSchema" : true,
             "autoUpdateOnRun" : false
           },
-          "properties" : {
-            "plug" : null
-          },
+          "properties" : { },
           "componentInfo" : {
             "gemId" : "gems/Verwijderworktabellenalleeninputs",
             "projectName" : "cz-prophecy-dev"
@@ -9782,8 +9774,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_2",
             "slug" : "Snapshot_uit_historie_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 620,
+            "y" : 820,
             "phase" : 11,
             "cache" : false,
             "detailedStats" : false,
@@ -10104,8 +10096,8 @@
             "columns_to_keep" : "LNK_PREMIE_RGL_LEEFTIJD_ID,COLLECTIVITEIT_OVEREENKOMST_ID,PRODUCTSET_SOORT_ID,BOUWSTEEN_ID,INGANG_DTM,EIND_DTM,LEEFTIJD_VAN,LEEFTIJD_TOT_MET,LEEFTIJD_BDG,LEEFTIJD_PCT,FABRIEKSPRIJS_BDG,COMM_TOESLAG_BDG,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_PROCES_DTD,EDWH_VERWIJDER_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -10122,8 +10114,8 @@
           "metadata" : {
             "label" : "target_tmp_hlp_afg_premie_blok__blokid",
             "slug" : "target_tmp_hlp_afg_premie_blok__blokid",
-            "x" : 0,
-            "y" : 0,
+            "x" : 6220,
+            "y" : 2480,
             "phase" : 49,
             "cache" : false,
             "detailedStats" : false,
@@ -10149,8 +10141,8 @@
           "metadata" : {
             "label" : "source_lnk_premie_rgl_pakketkorting",
             "slug" : "source_lnk_premie_rgl_pakketkorting",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2840,
+            "y" : 1120,
             "phase" : 28,
             "cache" : false,
             "detailedStats" : false,
@@ -10176,8 +10168,8 @@
           "metadata" : {
             "label" : "Join_7",
             "slug" : "Join_7",
-            "x" : 0,
-            "y" : 0,
+            "x" : 6020,
+            "y" : 2480,
             "phase" : 48,
             "cache" : false,
             "detailedStats" : false,
@@ -10591,8 +10583,8 @@
           "metadata" : {
             "label" : "source_datum",
             "slug" : "source_datum",
-            "x" : 0,
-            "y" : 0,
+            "x" : 20,
+            "y" : 420,
             "phase" : 5,
             "cache" : false,
             "detailedStats" : false,
@@ -10618,8 +10610,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_10",
             "slug" : "Snapshot_uit_historie_10",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4680,
+            "y" : 2160,
             "phase" : 41,
             "cache" : false,
             "detailedStats" : false,
@@ -10958,8 +10950,8 @@
             "columns_to_keep" : "LNK_PREMIE_RGL_BUITENLAND_ID,COLLECTIVITEIT_OVEREENKOMST_ID,PRODUCTSET_SOORT_ID,BOUWSTEEN_ID,INGANG_DTM,EIND_DTM,LAND_ID,LEEFTIJD_VAN,LEEFTIJD_TOT_MET,BUITENLAND_BDG,FABRIEKSDEEL,COMMERCIEEL_DEEL,BUITENLAND_PCT,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_VERWIJDER_DTD,EDWH_PROCES_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -10976,8 +10968,8 @@
           "metadata" : {
             "label" : "Append_subset_cols",
             "slug" : "Append_subset_cols",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3040,
+            "y" : 820,
             "phase" : 23,
             "cache" : false,
             "detailedStats" : false,
@@ -11215,8 +11207,8 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_11",
             "slug" : "Snapshot_uit_historie_11",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5620,
+            "y" : 2280,
             "phase" : 45,
             "cache" : false,
             "detailedStats" : false,
@@ -11465,8 +11457,8 @@
             "columns_to_keep" : "LNK_PREMIE_RGL_EIGEN_PRD_ID,COLLECTIVITEIT_OVEREENKOMST_ID,PRODUCTSET_SOORT_ID,BOUWSTEEN_ID,INGANG_DTM,EIND_DTM,EIGEN_PRODUCT_PCT,EIGEN_PRODUCT_BDG,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_VERWIJDER_DTD,EDWH_PROCES_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
             "keep_deleted" : false,
@@ -11483,8 +11475,8 @@
           "metadata" : {
             "label" : "Extract_dedup",
             "slug" : "Extract_dedup",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1860,
+            "y" : 100,
             "phase" : 10,
             "cache" : false,
             "detailedStats" : false,
@@ -11521,12 +11513,12 @@
           "metadata" : {
             "label" : "Join_AFW_3",
             "slug" : "Join_AFW_3",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2580,
+            "y" : 1020,
             "phase" : 22,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "Periode na afwijkende premie\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005AQ6\nOriginal transform name: Join AFW 3\nOriginal output dataset names:\n- W2KHJFPD"
           },
           "ports" : {
@@ -11834,12 +11826,12 @@
           "metadata" : {
             "label" : "Join_PKT_1",
             "slug" : "Join_PKT_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3640,
+            "y" : 1480,
             "phase" : 30,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "pakket korting\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005AQE\nOriginal transform name: Join PKT 1\nOriginal output dataset names:\n- met_pakketkorting"
           },
           "ports" : {
@@ -12153,12 +12145,12 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_7",
             "slug" : "Snapshot_uit_historie_7",
-            "x" : 0,
-            "y" : 0,
+            "x" : 3040,
+            "y" : 1120,
             "phase" : 28,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "Verwijderde regels behouden: No\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005AQC\nOriginal transform name: Snapshot uit historie\nOriginal output dataset names:\n- snap_rgl_pakketkorting"
           },
           "ports" : {
@@ -12385,10 +12377,11 @@
             "columns_to_keep" : "LNK_PREMIE_RGL_PAKKETKORTING_ID,LABEL_ID,BRN_PERSOON_ID,BOUWSTEEN_ID,INGANG_DTM,EIND_DTM,PAKKET_KORTING_PCT,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_PROCES_DTD,EDWH_VERWIJDER_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
+            "columnsSelector" : [ ],
             "keep_deleted" : false,
             "history_key" : "LNK_PREMIE_RGL_PAKKETKORTING_ID"
           },
@@ -12403,12 +12396,12 @@
           "metadata" : {
             "label" : "Join_AFW_2",
             "slug" : "Join_AFW_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 2580,
+            "y" : 720,
             "phase" : 21,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "Periode voor afwijkende premie\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005AQ5\nOriginal transform name: Join AFW 2\nOriginal output dataset names:\n- W2KHIH9F"
           },
           "ports" : {
@@ -12716,12 +12709,12 @@
           "metadata" : {
             "label" : "Extract_reformat",
             "slug" : "Extract_reformat",
-            "x" : 0,
-            "y" : 0,
+            "x" : 620,
+            "y" : 20,
             "phase" : 8,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "Lezen per blok\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005APS\nOriginal transform name: Extract\nOriginal output dataset names:\n- W6P80Z8"
           },
           "ports" : {
@@ -12869,7 +12862,7 @@
             "autoUpdateOnRun" : false
           },
           "properties" : {
-            "columnsSelector" : [ ],
+            "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
             "expressions" : [ {
               "target" : "BETAAL_TERMIJN_ID",
               "expression" : {
@@ -12968,7 +12961,10 @@
                 "expression" : "ZORGVERZ_OVEREENKOMST_ID"
               },
               "description" : ""
-            } ]
+            } ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ "p8_4##Zorgverzekering_IDC", "p8_4##BETAAL_TERMIJN_ID", "p8_4##PRODUCTSET_SOORT_ID", "p8_4##EIGEN_RISICO_REGELING_ID", "p8_4##LABEL_ID", "p8_4##INGANG_DTM", "p8_4##LAND_ID", "p8_4##ZORGVERZ_OVEREENKOMST_ID", "p8_4##BOUWSTEEN_ID", "p8_4##EIND_DTM", "p8_4##BRN_PERSOON_ID", "p8_4##GEBOORTE_DTM", "p8_4##COLLECTIVITEIT_OVEREENKOMST_ID", "p8_4##GESLACHT_ID" ]
           },
           "componentInfo" : {
             "gemId" : "gitUri=http://gitserver:3000/XIUGo8J6_team_2/XIUGo8J6_project_4.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=4&path=gems/Reformat",
@@ -12981,12 +12977,12 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_1",
             "slug" : "Snapshot_uit_historie_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 620,
+            "y" : 620,
             "phase" : 7,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "Verwijderde regels behouden: No\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005APR\nOriginal transform name: Snapshot uit historie\nOriginal output dataset names:\n- W5ADZEM"
           },
           "ports" : {
@@ -13177,10 +13173,11 @@
             "columns_to_keep" : "LABEL_ID,LABEL_KEY,LABEL_OMSCHRIJVING,LABEL_OMSCHRIJVING_KORT,EDWH_RESOURCE_ID,LABEL_ZORGVERZEKERING_IDC,EDWH_PEIL_DTM,EDWH_PROCES_DTD,EDWH_VERWIJDER_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
+            "columnsSelector" : [ ],
             "keep_deleted" : false,
             "history_key" : "LABEL_ID"
           },
@@ -13195,12 +13192,12 @@
           "metadata" : {
             "label" : "Extract_2",
             "slug" : "Extract_2",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5620,
+            "y" : 2080,
             "phase" : 44,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "buitenland\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005AQS\nOriginal transform name: Extract\nOriginal output dataset names:\n- met_buitenland"
           },
           "ports" : {
@@ -13627,12 +13624,12 @@
           "metadata" : {
             "label" : "Extract_reformat_1",
             "slug" : "Extract_reformat_1",
-            "x" : 0,
-            "y" : 0,
+            "x" : 1540,
+            "y" : 100,
             "phase" : 10,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "periode\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005APU\nOriginal transform name: Extract\nOriginal output dataset names:\n- periode_pers"
           },
           "ports" : {
@@ -13649,7 +13646,7 @@
             "autoUpdateOnRun" : false
           },
           "properties" : {
-            "columnsSelector" : [ ],
+            "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
             "expressions" : [ {
               "target" : "BETAAL_TERMIJN_ID",
               "expression" : {
@@ -13811,7 +13808,10 @@
                 "expression" : "ZORGVERZ_OVEREENKOMST_ID"
               },
               "description" : ""
-            } ]
+            } ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ ]
           },
           "componentInfo" : {
             "gemId" : "gitUri=http://gitserver:3000/XIUGo8J6_team_2/XIUGo8J6_project_4.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=4&path=gems/Reformat",
@@ -13824,12 +13824,12 @@
           "metadata" : {
             "label" : "Join",
             "slug" : "Join",
-            "x" : 0,
-            "y" : 0,
+            "x" : 620,
+            "y" : 300,
             "phase" : 6,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "Opsplitsen ingang eind datum per jaar\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005APQ\nOriginal transform name: Join\nOriginal output dataset names:\n- W4XI5Z2"
           },
           "ports" : {
@@ -14026,12 +14026,12 @@
           "metadata" : {
             "label" : "Snapshot_uit_historie_8",
             "slug" : "Snapshot_uit_historie_8",
-            "x" : 0,
-            "y" : 0,
+            "x" : 4100,
+            "y" : 1780,
             "phase" : 35,
             "cache" : false,
             "detailedStats" : false,
-            "isImported" : true,
+            "isImported" : false,
             "comment" : "Verwijderde regels behouden: No\n\n### GEM Origin Info (SAS) ###\nOriginal transform id: A5H5U7VN.BX005AQJ\nOriginal transform name: Snapshot uit historie\nOriginal output dataset names:\n- snap_rgl_eigenrisico"
           },
           "ports" : {
@@ -14366,10 +14366,11 @@
             "columns_to_keep" : "LNK_PREMIE_RGL_EIGEN_RISICO_ID,COLLECTIVITEIT_OVEREENKOMST_ID,PRODUCTSET_SOORT_ID,BOUWSTEEN_ID,EIGEN_RISICO_REGELING_ID,LEEFTIJD_VAN,LEEFTIJD_TOT_MET,INGANG_DTM,EIND_DTM,EIGEN_RISICO_BDG,EIGEN_RISICO_PCT,FABRIEKSPRIJS_BDG,COMM_TOESLAG_BDG,EDWH_RESOURCE_ID,EDWH_PEIL_DTM,EDWH_PROCES_DTD,EDWH_VERWIJDER_DTD",
             "snapshot_date_format" : "yyyy-MM-dd",
             "snapshot_date" : {
-              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))",
-              "format" : "sql"
+              "format" : "sql",
+              "expression" : "CZ_SAS_HUIDIGE_SITUATIE(expr('$SYSPEILDATUM'))"
             },
             "max_value_field" : "",
+            "columnsSelector" : [ ],
             "keep_deleted" : false,
             "history_key" : "LNK_PREMIE_RGL_EIGEN_RISICO_ID"
           },
@@ -14384,8 +14385,8 @@
           "metadata" : {
             "label" : "source_lnk_premie_rgl_betaaltermijn",
             "slug" : "source_lnk_premie_rgl_betaaltermijn",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5620,
+            "y" : 2480,
             "phase" : 47,
             "cache" : false,
             "detailedStats" : false,
@@ -14448,8 +14449,8 @@
           "metadata" : {
             "label" : "source_lnk_premie_rgl_eigen_product",
             "slug" : "source_lnk_premie_rgl_eigen_product",
-            "x" : 0,
-            "y" : 0,
+            "x" : 5420,
+            "y" : 2280,
             "phase" : 45,
             "cache" : false,
             "detailedStats" : false,
@@ -14481,8 +14482,8 @@
       "metadata" : {
         "label" : "Loop_1",
         "slug" : "Loop_1",
-        "x" : 0,
-        "y" : 0,
+        "x" : 420,
+        "y" : 20,
         "phase" : 51,
         "cache" : false,
         "detailedStats" : false,
