@@ -1,1 +1,1 @@
-# cz-prophecy-dev Repository
+# cz-prophecy-dev Repository. 
