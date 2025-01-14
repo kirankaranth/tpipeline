@@ -6,24 +6,11 @@ language: python
 buildSystem: ''
 buildSystemDetails:
   artefactID: cnflictchk
-  parentArtefactID: kiranadminprophecyioteam
+  parentArtefactID: ''
   buildSystem: wheel
   author: null
-  createdAt: '2024-11-29 08:14:34'
-pipelines:
-  pipelines/p1:
-    name: p1
-    description: ''
-    author: kiranadmin@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2024-11-29 08:14:56'
-    datasets:
-      inputs: []
-      outputs: []
-    subgraphs: []
-    dependencies: {}
+  createdAt: '2025-01-14 06:52:43'
+pipelines: {}
 datasets: {}
 templates: {}
 jobs: {}
@@ -34,7 +21,7 @@ gemContainer:
   dependencies: null
 functions:
   author: null
-  createdAt: '2024-11-29 08:12:46'
+  createdAt: '2025-01-14 06:52:43'
   udfs: {}
   udafs: {}
   expressions: {}
@@ -49,19 +36,7 @@ sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
-dependencies:
-- type: plibMaven
-  modifiedAt: '2024-11-29T08:17:46.856181Z'
-  name: plibMaven
-  version: 8.7.0-SNAPSHOT
-  id: '1008213900'
-  createdAt: '2024-11-29T08:17:46.855664Z'
-- type: plibPypi
-  modifiedAt: '2024-11-29T08:17:46.857453Z'
-  name: plibPypi
-  version: 1.9.24
-  id: '822915157'
-  createdAt: '2024-11-29T08:17:46.857404Z'
+dependencies: '[]'
 projectDependencies:
   '5':
     projectUID: 5
@@ -70,15 +45,15 @@ projectDependencies:
     version: 0.0.8
     isDefault: true
     author: null
-    createdAt: '2024-11-29 08:14:34'
+    createdAt: '2025-01-14 06:52:43'
   '120':
     projectUID: 120
     projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/5Hm0Dy3f_team_4/sVe2Q6TF_project_120.git&subPath=
-    version: 0.2.35
+    version: 0.2.39
     isDefault: true
     author: null
-    createdAt: '2024-11-29 08:14:34'
+    createdAt: '2025-01-14 06:52:43'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
