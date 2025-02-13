@@ -2,8 +2,8 @@
   "id" : "m1",
   "metainfo" : {
     "label" : "m1",
-    "autoLayout" : true,
-    "staleState" : "none",
+    "autoLayout" : false,
+    "staleState" : "file",
     "sourceSuggestions" : {
       "sources" : [ ]
     },
@@ -20,6 +20,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "m1",
+        "x" : 20,
+        "y" : 20,
         "phase" : 0,
         "isLabelGrayed" : false
       },
@@ -28,7 +30,6 @@
         "customQuery" : true,
         "incrementalEditorDisabled" : true,
         "query" : "local\n",
-        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
