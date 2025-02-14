@@ -54,7 +54,6 @@ sqlMacros:
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
-sqlOrchestratorPipelines: {}
 sqlPipeline:
   name: sqlPipeline
   description: null
