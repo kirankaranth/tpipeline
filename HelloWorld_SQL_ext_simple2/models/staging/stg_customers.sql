@@ -1,60 +1,27 @@
-{% set payment_methods = ['credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
+WITH source AS (
 
-WITH payments AS (
-
+  {#-
+  Normally we would select from the table here, but we are using seeds to load
+  our data in this project
+  #}
   SELECT * 
   
-  FROM {{ ref('stg_payments')}}
+  FROM {{ ref('raw_orders')}}
 
 ),
 
-order_payments AS (
+renamed AS (
 
   SELECT 
-    order_id,
-    {% for payment_method in payment_methods %}
-      sum(CASE
-        WHEN payment_method = '{{ payment_method }}'
-          THEN amount
-        ELSE 0
-      END) AS {{payment_method}}_amount,
-    {% endfor %}
-    
-    sum(amount) AS total_amount
+    id AS order_id,
+    user_id AS customer_id,
+    order_date,
+    status
   
-  FROM payments
-  
-  GROUP BY order_id
-
-),
-
-orders AS (
-
-  SELECT * 
-  
-  FROM {{ ref('stg_orders')}}
-
-),
-
-final AS (
-
-  SELECT 
-    orders.order_id,
-    orders.customer_id,
-    orders.order_date,
-    orders.status,
-    {% for payment_method in payment_methods %}
-      order_payments.{{payment_method}}_amount,
-    {% endfor %}
-    
-    order_payments.total_amount AS amount
-  
-  FROM orders
-  LEFT JOIN order_payments
-     ON orders.order_id = order_payments.order_id
+  FROM source
 
 )
 
 SELECT *
 
-FROM final
+FROM renamed
