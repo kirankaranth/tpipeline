@@ -1,0 +1,152 @@
+{
+  "name" : "HelloWorld_SQL",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "datasets" : { },
+  "pipelines" : {
+    "p1" : {
+      "id" : "p1",
+      "name" : "p1",
+      "path" : "HelloWorld_SQL/.prophecy/ide/pipelines/p1.json",
+      "config" : {
+        "schema" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      },
+      "preview" : [ {
+        "id" : "Yisdax6stJ3iC-hOH25oV$$UXNJ_YUOun5GR_yH76OmT",
+        "label" : "OrchestrationSource_1",
+        "schema" : {
+          "entityType" : "",
+          "providerType" : "databricks",
+          "fields" : [ {
+            "name" : "dad",
+            "dataType" : {
+              "type" : "String"
+            }
+          } ]
+        }
+      } ],
+      "sources" : [ {
+        "id" : "Yisdax6stJ3iC-hOH25oV$$UXNJ_YUOun5GR_yH76OmT",
+        "label" : "OrchestrationSource_1"
+      } ]
+    }
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "-",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dais_2024",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dais_gen_ai",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "data_engg",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "empty_catalog_2",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "fsidemos",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "gen_ai",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "gen_ai_sparklearner",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "lineage_data",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "maciej",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa-team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rohit_temp",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "snowflake_maciej",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "tanmay",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ {
+    "name" : "customers",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "orders",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_customers",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_orders",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_payments",
+    "type" : "Model",
+    "syncedOnce" : true
+  } ],
+  "frontEndLanguage" : "sql"
+}
