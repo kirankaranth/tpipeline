@@ -152,37 +152,7 @@ sqlModels:
     createdAt: '2024-08-05 08:36:43'
   .prophecy/metadata/sqlmodels/stg_customers:
     name: stg_customers
-    schema:
-      entityType: ''
-      providerType: Databricks
-      fields:
-      - name: order_id
-        dataType:
-          type: Integer
-      - name: customer_id
-        dataType:
-          type: Integer
-      - name: order_date
-        dataType:
-          type: Date
-      - name: status
-        dataType:
-          type: String
-      - name: credit_card_amount
-        dataType:
-          type: Double
-      - name: coupon_amount
-        dataType:
-          type: Double
-      - name: bank_transfer_amount
-        dataType:
-          type: Double
-      - name: gift_card_amount
-        dataType:
-          type: Double
-      - name: amount
-        dataType:
-          type: Double
+    schema: null
     description: null
     author: kiranadmin@prophecy.io
     files:
