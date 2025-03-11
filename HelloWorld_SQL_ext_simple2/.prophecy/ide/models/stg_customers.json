@@ -3,27 +3,171 @@
   "metainfo" : {
     "label" : "stg_customers",
     "autoLayout" : false,
-    "staleState" : "file",
+    "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
+    },
+    "graphConfig" : {
+      "userDefinedConfig" : {
+        "vars" : {
+          "payment_methods" : "['credit_card', 'coupon', 'bank_transfer', 'gift_card']"
+        }
+      }
     },
     "version" : 3
   },
   "processes" : {
-    "stg_customers##RSic3EcF" : {
-      "id" : "stg_customers##RSic3EcF",
+    "final##hl9Zkvic" : {
+      "id" : "final##hl9Zkvic",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "final",
+        "x" : 420,
+        "y" : 120,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "order_payments",
+          "expression" : {
+            "expression" : "orders.order_id = order_payments.order_id"
+          },
+          "joinType" : "LEFT"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "orders.order_id"
+          },
+          "_row_id" : "1518187672"
+        }, {
+          "expression" : {
+            "expression" : "orders.customer_id"
+          },
+          "_row_id" : "1462303746"
+        }, {
+          "expression" : {
+            "expression" : "orders.order_date"
+          },
+          "_row_id" : "954067424"
+        }, {
+          "expression" : {
+            "expression" : "orders.status"
+          },
+          "_row_id" : "2107092124"
+        }, {
+          "rowType" : "for",
+          "children" : [ {
+            "expression" : {
+              "expression" : "order_payments.{{payment_method}}_amount"
+            },
+            "_row_id" : "930282883"
+          } ],
+          "variable" : {
+            "expression" : "payment_method"
+          },
+          "_row_id" : "530887951",
+          "iterable" : {
+            "expression" : "payment_methods"
+          }
+        }, {
+          "expression" : {
+            "expression" : "order_payments.total_amount"
+          },
+          "alias" : "amount",
+          "_row_id" : "1493887117"
+        } ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "headAlias" : "orders"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SeevAGXK",
+          "slug" : "orders"
+        }, {
+          "id" : "csq7aZ62",
+          "slug" : "order_payments"
+        } ],
+        "outputs" : [ {
+          "id" : "buAYhmrF",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 3
+    },
+    "orders##VBYpY6hg" : {
+      "id" : "orders##VBYpY6hg",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "orders",
+        "x" : 220,
+        "y" : 20,
+        "phase" : 0,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "table" : {
+          "name" : "stg_orders",
+          "sourceType" : "Model"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "lkK7LvQK",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 2
+    },
+    "payments##pKhGVwAJ" : {
+      "id" : "payments##pKhGVwAJ",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "payments",
+        "x" : 20,
+        "y" : 220,
+        "phase" : 0,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "table" : {
+          "name" : "stg_payments",
+          "sourceType" : "Model"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "t0vm2AG5",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 0
+    },
+    "final##aZHEDdqH" : {
+      "id" : "final##aZHEDdqH",
       "component" : "TargetModel",
       "metadata" : {
         "label" : "stg_customers",
-        "x" : 20,
-        "y" : 20,
-        "phase" : 0
+        "x" : 620,
+        "y" : 120,
+        "phase" : 0,
+        "isLabelGrayed" : false
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "",
+        "query" : "SELECT *\n\nFROM final\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -32,18 +176,110 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "ULWXcOCc",
-          "slug" : "in0"
+          "id" : "Fqh7WnGK",
+          "slug" : "final"
         } ],
         "outputs" : [ {
-          "id" : "lHAhpFON",
+          "id" : "QfO8IOsb",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
-      }
+      },
+      "index" : 4
+    },
+    "order_payments##FNTDR8gi" : {
+      "id" : "order_payments##FNTDR8gi",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "order_payments",
+        "x" : 220,
+        "y" : 220,
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "aggregate" : [ {
+          "expression" : {
+            "expression" : "order_id"
+          },
+          "_row_id" : "980806364"
+        }, {
+          "rowType" : "for",
+          "children" : [ {
+            "expression" : {
+              "expression" : "sum(CASE\n  WHEN payment_method = '{{ payment_method }}'\n    THEN amount\n  ELSE 0\nEND)"
+            },
+            "alias" : "{{payment_method}}_amount",
+            "_row_id" : "1709234074"
+          } ],
+          "variable" : {
+            "expression" : "payment_method"
+          },
+          "_row_id" : "1785758680",
+          "iterable" : {
+            "expression" : "payment_methods"
+          }
+        }, {
+          "expression" : {
+            "expression" : "sum(amount)"
+          },
+          "alias" : "total_amount",
+          "_row_id" : "1388758896"
+        } ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ {
+          "expression" : {
+            "expression" : "order_id"
+          },
+          "_row_id" : "657527788"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "RLpC7mFv",
+          "slug" : "payments"
+        } ],
+        "outputs" : [ {
+          "id" : "ZSKbp2sP",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 1
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "kMLMs10V",
+    "source" : "payments##pKhGVwAJ",
+    "sourcePort" : "t0vm2AG5",
+    "target" : "order_payments##FNTDR8gi",
+    "targetPort" : "RLpC7mFv"
+  }, {
+    "id" : "qR6Y6l6J",
+    "source" : "orders##VBYpY6hg",
+    "sourcePort" : "lkK7LvQK",
+    "target" : "final##hl9Zkvic",
+    "targetPort" : "SeevAGXK"
+  }, {
+    "id" : "cRP7dA8C",
+    "source" : "order_payments##FNTDR8gi",
+    "sourcePort" : "ZSKbp2sP",
+    "target" : "final##hl9Zkvic",
+    "targetPort" : "csq7aZ62"
+  }, {
+    "id" : "HzRI8KMA",
+    "source" : "final##hl9Zkvic",
+    "sourcePort" : "buAYhmrF",
+    "target" : "final##aZHEDdqH",
+    "targetPort" : "Fqh7WnGK"
+  } ],
   "component" : "Model"
 }
