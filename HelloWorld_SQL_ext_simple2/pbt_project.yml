@@ -26,7 +26,22 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/stg_orders:
     name: stg_orders
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
     description: null
     author: kiranadmin@prophecy.io
     files:
@@ -42,7 +57,37 @@ sqlModels:
     createdAt: '2024-08-05 08:36:43'
   .prophecy/metadata/sqlmodels/orders:
     name: orders
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: customer_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+      - name: credit_card_amount
+        dataType:
+          type: Double
+      - name: coupon_amount
+        dataType:
+          type: Double
+      - name: bank_transfer_amount
+        dataType:
+          type: Double
+      - name: gift_card_amount
+        dataType:
+          type: Double
+      - name: amount
+        dataType:
+          type: Double
     description: This table has basic information about orders, as well as some derived
       facts based on payments
     author: kiranadmin@prophecy.io
@@ -76,7 +121,22 @@ sqlModels:
     createdAt: '2024-08-05 08:36:43'
   .prophecy/metadata/sqlmodels/stg_payments:
     name: stg_payments
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: payment_id
+        dataType:
+          type: Integer
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: payment_method
+        dataType:
+          type: String
+      - name: amount
+        dataType:
+          type: Double
     description: null
     author: kiranadmin@prophecy.io
     files:
