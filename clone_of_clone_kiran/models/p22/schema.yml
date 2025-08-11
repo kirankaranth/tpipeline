@@ -1,0 +1,6 @@
+---
+version: 2
+models:
+- name: "p22__Aggregate_0"
+  tags:
+  - "prophecy_temp"

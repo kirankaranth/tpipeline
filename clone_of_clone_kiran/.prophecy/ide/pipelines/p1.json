@@ -65,6 +65,34 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "Frogyqti2gVpn9arwR-HM$$z3s8mPFZ1ct_hDVFTPRYJ" : {
+      "id" : "Frogyqti2gVpn9arwR-HM$$z3s8mPFZ1ct_hDVFTPRYJ",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_1",
+        "x" : -1340,
+        "y" : -660,
+        "phase" : 0
+      },
+      "properties" : {
+        "maxTriggers" : 10000,
+        "triggerCondition" : "Always",
+        "enableMaxTriggers" : false,
+        "pipelineName" : "p1",
+        "parameters" : { }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2Azp7yRskyaGOTNlKoo0I$$L5lv0L3PTAj4PAWWvu1S2",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "wOoa2D33W87xxRhPKhorg$$YQDOdXfOvLLHEcWArBMma",
+          "slug" : "out0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],

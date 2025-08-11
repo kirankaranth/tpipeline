@@ -10,3 +10,12 @@ with DAG(Schedule = Schedule, SensorSchedule = SensorSchedule):
         isNew = True, 
         format = CSVFormat(allowLazyQuotes = False, allowEmptyColumnNames = True, separator = ",", nullValue = "", header = True)
     )
+    Pipeline_1 = Task(
+        task_id = "Pipeline_1", 
+        component = "Pipeline", 
+        maxTriggers = 10000, 
+        triggerCondition = "Always", 
+        enableMaxTriggers = False, 
+        pipelineName = "p1", 
+        parameters = {}
+    )

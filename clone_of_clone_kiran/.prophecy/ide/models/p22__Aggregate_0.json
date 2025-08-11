@@ -1,0 +1,92 @@
+{
+  "id" : "p22__Aggregate_0",
+  "metainfo" : {
+    "label" : "p22__Aggregate_0",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "ephemeral",
+        "database" : "\"hive_metastore\"",
+        "schema" : "\"prophecy_rajat_dev_cloud2345\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "Aggregate_0_bRgfKwJabZ7Eq1_8R-Pc-$$iV680EZf8TsvjWcQG4UXP" : {
+      "id" : "Aggregate_0_bRgfKwJabZ7Eq1_8R-Pc-$$iV680EZf8TsvjWcQG4UXP",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "Aggregate_0"
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM Aggregate_0\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0",
+          "slug" : "input_port_0"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0",
+          "slug" : "output_port_0"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "TEOOTPnuTISR52TQUEJ9r$$LTWzRPuezcm3r8AtwHaBW" : {
+      "id" : "TEOOTPnuTISR52TQUEJ9r$$LTWzRPuezcm3r8AtwHaBW",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_0",
+        "x" : -420,
+        "y" : -300,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yEtlAT2bH8ysHRePPW1H_$$5OVA04DHpkhA8EogfhU-S",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "bRgfKwJabZ7Eq1_8R-Pc-$$iV680EZf8TsvjWcQG4UXP",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_TEOOTPnuTISR52TQUEJ9r$$LTWzRPuezcm3r8AtwHaBW_Aggregate_0_bRgfKwJabZ7Eq1_8R-Pc-$$iV680EZf8TsvjWcQG4UXP",
+    "source" : "TEOOTPnuTISR52TQUEJ9r$$LTWzRPuezcm3r8AtwHaBW",
+    "sourcePort" : "bRgfKwJabZ7Eq1_8R-Pc-$$iV680EZf8TsvjWcQG4UXP",
+    "target" : "Aggregate_0_bRgfKwJabZ7Eq1_8R-Pc-$$iV680EZf8TsvjWcQG4UXP",
+    "targetPort" : "input_port_0"
+  } ],
+  "component" : "Model"
+}

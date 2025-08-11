@@ -69,4 +69,15 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-08-11 04:26:42'
+  .prophecy/metadata/sqlorchestratorpipeline/p22:
+    name: p22
+    schema: null
+    description: null
+    author: kiranadmin@prophecy.io
+    files:
+    - models/p22/schema.yml
+    - models/p22/p22__Aggregate_0.sql
+    - .prophecy/ide/pipelines/p22.json
+    - pipelines/p22.py
+    createdAt: '2025-08-11 07:57:22'
 sqlBusinessApps: {}
