@@ -43,6 +43,7 @@ sqlMacros:
     author: arunsharma+admin@prophecy.io
     files:
     - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
     createdAt: '2025-08-11 04:26:42'
 sqlSeeds: {}
 sqlSources: {}
