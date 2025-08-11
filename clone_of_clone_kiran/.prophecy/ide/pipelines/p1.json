@@ -33,8 +33,8 @@
       "kind" : "OnedriveSource",
       "metadata" : {
         "label" : "OrchestrationSource_0",
-        "x" : -600,
-        "y" : -300,
+        "x" : -960,
+        "y" : -400,
         "phase" : 0
       },
       "properties" : {
