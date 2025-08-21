@@ -89,6 +89,44 @@
         } ],
         "outputs" : [ {
           "id" : "wOoa2D33W87xxRhPKhorg$$YQDOdXfOvLLHEcWArBMma",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "run_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "start_time",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "end_time",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "error",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "logs",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            } ]
+          },
           "slug" : "out0"
         } ],
         "isCustomOutputSchema" : false
